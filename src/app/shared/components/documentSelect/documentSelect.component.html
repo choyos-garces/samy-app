@@ -1,0 +1,31 @@
+<div class="document-select" [ngClass]="{ active : active }">
+    <div class="input-combo">
+        <span class="chevron">
+            <input type="text" [value]="displayLabel(selected)" class="form-control" (click)="toggleActive()"  [disabled]="disabled" readonly/>
+        </span>
+    </div>
+    <div class="options">
+        <form [formGroup]="form" class="p-1">
+            <div class="input-combo">
+                <span class="search">
+                    <input type="text" class="form-control form-control-sm" formControlName="search" autocomplete="off" placeholder="Busqueda" />
+                </span>
+            </div>
+        </form>
+        <div class="options-scroller">
+            <div class="option px-1" *ngFor="let option of options" (click)="updateSelected(option)" [ngClass]="{'selected' : isOptionSelected(option)}">
+                <div class="option-item option-text">
+                    <div class="option-display">
+                        {{ displayLabel(option) }}
+                    </div>
+                    <div class="options-aux" *ngIf="displayAux(option)">
+                        <small class="text-muted">{{ displayAux(option) }}</small>
+                    </div>
+                </div>
+                <div class="option-item option-check">
+                    <i class="fa fa-fw fa-circle-o"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

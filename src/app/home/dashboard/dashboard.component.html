@@ -1,0 +1,17 @@
+<div>
+    <small class="text-muted">{{compania}} - {{ header?.grupo }}</small>
+    <div class="clearfix">
+        <div class="float-xs-right">
+            <div class="btn-group">
+                <button><i class="fa fa-fw fa-download"></i></button>
+                <button><i class="fa fa-fw fa-print"></i></button>
+            </div>
+            <div class="btn-group">
+                <button *ngFor="let accion of header.acciones" [routerLink]="accion.uri" [title]="accion.title">
+                    <i class="fa fa-fw {{ accion.icono }}"></i>
+                </button>
+            </div>
+        </div>
+        <h3>{{ header?.seccion }}</h3>
+    </div>
+</div>

@@ -1,6 +1,5 @@
-export interface ICollectionPayload
+import {IControlOutput} from "./IControlOutput";
+export interface ICollectionControlOutput extends IControlOutput
 {
-    value : any,
     index : number,
-    valid : boolean
 }

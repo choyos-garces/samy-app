@@ -1,0 +1,10 @@
+<div class="wrapper">
+    <div>
+        <span >samy@hoyosgarces</span>
+        <form [formGroup]="form">
+            <input type="email" id="user" formControlName="_username" placeholder="Usuario"/>
+            <input type="password" id="contrasena" formControlName="_password" placeholder="Contraseña" />
+            <button (click)="submit()" [disabled]="isFormDisabled()"><i class="fa fa-sign-in"></i></button>
+        </form>
+    </div>
+</div>

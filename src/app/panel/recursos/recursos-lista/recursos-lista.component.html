@@ -1,0 +1,34 @@
+<div class="content-block">
+    <h5>Lista de Recursos</h5>
+</div>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th width="1">#</th>
+                <th>Nombre</th>
+                <th>Aplicacion</th>
+                <th>Seccion</th>
+                <th class="text-xs-center">Categorias</th>
+                <th class="text-xs-center">Habilitado</th>
+                <th class="text-xs-center">Creado</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let recurso of recursos; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td><a [routerLink]="['../view', recurso?.id]">{{ recurso.nombre }}</a></td>
+                <td>{{ recurso.aplicacion.nombre }}</td>
+                <td>{{ recurso.seccion.nombre }}</td>
+                <td class="text-xs-center">{{ recurso.categorias.length }}</td>
+                <td class="text-xs-center">{{ recurso.active ? "Si" : "No" }}</td>
+                <td class="text-xs-center">{{ recurso.created | date }}</td>
+                <td class="list-actions">
+                    <a [routerLink]="['../edit', recurso.id]"><i class="fa fa-pencil"></i></a>
+                    <a (click)="toggleActive(recurso, i)"><i class="fa" [ngClass]="{'fa-eye' : recurso?.active, 'fa-eye-slash' : !recurso?.active}"></i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

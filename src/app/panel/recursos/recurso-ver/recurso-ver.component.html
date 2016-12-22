@@ -1,0 +1,60 @@
+<div class="content-block">
+    <div class="clearfix button-holder">
+        <div class="float-xs-right ">
+            <button (click)="toggleActive(recurso)">
+                {{ recurso?.active ? 'Habilitado' : 'Deshabilitado' }} <i class="fa fa-fw" [ngClass]="{'fa-eye': recurso?.active, 'fa-eye-slash': !recurso?.active}"></i>
+            </button>
+            <button [routerLink]="['../../edit', recurso?.id ]"><i class="fa fa-fw fa-pencil"></i></button>
+        </div>
+        <h5>Recurso: {{ recurso?.nombre}}</h5>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div>
+                <strong>Applicacion</strong>
+                <div class="view-display-static">{{ recurso?.aplicacion.nombre }}</div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <strong>Tipo Recurso</strong>
+                <div class="view-display-static">{{ recurso?.seccion.nombre }}</div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div>
+                <strong>Nombre</strong>
+                <div class="view-display-static">{{ recurso?.nombre }}</div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <strong>Creado</strong>
+                <div class="view-display-static">{{ recurso?.created | date }}</div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <strong>Editado</strong>
+                <div class="view-display-static">{{ recurso?.edited | date }}</div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div>
+                <strong>Detalle</strong>
+                <div class="box-pre"><pre>{{ recurso?.detalle }}</pre></div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div>
+                <strong>Categorias</strong>
+                <div class="view-display-static">
+                    <span class="tag tag-default" *ngFor="let categoria of recurso?.categorias; let i = index">
+                    {{ categoria.nombre }}
+                    <i class="fa fa-fw" [ngClass]="{'fa-eye': categoria.active, 'fa-eye-slash': !categoria.active}"></i>
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,13 +1,11 @@
-import {IKey} from "./IKey";
-import {ISeccion} from "./Recursos/ISeccion";
-import {IAplicacion} from "./Recursos/IAplicacion";
-import {ICategoria} from "./Recursos/ICategoria";
+import {ISeccion} from "./ISeccion";
+import {IAplicacion} from "./IAplicacion";
+import {ICategoria} from "./ICategoria";
+import {IDocument} from "../IDocument";
 
-export interface IRecurso extends IKey{
+export interface IRecurso extends IDocument {
     aplicacion : IAplicacion;
     seccion : ISeccion;
     detalle : string;
     categorias? : ICategoria[];
-    active : boolean;
-    created : Date | string;
 }

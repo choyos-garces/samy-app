@@ -1,1 +1,191 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    overflow: hidden;
+}
+@font-face {
+    font-family: Consolas;
+    src: url("assets/fonts/consolas.ttf");
+}
+
+@media (max-width: 576px) {
+    .view-action {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) {
+    .view-action {
+        float: right;
+    }
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+
+.view-display-static {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    line-height: 1.25;
+    border: solid transparent;
+    border-width: 1px 0;
+    min-height: 38px;
+}
+
+.has-collection-danger {
+    border-color: #d9534f;
+}
+
+.form-control-feedback {
+    font-size: 80%;
+    display: none;
+}
+
+.has-danger small.form-text {
+    display: none;
+}
+
+.has-danger .form-control-feedback {
+    display: block;
+}
+
+.box-pre {
+    padding: 8px 16px;
+    display: block;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 4px;
+    background: rgb(250, 250, 250);
+    margin-bottom: 14px;
+    min-height: 6em;
+}
+
+button[type='submit'] {
+    margin-bottom: 16px;
+}
+
+.button-holder {
+    margin-bottom: .8rem;
+}
+.list-actions {
+    text-align: right;
+}
+
+.list-actions a {
+    opacity: .2;
+    color: inherit;
+    cursor: pointer;
+    margin: 0 4px;
+}
+
+.list-actions a:hover {
+    opacity: 1;
+}
+
+textarea {
+    height: 124px;
+    resize: none;
+}
+
+.content-block {
+    padding: 12px 24px;
+}
+
+.table .thead-condensed th {
+    padding: .45rem .75rem;
+    font-size: .9rem;
+    vertical-align: middle;
+}
+
+.table thead .thead-expand-title {
+    text-align: center;
+    padding: .4rem .75rem;
+    border-bottom: 1px solid #eceeef;
+}
+
+.table .thead-expand th {
+    text-align: center;
+    padding: .3rem .75rem;
+    font-size: .75rem;
+    vertical-align: middle;
+}
+
+.table tr th:first-child,
+.table tr td:first-child {
+    padding-left: 24px;
+}
+
+.table tr th:last-child,
+.table tr td:last-child {
+    padding-right: 24px;
+}
+
+.table-bordered {
+    border-right: none;
+    border-left: none;
+}
+
+.table-bordered th:first-child,
+.table-bordered td:first-child {
+    border-left: none;
+}
+
+.table-bordered th:last-child,
+.table-bordered td:last-child {
+    border-right: none;
+}
+
+button {
+    background: #fff;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid rgba(0,0,0,.15);
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+
+button[disabled], button[disabled]:active, button:hover {
+    background: #f2f5f7;
+}
+
+button[disabled]:active {
+    top: 0;
+}
+
+button:active {
+    background: #eceeef;
+    outline: none;
+    position: relative;
+    top: 1px;
+}
+
+button:focus {
+    outline: none;
+}
+
+label, select {
+    cursor: pointer;
+}
+
+input[type=date] {
+    max-height: 38px;
+    font-size: 95%;
+}

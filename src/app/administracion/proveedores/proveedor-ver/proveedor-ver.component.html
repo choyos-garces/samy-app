@@ -1,0 +1,23 @@
+<div class="content-block">
+    <div class="clearfix button-holder">
+        <div class="float-xs-right ">
+            <button (click)="toggleActive(proveedor)" [disabled]="toggleWaiting">
+                {{ proveedor?.active ? 'Habilitado' : 'Deshabilitado' }} <i class="fa fa-fw" [ngClass]="{'fa-eye': proveedor?.active, 'fa-eye-slash': !proveedor?.active}"></i>
+            </button>
+            <button [routerLink]="['../../edit', proveedor?.id ]" ><i class="fa fa-fw fa-pencil"></i></button>
+        </div>
+        <h5>Proveedor: {{ proveedor?.nombre}}</h5>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div>
+                <strong>Nombre</strong>
+                <div class="form-control-static">{{ proveedor?.nombre }}</div>
+            </div>
+            <div>
+                <strong>Creado</strong>
+                <div class="form-control-static">{{ proveedor?.created | date }}</div>
+            </div>
+        </div>
+    </div>
+</div>

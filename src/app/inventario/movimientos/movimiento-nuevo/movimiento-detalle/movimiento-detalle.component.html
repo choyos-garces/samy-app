@@ -1,0 +1,48 @@
+<form [formGroup]="form">
+    <fieldset [disabled]="isNotReady">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="form-group">
+                    <label class="form-control-label" for="documento">{{ accion ? 'Origen' : 'Destino' }}</label>
+                    <select class="form-control" id="documento" formControlName="documento">
+                        <option *ngFor="let documento of categorias" [value]="documento.nombre">{{ documento.nombre }}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group" *ngIf="getControlValue('documento') == 'Bodega'">
+                    <label class="form-control-label" for="bodegas">Bodega</label>
+                    <select class="form-control" id="bodegas" formControlName="referencia">
+                        <option *ngFor="let bodega of bodegas" [value]="bodega.id">{{ bodega.nombre }}</option>
+                    </select>
+                </div>
+                <div class="form-group" *ngIf="getControlValue('documento') == 'Proveedor'">
+                    <label class="form-control-label" for="proveedores">Proveedor</label>
+                    <select class="form-control" id="proveedores" formControlName="referencia">
+                        <option *ngFor="let proveedor of proveedores" [value]="proveedor.id">{{ proveedor.nombre }}</option>
+                    </select>
+                </div>
+                <div class="form-group" *ngIf="getControlValue('documento') == 'Productor'">
+                    <label class="form-control-label" for="productores">Productor</label>
+                    <select class="form-control" id="productores" formControlName="referencia">
+                        <option *ngFor="let productor of productores" [value]="productor.id">{{ productor.nombre }}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="form-group"  *ngIf="!accion && getControlValue('documento') == 'Productor'">
+                    <label class="form-control-label" for="info">Orden de Corte</label>
+                    <input type="tel" id="info" class="form-control" formControlName="adicional" />
+                </div>
+                <div class="form-group"  *ngIf="accion && getControlValue('documento') == 'Proveedor'">
+                    <label class="form-control-label" for="info">Factura</label>
+                    <input type="tel" id="info" class="form-control" formControlName="adicional" />
+                </div>
+                <div class="form-group"  *ngIf="accion && getControlValue('documento') == 'Bodega'">
+                    <label class="form-control-label" for="info">Numero de Guia</label>
+                    <input type="tel" id="info" class="form-control" formControlName="adicional" />
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</form>

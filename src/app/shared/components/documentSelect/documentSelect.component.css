@@ -1,0 +1,119 @@
+.document-select {
+    position: relative;
+}
+
+.input-combo {
+    position: relative;
+}
+
+.input-combo span:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    display: block;
+    position: absolute;
+}
+
+.input-combo span.chevron:after {
+    content: "\f078";
+    bottom: 12px;
+    right: 12px;
+}
+
+.active .input-combo span.chevron:after {
+    content: "\f077";
+}
+
+.input-combo span.search:after {
+    content: "\f002";
+    background: #fff;
+    bottom: 7px;
+    left: 8px;
+}
+
+.input-combo .form-control[readonly] {
+    cursor: pointer;
+    background: #fff;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.input-combo .form-control:disabled {
+    background-color: #eceeef;
+}
+
+.active .input-combo .form-control {
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.options {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+    position: absolute;
+    display: none;
+    margin-bottom: 0.75rem;
+    background-color: #fff;
+    border-radius: 0 0 0.25rem 0.25rem;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-top: none;
+    z-index: 333;
+    left: 0;
+    right: 0;
+}
+
+.active .options {
+    display: block;
+}
+
+.options .form-control {
+    padding-left: 28px;
+    background: #fff;
+}
+
+.options-scroller {
+    max-height: 168px;
+    overflow-x: hidden;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.option-text{
+    flex-grow: 2;
+}
+
+.selected {
+    background: #f0f5f5;
+}
+
+.option:hover {
+    background: #0275d8;
+    color: #fff
+}
+
+.option-check {
+    text-align: center;
+    display: none;
+    color: #0275d8;
+}
+
+.option:hover .option-check {
+    color: #fff;
+}
+
+.option:hover .text-muted {
+    color: rgba(255,255,255,.8) !important;
+}
+
+.selected .option-check {
+    display: block;
+}

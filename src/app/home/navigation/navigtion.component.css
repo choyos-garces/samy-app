@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+    ul.nav {
+        position: absolute;
+        max-height: 0;
+        overflow: hidden;
+    }
+}
+
+.nav {
+    color: #969ba0
+}
+
+.nav-section-name {
+    color: #7d8287
+}
+
+.nav-link {
+    color: inherit;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-link.active {
+    color: inherit;
+    background: none;
+    font-weight: bold;
+}
+
+.nav-link.active:hover, .nav-link.active:focus {
+    background: none;
+    color: inherit;
+}
+
+.nav-child {
+    padding-left: 24px;
+}

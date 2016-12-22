@@ -1,0 +1,43 @@
+<div class="content-block">
+    <div class="clearfix button-holder">
+        <div class="view-action">
+            <button (click)="toggleActive(bodega)" [disabled]="toggleWaiting">
+                {{ bodega?.active ? 'Habilitado' : 'Deshabilitado' }} <i class="fa fa-fw" [ngClass]="{'fa-eye': bodega?.active, 'fa-eye-slash': !bodega?.active}"></i>
+            </button>
+            <button [routerLink]="['../../edit', bodega?.id ]" ><i class="fa fa-fw fa-pencil"></i></button>
+        </div>
+        <h5>Bodega: <code>#{{ bodega?.codigo}}</code></h5>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div>
+                <strong>Nombre</strong>
+                <div class="view-display-static">{{ bodega?.nombre }}</div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <strong>Encargado Actual</strong>
+                <div class="view-display-static">{{ bodega?.encargado?.nombre }} {{ bodega?.encargado?.apellido }}</div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <strong>Creada</strong>
+                <div class="view-display-static">{{ bodega?.created | date }}</div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <strong>Ultimo Cambio</strong>
+                <div class="view-display-static">{{ bodega?.edited | date }}</div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div>
+                <strong>Descripcion</strong>
+                <div class="box-pre"><pre>{{ bodega?.descripcion }}</pre></div>
+            </div>
+        </div>
+    </div>
+</div>

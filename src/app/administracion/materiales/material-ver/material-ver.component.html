@@ -1,0 +1,51 @@
+<div class="content-block">
+    <div class="clearfix button-holder">
+        <div class="view-action">
+            <button (click)="toggleActive(material)" [disabled]="toggleWaiting">
+                {{ material?.active ? 'Habilitado' : 'Deshabilitado' }} <i class="fa fa-fw" [ngClass]="{'fa-eye': material?.active, 'fa-eye-slash': !material?.active}"></i>
+            </button>
+            <button [routerLink]="['../../edit', material?.id ]" ><i class="fa fa-fw fa-pencil"></i></button>
+        </div>
+        <h5>Material: <code>#{{ material?.codigo}}</code></h5>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div>
+                <strong>Nombre</strong>
+                <div class="view-display-static">{{ material?.nombre }}</div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <div>
+                <strong>Tipo Material</strong>
+                <div class="view-display-static">{{ material?.tipoMaterial.nombre }}</div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <strong>Categoria</strong>
+                <div class="view-display-static">{{ material?.categoria.nombre }}</div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <strong>Creado</strong>
+                <div class="view-display-static">{{ material?.created | date }}</div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div>
+                <strong>Ultimo Cambio</strong>
+                <div class="view-display-static">{{ material?.edited | date }}</div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div>
+                <strong>Detalle</strong>
+                <div class="box-pre"><pre>{{ material?.descripcion }}</pre></div>
+            </div>
+        </div>
+    </div>
+</div>

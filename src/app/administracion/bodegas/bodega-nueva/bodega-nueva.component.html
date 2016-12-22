@@ -1,0 +1,45 @@
+<div class="content-block">
+    <form [formGroup]="form" autocomplete="off">
+        <fieldset [disabled]="isFormDisabled()">
+            <h5>Nueva Bodega</h5>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('codigo'), 'has-success' : codigoReady }">
+                        <label class="form-control-label" for="bodega-codigo">Codigo</label>
+                        <input type="text" id="bodega-codigo" class="form-control form-control-success text-md-center" formControlName="codigo" readonly/>
+                        <small class="form-text text-muted">Codigo generado automaticamente</small>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('encargado')}">
+                        <label class="form-control-label" for="encargado">Encargado</label>
+                        <select formControlName="encargado" id="encargado" class="form-control">
+                            <option *ngFor="let persona of personal" [value]="persona.id">{{ persona.nombre + " " + persona.apellido}}</option>
+                        </select>
+                        <small class="form-control-feedback">{{ getFeedback('encargado') }}</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('nombre')}">
+                        <label class="form-control-label" for="bodega-nombre">Nombre</label>
+                        <input type="text" id="bodega-nombre" class="form-control" formControlName="nombre" autocomplete="off" placeholder="Cuidad, Edificio, etc..." />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label" for="descripcion">Descripcion</label>
+                        <textarea id="descripcion" class="form-control control-y-2" formControlName="descripcion" placeholder="Cartonera, Etiquetas y Fundas, etc.."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group text-xs-right">
+                <div class="btn-group">
+                    <button type="submit" (click)="submit()" [disabled]="isSubmitDisabled()">
+                        <span>Ingresar Bodega</span>
+                        <i class="fa fa-fw" [ngClass]="{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }"></i>
+                    </button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

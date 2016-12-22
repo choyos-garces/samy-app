@@ -1,0 +1,43 @@
+<div class="content-block">
+    <h5>Lista de Materiales en Bodegas</h5>
+</div>
+<table class="table table-hover table-bordered">
+    <thead>
+        <tr>
+            <th width="1" rowspan="2">#</th>
+            <th rowspan="2">Bodega</th>
+            <th colspan="4" class="thead-expand-title">Material</th>
+            <th class="text-sm-center" rowspan="2">Disponible</th>
+            <th class="text-sm-center" rowspan="2">Ultimo Movimiento</th>
+            <th class="text-sm-center" rowspan="2">Primer Ingreso</th>
+        </tr>
+        <tr class="thead-expand">
+            <th>Codigo</th>
+            <th>Tipo</th>
+            <th>Categoria</th>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of existente; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>
+                <a [routerLink]="['../../historial/bodega', item.bodega.id]">
+                    {{ item.bodega.nombre }}
+                </a>
+            </td>
+            <td class="text-sm-center"><code>#{{ item.material.codigo}}</code></td>
+            <td class="text-sm-center">{{ item.material.tipoMaterial.nombre }}</td>
+            <td class="text-sm-center">{{ item.material.categoria.nombre }}</td>
+            <td class="text-sm-center">{{ item.material.nombre}}</td>
+            <td class="text-sm-right">
+                <a [routerLink]="['../../historial/materialEnBodega', { material : item.material.id, bodega : item.bodega.id}]">
+                    {{ item.cantidad }}
+                </a>
+            </td>
+            <td class="text-sm-center">{{ item.updated | date }}</td>
+            <td class="text-sm-center">{{ item.created | date }}</td>
+        </tr>
+    </tbody>
+</table>
+

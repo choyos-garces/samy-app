@@ -1,0 +1,30 @@
+<div class="content-block">
+    <h5>Lista de Proveedores</h5>
+</div>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>RUC</th>
+            <th>Correo</th>
+            <th class="text-xs-center">Habilitado</th>
+            <th class="text-xs-center">Creado</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let proveedor of proveedores; let i = index">
+            <td><a [routerLink]="['../view', proveedor.id]">{{ proveedor.nombre }}</a></td>
+            <td>{{ proveedor.ruc }}</td>
+            <td>{{ proveedor.correo }}</td>
+            <td class="text-xs-center">{{ proveedor.active ? "Si" : "No" }}</td>
+            <td class="text-xs-center">{{ proveedor.created | date }}</td>
+            <td class="list-actions">
+                <a [routerLink]="['../edit', proveedor.id]"><i class="fa fa-pencil"></i></a>
+                <a (click)="toggleActive(proveedor, i)"><i class="fa" [ngClass]="{'fa-eye' : proveedor?.active, 'fa-eye-slash' : !proveedor?.active}"></i></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

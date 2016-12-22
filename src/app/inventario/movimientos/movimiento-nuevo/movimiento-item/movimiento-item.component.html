@@ -1,0 +1,41 @@
+<form [formGroup]="form">
+    <fieldset [disabled]="isFormDisabled()">
+        <div class="row">
+            <div class="col-xs-6 col-sm-3">
+                <div class="form-group">
+                    <label class="form-control-label" for="tipo-material">Tipo Material</label>
+                    <select id="tipo-material" class="form-control" formControlName="tipoMaterial">
+                        <option *ngFor="let tipoMaterial of tiposMateriales" [value]="tipoMaterial.id">{{ tipoMaterial.nombre }}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="form-group">
+                    <label class="form-control-label" for="categoria">Categoria</label>
+                    <select id="categoria" class="form-control" formControlName="categoria">
+                        <option *ngFor="let categoria of categorias" [value]="categoria.id">{{ categoria.nombre }}</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="form-group">
+                    <label class="form-control-label" for="material">Material</label>
+                    <select id="material" class="form-control" formControlName="material">
+                        <option *ngFor="let material of opcionesMaterial" [value]="material.id">{{ material.nombre }} (#{{ material.codigo }})</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="form-group">
+                    <label class="form-control-label" for="cantidad">Cantidad</label>
+                    <div class="input-group">
+                        <input id="cantidad" formControlName="cantidad" type="number" class="form-control" />
+                        <div class="input-group-btn">
+                            <button class="btn btn-secondary" (click)="submit()" [disabled]="isSubmitDisabled()"><i class="fa fa-fw fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</form>

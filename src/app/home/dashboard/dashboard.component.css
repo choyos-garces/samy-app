@@ -1,0 +1,31 @@
+small {
+    text-transform: uppercase;
+}
+
+hr {
+    margin-top: 12px;
+}
+
+.btn-group {
+    font-size: 0;
+}
+
+.btn-group button {
+    font-size:16px
+}
+
+.btn-group button:first-child {
+    border-radius: .25rem 0 0 .25rem;
+    border-right: none;
+}
+
+.btn-group button:not(:first-child) {
+    border-width: 1px 0 1px 1px;
+    border-radius: 0;
+}
+
+
+.btn-group button:last-child {
+    border-width: 1px;
+    border-radius: 0 .25rem .25rem 0
+}

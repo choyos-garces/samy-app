@@ -1,0 +1,35 @@
+<div class="content-block">
+    <h5>Estados de Transferencia</h5>
+</div>
+<table class="table table-bordered table-hover text-sm-center">
+    <thead>
+        <tr>
+            <th rowspan="2" width="1">#</th>
+            <th rowspan="2">Numero de Guia</th>
+            <th colspan="2" class="thead-expand-title">Origen</th>
+            <th colspan="2" class="thead-expand-title">Destino</th>
+            <th rowspan="2">Estado</th>
+            <th rowspan="2">Emitida</th>
+            <th rowspan="2">Culminada</th>
+        </tr>
+        <tr class="thead-expand">
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Codigo</th>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let guia of guias; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td><code><a [routerLink]="['../view', guia.numeroGuia ]">{{ guia.numeroGuia }}</a></code></td>
+            <td><code>{{ guia.movimientoOrigen.bodega.codigo }}</code></td>
+            <td>{{ guia.movimientoOrigen.bodega.nombre }}</td>
+            <td><code>{{ guia.movimientoOrigen.detalle.bodega.codigo }}</code></td>
+            <td>{{ guia.movimientoOrigen.detalle.bodega.nombre }}</td>
+            <td><i class="fa fa-fw" [ngClass]="{ 'fa-warning' : guia.status == 'error', 'fa-check' : guia.status == 'done', 'fa-clock-o' : guia.status == 'waiting'}"></i></td>
+            <td>{{ guia.created | date }}</td>
+            <td>{{ guia.updated | date }}</td>
+        </tr>
+    </tbody>
+</table>

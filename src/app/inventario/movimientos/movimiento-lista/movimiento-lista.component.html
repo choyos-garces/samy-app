@@ -1,0 +1,34 @@
+<div class="content-block">
+    <h5>Lista de ingresos y egresos de Inventario</h5>
+</div>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th width="1">#</th>
+            <th>Tipo</th>
+            <th width="*">Motivo</th>
+            <th width="*">Bodega</th>
+            <th class="text-sm-center">Materiales</th>
+            <th>Usuario</th>
+            <th class="text-sm-center">Fecha</th>
+            <th class="text-sm-right"></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let movimiento of movimientos; let i = index">
+            <td>{{ i + offset + 1}}</td>
+            <td>
+                <a [routerLink]="['../view', movimiento.id]">{{ movimiento.accion ? "Ingreso" : "Egreso "}}</a>
+            </td>
+            <td>{{ movimiento.detalle.documento }}</td>
+            <td>{{ movimiento.bodega.nombre}}</td>
+            <td class="text-sm-center">{{ movimiento.materiales.length }}</td>
+            <td>{{ movimiento.createdBy.username }}</td>
+            <td class="text-sm-center">{{ movimiento.created | date }}</td>
+            <td class="list-actions text-sm-right">
+                <a href="#"><i class="fa fa-fw fa-bell-o" title="Re-notificar"></i></a>
+                <a href="#"><i class="fa fa-fw fa-flag-o" title="Reportar un error"></i></a>
+            </td>
+        </tr>
+    </tbody>
+</table>

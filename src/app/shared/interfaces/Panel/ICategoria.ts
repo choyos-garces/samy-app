@@ -1,5 +1,4 @@
-import {IKey} from "../IKey";
+import {IDocument} from "../IDocument";
 
-export class ICategoria extends IKey {
-    active : boolean;
+export class ICategoria extends IDocument {
 }

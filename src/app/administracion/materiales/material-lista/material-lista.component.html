@@ -1,0 +1,34 @@
+<div class="content-block">
+    <h5>Lista de Materiales</h5>
+</div>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Codigo</th>
+                <th>Nombre</th>
+                <th>Tipo Material</th>
+                <th>Categoria</th>
+                <th class="text-xs-center">Habilitado</th>
+                <th class="text-xs-center">Creado</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let material of materiales; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td><code><a [routerLink]="['../view', material?.id]">{{ material.codigo }}</a></code></td>
+                <td><a [routerLink]="['../view', material?.id]">{{ material.nombre }}</a></td>
+                <td>{{ material.tipoMaterial.nombre }}</td>
+                <td>{{ material.categoria.nombre }}</td>
+                <td class="text-xs-center">{{ material.active ? "Si" : "No" }}</td>
+                <td class="text-xs-center">{{ material.created | date }}</td>
+                <td class="list-actions">
+                    <a [routerLink]="['../edit', material.id]"><i class="fa fa-pencil"></i></a>
+                    <a (click)="toggleActive(material, i)"><i class="fa" [ngClass]="{'fa-eye-slash' : !material?.active, 'fa-eye' : material?.active}"></i></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

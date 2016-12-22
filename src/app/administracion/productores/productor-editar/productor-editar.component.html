@@ -1,0 +1,66 @@
+<div class="content-block">
+    <form [formGroup]="form" autocomplete="off">
+        <div class="clearfix">
+            <div class="float-xs-right ">
+                <button [routerLink]="['../../view', productor?.id ]"><i class="fa fa-fw fa-file-text-o"></i></button>
+            </div>
+            <h5>Editar Productor</h5>
+        </div>
+        <fieldset [disabled]="isFormDisabled()">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('nombre')}">
+                        <label class="form-control-label" for="nombre">Nombre</label>
+                        <input type="text" id="nombre" class="form-control" formControlName="nombre" autocomplete="off"/>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('apellido')}">
+                        <label class="form-control-label" for="apellido">Apellido</label>
+                        <input type="text" id="apellido" class="form-control form-control-danger" formControlName="apellido" autocomplete="off"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('correo')}">
+                        <label class="form-control-label" for="correo">Correo Electronico</label>
+                        <input type="email" id="correo" class="form-control" formControlName="correo" autocomplete="off"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('telefono')}">
+                        <label class="form-control-label" for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" class="form-control" formControlName="telefono" autocomplete="off"/>
+                        <div class="form-control-feedback" >{{ getFeedback('telefono') }}</div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('ruc')}">
+                        <label class="form-control-label" for="ruc">Cedula</label>
+                        <input type="tel" id="ruc" class="form-control" formControlName="ruc" autocomplete="off"/>
+                        <div class="form-control-feedback" >{{ getFeedback('ruc') }}</div>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-check">
+                        <label class="form-check-label" for="recurso-active">
+                            <input type="checkbox" id="recurso-active" class="form-check-input" formControlName="active"/>
+                            Recurso Habilitado
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group text-xs-right">
+                <div class="btn-group">
+                    <button type="submit" (click)="submit()" [disabled]="isSubmitDisabled()">
+                        <span>Ingresar Bodega</span>
+                        <i class="fa fa-fw" [ngClass]="{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }"></i>
+                    </button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

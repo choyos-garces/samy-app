@@ -1,0 +1,50 @@
+<div class="content-block">
+    <form [formGroup]="form">
+        <fieldset [disabled]="isFormDisabled()">
+            <h5>Nuevo Material</h5>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group" [ngClass]="{ 'has-danger' :isControlInvalid('codigo'), 'has-success' : codigoReady}">
+                        <label class="form-control-label" for="codigo-material">Codigo</label>
+                        <input type="text" id="codigo-material" class="form-control  form-control-success text-md-center" formControlName="codigo" readonly/>
+                        <small class="form-text text-muted">Codigo generado automaticamente</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="form-control-label" for="tipo-material">Tipo de Material</label>
+                        <select id="tipo-material" class="form-control" formControlName="tipoMaterial">
+                            <option *ngFor="let tipoMaterial of tiposMateriales" [value]="tipoMaterial.id">{{ tipoMaterial.nombre }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group" [ngClass]="{ 'has-danger' : isControlInvalid('categoria')}">
+                        <label class="form-control-label" for="categoria">Categoria</label>
+                        <select id="categoria" class="form-control" formControlName="categoria">
+                            <option *ngFor="let categoria of categorias" [value]="categoria.id">{{ categoria.nombre }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group" [ngClass]="{ 'has-danger' : isControlInvalid('nombre')}">
+                        <label class="form-control-label" for="nombre-material">Nombre</label>
+                        <input type="text" id="nombre-material" class="form-control" formControlName="nombre" autocomplete="off"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label" for="descripcion-material">Descripcion</label>
+                        <textarea id="descripcion-material" class="form-control control-y-2" formControlName="descripcion" placeholder="Opcional"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group text-xs-right">
+                <button type="submit" (click)="submit()" [disabled]="isSubmitDisabled()">
+                    <span>Ingresar Material</span>
+                    <i class="fa fa-fw" [ngClass]="{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }"></i>
+                </button>
+            </div>
+        </fieldset>
+    </form>
+</div>

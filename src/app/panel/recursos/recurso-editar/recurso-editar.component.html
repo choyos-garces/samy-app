@@ -1,0 +1,71 @@
+<div class="content-block">
+    <form [formGroup]="form">
+        <div class="clearfix">
+            <div class="float-xs-right ">
+                <button [routerLink]="['../../view', recurso?.id ]"><i class="fa fa-fw fa-file-text-o"></i></button>
+            </div>
+            <h5>Editar Recurso</h5>
+        </div>
+        <fieldset [disabled]="isFormDisabled()">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="form-control-label" for="recurso-app">Applicacion</label>
+                        <input type="text" id="recurso-app" class="form-control" [value]="recurso?.aplicacion.nombre" autocomplete="off" readonly/>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="form-control-label" for="recurso-tipo">Tipo Recurso</label>
+                        <input type="text" id="recurso-tipo" class="form-control" [value]="recurso?.seccion.nombre" autocomplete="off" readonly/>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="form-group" [ngClass]="{ 'has-danger': isControlInvalid('nombre')}">
+                        <label class="form-control-label" for="recurso-nombre">Nombre</label>
+                        <input type="text" id="recurso-nombre" class="form-control" formControlName="nombre" autocomplete="off" />
+                        <div class="form-control-feedback" >{{ getFeedback('nombre') }}</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label" for="recurso-detalle">Detalle</label>
+                        <textarea id="recurso-detalle" class="form-control control-y-2" formControlName="detalle" placeholder="Opcional"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="card" [ngClass]="{'has-collection-danger': isControlInvalid('categorias')}">
+                <div class="card-block">
+                    <div class="clearfix">
+                        <div class="float-xs-right">
+                            <button (click)="clearCategorias()"><i class="fa fa-fw fa-trash-o"></i></button>
+                            <button (click)="addCategoria()"><i class="fa fa-fw fa-plus"></i></button>
+                        </div>
+                        <h5>Categorias</h5>
+                    </div>
+                    <div *ngFor="let categoria of recurso?.categorias; let i = index">
+                        <app-catagorias-item [categoria]="categoria" [index]="i" (output)="updateCategorias($event)"></app-catagorias-item>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-check">
+                        <label class="form-check-label" for="recurso-active">
+                            <input type="checkbox" id="recurso-active" class="form-check-input" formControlName="active"/>
+                            Recurso Habilitado
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-xs-right">
+                    <div class="btn-group">
+                        <button type="submit" (click)="submit()" [disabled]="isFormDisabled()">
+                            <span>Editar Recurso</span>
+                            <i class="fa fa-fw" [ngClass]="{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

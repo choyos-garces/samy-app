@@ -1,0 +1,44 @@
+div {
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (min-width: 768px) {
+    div.wrapper {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+    div.sidebar {
+        background: rgb(15,15,18);
+        width: 250px;
+        padding: 48px 24px 12px;
+    }
+
+    div.main {
+        flex-grow: 2;
+        position: relative;
+    }
+
+    div.dashboard {
+        padding: 48px 24px 12px;
+    }
+
+    div.main-content {
+        border-top: 1px solid #eceeef;
+        overflow-y: scroll;
+        position: absolute;
+        padding: 12px 0;
+        top: 122px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}

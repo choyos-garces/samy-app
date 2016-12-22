@@ -1,0 +1,63 @@
+<div class="content-block">
+    <form [formGroup]="form" autocomplete="off">
+        <div class="clearfix">
+            <div class="float-xs-right ">
+                <button [routerLink]="['../../view',bodega?.id ]"><i class="fa fa-fw fa-file-text-o"></i></button>
+            </div>
+            <h5>Editar Bodega</h5>
+        </div>
+        <fieldset [disabled]="isFormDisabled()">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label class="form-control-label" for="bodega-codigo">Codigo</label>
+                        <input type="text" id="bodega-codigo" class="form-control text-md-center" [value]="bodega?.codigo" readonly/>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('encargado')}">
+                        <label class="form-control-label">Encargado</label>
+                        <app-document-select
+                                [documents]="personal"
+                                [current]="bodega?.encargado.id"
+                                [documentMap]="documentMap"
+                                [disabled]="waiting"
+                                (output)="updateEncargado($event)"
+                        ></app-document-select>
+                        <small class="form-control-feedback">{{ getFeedback('encargado') }}</small>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('nombre')}">
+                        <label class="form-control-label" for="bodega-nombre">Nombre</label>
+                        <input type="text" id="bodega-nombre" class="form-control" formControlName="nombre" autocomplete="off" placeholder="Cuidad, Edificio, etc..." />
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Descripcion</label>
+                        <textarea id="descripcion" class="form-control control-y-2" formControlName="descripcion" placeholder="Cartonera, Etiquetas y Fundas, etc.."></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-check">
+                        <label class="form-check-label" for="recurso-active">
+                            <input type="checkbox" id="recurso-active" class="form-check-input" formControlName="active"/>
+                            Recurso Habilitado
+                        </label>
+                    </div>
+                </div>
+                <div class="col-xs-12 text-xs-right">
+                    <div class="btn-group">
+                        <button type="submit" (click)="submit()" [disabled]="isSubmitDisabled()">
+                            <span>Editar Bodega</span>
+                            <i class="fa fa-fw" [ngClass]="{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>

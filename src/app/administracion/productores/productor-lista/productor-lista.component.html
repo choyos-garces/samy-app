@@ -1,0 +1,30 @@
+<div class="content-block">
+    <h5>Lista del Personal</h5>
+</div>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>RUC</th>
+            <th>Correo</th>
+            <th class="text-xs-center">Habilitado</th>
+            <th class="text-xs-center">Creado</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let productor of productores; let i = index">
+            <td><a [routerLink]="['../view', productor.id]">{{ productor.nombre + " " + productor.apellido }}</a></td>
+            <td>{{ productor.ruc }}</td>
+            <td>{{ productor.correo }}</td>
+            <td class="text-xs-center">{{ productor.active ? "Si" : "No" }}</td>
+            <td class="text-xs-center">{{ productor.created | date }}</td>
+            <td class="list-actions">
+                <a [routerLink]="['../edit', productor.id]"><i class="fa fa-pencil"></i></a>
+                <a (click)="toggleActive(productor, i)"><i class="fa" [ngClass]="{'fa-eye' : productor?.active, 'fa-eye-slash' : !productor?.active}"></i></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

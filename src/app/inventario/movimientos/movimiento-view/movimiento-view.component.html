@@ -1,0 +1,118 @@
+<div class="content-block">
+    <div class="clearfix button-holder">
+        <div class="view-action">
+            <button (click)="toggleActive(bodega)" [disabled]="toggleWaiting">
+                Volver a Notificar <i class="fa fa-fw fa-bell-o"></i>
+            </button>
+            <button [routerLink]="['../../edit', bodega?.id ]" ><i class="fa fa-fw fa-flag-o"></i></button>
+        </div>
+        <h5>Datos de Movimiento:</h5>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <strong>Accion</strong>
+                            <div class="view-display-static">{{ movimiento?.accion ? "Ingreso de Material" : "Egreso de Material" }}</div>
+                        </div>
+                        <div class="col-xs-12">
+                            <strong>Bodega</strong>
+                            <div class="view-display-static">{{ movimiento?.bodega.nombre }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <strong>{{ movimiento?.accion ? "Origen" : "Destino" }}</strong>
+                            <div class="view-display-static">{{ movimiento?.detalle.documento }}</div>
+                        </div>
+                        <div class="col-sm-12" *ngIf="movimiento?.detalle.documento == 'Saldo Inicial'">
+                            <strong>Autorizado Por</strong>
+                            <div class="view-display-static">{{ movimiento?.detalle.adicional }}</div>
+                        </div>
+                        <div class="col-sm-12" *ngIf="!movimiento?.accion && movimiento?.detalle.documento == 'Productor'">
+                            <strong>Orden de Corte</strong>
+                            <div class="view-display-static">{{ movimiento?.detalle.adicional }}</div>
+                        </div>
+                        <div class="col-sm-12" *ngIf="movimiento?.accion && movimiento?.detalle.documento == 'Productor'">
+                            <strong>Autorizado por</strong>
+                            <div class="view-display-static">{{ movimiento?.detalle.adicional }}</div>
+                        </div>
+                        <div class="col-sm-12" *ngIf="movimiento?.accion && movimiento?.detalle.documento == 'Proveedor'">
+                            <strong>Factura</strong>
+                            <div class="view-display-static">{{ movimiento?.detalle.adicional }}</div>
+                        </div>
+                        <div class="col-sm-12" *ngIf="!movimiento?.accion && movimiento?.detalle.documento == 'Proveedor'">
+                            <strong>Autorizado Por</strong>
+                            <div class="view-display-static">{{ movimiento?.detalle.adicional }}</div>
+                        </div>
+                        <div class="col-sm-12" *ngIf="movimiento?.detalle.documento == 'Bodega'">
+                            <strong>Numero de Guia</strong>
+                            <div class="view-display-static">
+                                <code>
+                                    <a [routerLink]="['../../../guias/view', movimiento?.detalle.adicional ]">
+                                        {{ movimiento?.detalle.adicional }}
+                                    </a>
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-block">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <strong>Fecha</strong>
+                            <div class="view-display-static">{{ movimiento?.created | date }}</div>
+                        </div>
+                        <div class="col-xs-12">
+                            <strong>Responsable</strong>
+                            <div class="view-display-static">{{ movimiento?.createdBy?.username }}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<table class="table table-bordered table-hover">
+    <thead class="thead-condensed">
+        <tr>
+            <th width="1" rowspan="2">#</th>
+            <th colspan="5" class="thead-expand-title">Material</th>
+            <th class="text-sm-center" rowspan="2">Cantidad</th>
+            <th class="text-sm-center" rowspan="2">Saldo Previo</th>
+            <th class="text-sm-center" rowspan="2">Total</th>
+        </tr>
+        <tr class="thead-expand">
+            <th>Codigo</th>
+            <th>Tipo</th>
+            <th>Categoria</th>
+            <th>Nombre</th>
+            <th>Descripcion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of movimiento?.materiales; let i = index">
+            <td>{{ i + 1}}</td>
+            <td class="text-sm-center"><code>#{{ item.material.codigo}}</code></td>
+            <td class="text-sm-center">{{ item.material.tipoMaterial.nombre }}</td>
+            <td class="text-sm-center">{{ item.material.categoria.nombre }}</td>
+            <td class="text-sm-center">{{ item.material.nombre}}</td>
+            <td>{{ item.material.descripcion }}</td>
+            <td class="text-sm-right">{{ item.cantidad }}</td>
+            <td class="text-sm-right">{{ item.existente }}</td>
+            <td class="text-sm-right">{{ existente(item) }}</td>
+        </tr>
+    </tbody>
+</table>

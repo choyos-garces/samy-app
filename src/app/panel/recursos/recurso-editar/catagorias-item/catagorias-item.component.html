@@ -1,0 +1,14 @@
+<form class="form-inline" [formGroup]="form">
+    <div class="form-group" [ngClass]="{ 'has-danger'  : isControlInvalid('nombre')}">
+        <div class="form-control-static" [ngClass]="{ 'text-muted': !categoria.hasOwnProperty('id')}">{{ index + 1 }}</div>
+    </div>
+    <div class="form-group form-group-grow" [ngClass]="{ 'has-danger'  : isControlInvalid('nombre')}">
+        <label class="sr-only">Nombre</label>
+        <input type="text" class="form-control" formControlName="nombre" autocomplete="off" placeholder="Nombre">
+    </div>
+    <div class="form-group">
+        <button (click)="toggleActive()">
+            <i class="fa fa-fw" [ngClass]="{'fa-eye' : categoria.active, 'fa-eye-slash' : !categoria.active}"></i>
+        </button>
+    </div>
+</form>

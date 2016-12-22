@@ -1,0 +1,30 @@
+<div class="content-block">
+    <h5>Lista de Bodegas</h5>
+</div>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th width="1">#</th>
+            <th>Codigo</th>
+            <th>Nombre</th>
+            <th class="text-xs-center">Habilitado</th>
+            <th class="text-xs-center">Creado</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let bodega of bodegas; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td><code><a [routerLink]="['../view', bodega.id]">{{ bodega.codigo }}</a></code></td>
+            <td><a [routerLink]="['../view', bodega.id]">{{ bodega.nombre }}</a></td>
+            <td class="text-xs-center">{{ bodega.active ? "Si" : "No" }}</td>
+            <td class="text-xs-center">{{ bodega.created | date }}</td>
+            <td class="list-actions">
+                <a [routerLink]="['../edit', bodega.id]"><i class="fa fa-pencil"></i></a>
+                <a (click)="toggleActive(bodega, i)"><i class="fa" [ngClass]="{'fa-eye' : bodega?.active, 'fa-eye-slash' : !bodega?.active}"></i></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

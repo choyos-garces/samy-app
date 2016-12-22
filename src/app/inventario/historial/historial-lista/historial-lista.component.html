@@ -1,0 +1,100 @@
+<div class="content-block">
+    <div class="card">
+        <div class="card-block">
+            <form [formGroup]="form">
+                <fieldset [disabled]="isFormDisabled()">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="bodegas" class="form-control-label">Bodega</label>
+                                <select class="form-control" id="bodegas" formControlName="bodega">
+                                    <option *ngFor="let bodega of bodegas" [value]="bodega.id">{{ bodega.nombre}} (#{{ bodega.codigo}})</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="materiales" class="form-control-label">Material</label>
+                                <select class="form-control" id="materiales" formControlName="material">
+                                    <option *ngFor="let material of materiales" [value]="material.id">{{ material.nombre}} (#{{ material.codigo}})</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="desde" class="form-control-label">Desde</label>
+                                <input type="date" class="form-control" id="desde" formControlName="desde" />
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="form-group">
+                                <label for="hasta" class="form-control-label">Hasta</label>
+                                <input type="date" class="form-control" id="hasta" formControlName="hasta" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <fieldset class="form-inline">
+                            <div class="col-sm-12 text-sm-right">
+                                <div class="form-group">
+                                    <label for="limit" class="form-control-label">Mostrar</label>
+                                    <input type="number" size="3" class="form-control" id="limit" formControlName="limit" />
+                                </div>
+                                <div class="form-group">
+                                    <button (click)="submit()"><i class="fa fa-fw fa-search"></i> Buscar</button>
+                                    <button (click)="resetForm()"><i class="fa fa-circle-o"></i></button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
+<table class="table table-bordered table-hover">
+    <thead>
+    <tr>
+        <th rowspan="2" width="1">#</th>
+        <th rowspan="2">Fecha</th>
+        <th rowspan="2">Detalle</th>
+        <th colspan="2" class="thead-expand-title">Bodega</th>
+        <th colspan="3" class="thead-expand-title">Material</th>
+        <th rowspan="2">Previo</th>
+        <th rowspan="2">Movimiento</th>
+        <th rowspan="2">Saldo</th>
+    </tr>
+    <tr class="thead-expand">
+        <th>Codigo</th>
+        <th>Nombre</th>
+        <th>Codigo</th>
+        <th>Categoria</th>
+        <th>Nombre</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let historia of historial; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ historia.created | date }}</td>
+        <td>
+            <a [routerLink]="['../../../movimientos/view', historia.movimiento.id]">
+                {{ historia.accion ? "Ingreso" : "Egreso" }}<i class="fa fa-fw fa-angle-double-right"></i>{{ historia.movimiento.detalle.documento }}
+            </a>
+        </td>
+        <td><code>{{ historia.bodega.codigo }}</code></td>
+        <td>{{ historia.bodega.nombre }}</td>
+        <td><code>{{ historia.material.codigo }}</code></td>
+        <td>{{ historia.material.categoria.nombre }}</td>
+        <td>{{ historia.material.nombre }}</td>
+        <td class="text-xs-right">{{ historia.existente }}</td>
+        <td class="text-xs-right" [ngClass]="{'text-danger': !historia.accion}">
+            {{ historia.accion ? "+" : "-"}}{{ historia.cantidad }}
+        </td>
+        <td class="text-xs-right">
+            <span *ngIf="historia.accion">{{ historia.existente + historia.cantidad }}</span>
+            <span *ngIf="!historia.accion">{{ historia.existente - historia.cantidad }}</span>
+        </td>
+    </tr>
+    </tbody>
+
+</table>

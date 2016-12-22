@@ -1,0 +1,26 @@
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.form-group {
+    flex-grow: 0;
+    margin:8px 8px;
+}
+
+.form-control-static {
+    font-weight: bold;
+}
+
+.form-group-grow {
+    flex-grow: 1;
+}
+
+.form-group input.form-control[type="text"] {
+    width: 100%
+}
+
+.has-danger .text-muted,
+.has-danger .form-control-static {
+    color: #d9534f !important;
+}

@@ -1,0 +1,106 @@
+<div class="content-block">
+    <form [formGroup]="form">
+        <h5>Ingreso de Inventario</h5>
+        <fieldset [disabled]="isFormDisabled()">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('accion')}">
+                        <label class="form-control-label" for="accion">Accion</label>
+                        <select id="accion" class="form-control" formControlName="accion">
+                            <option *ngFor="let accion of acciones" [value]="accion.id">{{ accion.nombre }}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('bodega')}">
+                        <label class="form-control-label" for="bodega">Bodega</label>
+                        <select class="form-control" id="bodega" formControlName="bodega">
+                            <option *ngFor="let bodega of bodegas" [value]="bodega.id">{{ bodega.nombre }}</option>
+                        </select>
+                        <small class="form-control-feedback">{{ getFeedback('bodega') }}</small>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-block">
+                    <strong>Datos del Movimiento</strong>
+                    <app-movimiento-detalle
+                            [categorias]="categorias"
+                            [accion]="accion"
+                            [bodegas]="bodegasDisponibles"
+                            [proveedores]= "proveedores"
+                            [productores]= "productores"
+                            (output)="updateDetalle($event)"
+                    ></app-movimiento-detalle>
+                    <div class="alert alert-danger" *ngIf="getError('detalle', 'feedback')">
+                        <pre>{{ getError('detalle', 'feedback') | json }}</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-block">
+                    <strong>Materiales</strong>
+                    <app-movimiento-item
+                            [tiposMateriales]= "tiposMateriales"
+                            [materiales]= "materialesDisponibles"
+                            (output)="updateMovimientoItems($event)"
+                    ></app-movimiento-item>
+                </div>
+                <div class="alert alert-danger" *ngIf="getError('materiales', 'feedback')">
+                    <pre>{{ getError('materiales', 'feedback') | json }}</pre>
+                </div>
+                <table class="table table-hover table-bordered">
+                    <thead class="thead-condensed">
+                        <tr>
+                            <th width="1" rowspan="2">#</th>
+                            <th class="thead-expand-title" colspan="5">Material</th>
+                            <th class="text-sm-center" rowspan="2">Cantidad</th>
+                            <th width="1" class="text-sm-right" rowspan="2">
+                                <button class="form-control-sm"><i class="fa fa-fw fa-trash"></i></button>
+                            </th>
+                        </tr>
+                        <tr class="thead-expand">
+                            <th>Codigo</th>
+                            <th>Tipo</th>
+                            <th>Categoria</th>
+                            <th>Nombre</th>
+                            <th>Descripcion</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let material of getControlValue('materiales'); let i = index">
+                            <td >{{i+1}}</td>
+                            <td class="text-sm-center"><code>#{{ getMaterialById(material.material).codigo }}</code></td>
+                            <td class="text-sm-center">{{ getMaterialById(material.material).tipoMaterial.nombre }}</td>
+                            <td class="text-sm-center">{{ getMaterialById(material.material).categoria.nombre }}</td>
+                            <td class="text-sm-center">{{ getMaterialById(material.material).nombre }}</td>
+                            <td class="text-sm-left">{{ getMaterialById(material.material).descripcion }}</td>
+                            <td class="text-sm-right">{{ material.cantidad }}</td>
+                            <td class="text-sm-right"><button class="form-control-sm" (click)="removerMovimientoItem(i)"><i class="fa fa-fw fa-close"></i></button></td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="thead-condensed">
+                        <tr>
+                            <th colspan="7" class="text-muted text-sm-right">Total de Ingresos</th>
+                            <th class="text-muted text-sm-center">{{ totalSeleccion() }}</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <label for="observaciones" class="form-control-label">Observaciones</label>
+                        <textarea id="observaciones" class="form-control control-y-2" formControlName="observaciones"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group text-xs-right">
+                <button type="submit" (click)="submit()" [disabled]="isSubmitDisabled()">
+                    <span>Ingresar Inventario</span>
+                    <i class="fa fa-fw" [ngClass]="{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }"></i>
+                </button>
+            </div>
+        </fieldset>
+    </form>
+</div>

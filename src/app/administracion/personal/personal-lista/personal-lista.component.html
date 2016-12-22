@@ -1,0 +1,30 @@
+<div class="content-block">
+    <h5>Lista del Personal</h5>
+</div>
+<div class="table-responsive">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Codigo</th>
+            <th>Cedula</th>
+            <th class="text-xs-center">Habilitado</th>
+            <th class="text-xs-center">Creado</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let persona of personal; let i = index">
+            <td><a [routerLink]="['../view', persona.id]">{{ persona.nombre + " " + persona.apellido }}</a></td>
+            <td>{{ persona.codigo }}</td>
+            <td>{{ persona.cedula }}</td>
+            <td class="text-xs-center">{{ persona.active ? "Si" : "No" }}</td>
+            <td class="text-xs-center">{{ persona.created | date }}</td>
+            <td class="list-actions">
+                <a [routerLink]="['../edit', persona.id]"><i class="fa fa-pencil"></i></a>
+                <a (click)="toggleActive(persona, i)"><i class="fa" [ngClass]="{'fa-eye' : persona?.active, 'fa-eye-slash' : !persona?.active}"></i></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -3,7 +3,7 @@ import {IHeader} from "../interfaces/IHeader";
 import {Observable} from "rxjs";
 
 @Injectable()
-export class HeaderService {
+export class DashboardService {
 
     private header : IHeader;
     headerChange : Observable<any>;

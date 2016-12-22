@@ -1,0 +1,58 @@
+.wrapper {
+    background: radial-gradient(ellipse at center, #03A9F4 0%, #01579B 100%);
+    /** background: radial-gradient(ellipse at center, #7db9e8 0%,#1e5799 100%); **/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+span {
+    cursor: default;
+    display: block;
+    font-family: Consolas, serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+    user-select: none;
+}
+
+form {
+    width: 300px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 0 12px rgba(0,0,0,0.3);
+}
+
+input, button {
+    text-align: center;
+    outline: none;
+    padding: 8px 16px;
+    width: 100%;
+    margin: 0;
+    display: block;
+    border: none;
+    background: rgb(255, 255, 255);
+}
+
+input:first-child {
+    border-radius: 4px 4px 0 0;
+    padding-top: 12px;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+    color: rgb(180,180,180);
+}
+
+button {
+    cursor: pointer;
+    border-radius: 0 0 4px 4px;
+}

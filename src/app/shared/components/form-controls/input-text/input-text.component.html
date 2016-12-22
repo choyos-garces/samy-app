@@ -1,0 +1,17 @@
+<div class="form-group" [ngClass]="controlGroupValidationClasses()">
+    <label class="form-control-label" [attr.for]="name">{{ label }}</label>
+    <input  autocomplete="off"
+            class="form-control form-control-danger form-control-success"
+            [attr.type]="type"
+            [attr.id]="name" [attr.name]="name"
+            [attr.placeholder]="placeholder"
+            [readonly]="readOnly"
+            [(ngModel)]="modelValue"
+            (focus)="onTouchedCallback()" />
+    <div *ngIf="control.dirty && !control.valid" class="form-control-feedback">
+        <div *ngFor="let error of (control.errors | controlError)">
+            {{ error.msg }}
+        </div>
+    </div>
+    <ng-content></ng-content>
+</div>
