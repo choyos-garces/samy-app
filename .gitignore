@@ -34,3 +34,8 @@ testem.log
 #System Files
 .DS_Store
 Thumbs.db
+src/app/administracion/materiales/shared/
+src/app/administracion/shared/
+src/app/inventario/movimientos/shared/
+src/app/panel/shared/
+src/assets/css/
