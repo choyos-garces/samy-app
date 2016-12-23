@@ -21,4 +21,4 @@ import HomeModule from "./home/home.module";
     providers: [AuthGuard, AuthService]
 })
 
-export default class AppModule {}
+export class AppModule {}
