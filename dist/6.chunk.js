@@ -1,17 +1,17 @@
 webpackJsonp([6,16],{
 
-/***/ 1003:
+/***/ 1002:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__guias_routing_module__ = __webpack_require__(1064);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_components_documentSelect_documentSelect_module__ = __webpack_require__(1011);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__guias_component__ = __webpack_require__(1054);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__transferencia_lista_transferencia_lista_component__ = __webpack_require__(1038);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__transferencia_ver_transferencia_ver_component__ = __webpack_require__(1039);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__guias_routing_module__ = __webpack_require__(1063);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_components_documentSelect_documentSelect_module__ = __webpack_require__(1010);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__guias_component__ = __webpack_require__(1053);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__transferencia_lista_transferencia_lista_component__ = __webpack_require__(1037);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__transferencia_ver_transferencia_ver_component__ = __webpack_require__(1038);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -50,14 +50,14 @@ var GuiasModule = (function () {
 
 /***/ },
 
-/***/ 1011:
+/***/ 1010:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__documentSelect_component__ = __webpack_require__(1012);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__documentSelect_component__ = __webpack_require__(1011);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DocumentSelectModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -89,14 +89,14 @@ var DocumentSelectModule = (function () {
 
 /***/ },
 
-/***/ 1012:
+/***/ 1011:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FormController__ = __webpack_require__(431);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_IDocumentMap__ = __webpack_require__(1013);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_IDocumentMap__ = __webpack_require__(1012);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_IDocumentMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__shared_IDocumentMap__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DocumentSelectComponent; });
 var __extends = (this && this.__extends) || function (d, b) {
@@ -244,8 +244,8 @@ var DocumentSelectComponent = (function (_super) {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             host: { '(document:click)': 'onClickOutside($event)' },
             selector: 'app-document-select',
-            template: __webpack_require__(1015),
-            styles: [__webpack_require__(1014)]
+            template: __webpack_require__(1014),
+            styles: [__webpack_require__(1013)]
         }), 
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* ElementRef */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _c) || Object])
     ], DocumentSelectComponent);
@@ -256,28 +256,28 @@ var DocumentSelectComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1013:
+/***/ 1012:
 /***/ function(module, exports) {
 
 
 
 /***/ },
 
-/***/ 1014:
+/***/ 1013:
 /***/ function(module, exports) {
 
 module.exports = ".document-select {\r\n    position: relative;\r\n}\r\n\r\n.input-combo {\r\n    position: relative;\r\n}\r\n\r\n.input-combo span:after {\r\n    font: normal normal normal 14px/1 FontAwesome;\r\n    text-rendering: auto;\r\n    display: block;\r\n    position: absolute;\r\n}\r\n\r\n.input-combo span.chevron:after {\r\n    content: \"\\f078\";\r\n    bottom: 12px;\r\n    right: 12px;\r\n}\r\n\r\n.active .input-combo span.chevron:after {\r\n    content: \"\\f077\";\r\n}\r\n\r\n.input-combo span.search:after {\r\n    content: \"\\f002\";\r\n    background: #fff;\r\n    bottom: 7px;\r\n    left: 8px;\r\n}\r\n\r\n.input-combo .form-control[readonly] {\r\n    cursor: pointer;\r\n    background: #fff;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n}\r\n\r\n.input-combo .form-control:disabled {\r\n    background-color: #eceeef;\r\n}\r\n\r\n.active .input-combo .form-control {\r\n    border-radius: 0.25rem 0.25rem 0 0;\r\n}\r\n\r\n.options {\r\n    box-shadow: 0 1px 4px rgba(0,0,0,0.12);\r\n    position: absolute;\r\n    display: none;\r\n    margin-bottom: 0.75rem;\r\n    background-color: #fff;\r\n    border-radius: 0 0 0.25rem 0.25rem;\r\n    border: 1px solid rgba(0, 0, 0, 0.125);\r\n    border-top: none;\r\n    z-index: 333;\r\n    left: 0;\r\n    right: 0;\r\n}\r\n\r\n.active .options {\r\n    display: block;\r\n}\r\n\r\n.options .form-control {\r\n    padding-left: 28px;\r\n    background: #fff;\r\n}\r\n\r\n.options-scroller {\r\n    max-height: 168px;\r\n    overflow-x: hidden;\r\n}\r\n\r\n.option {\r\n    display: flex;\r\n    align-items: center;\r\n    cursor: pointer;\r\n    padding: 4px;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n}\r\n\r\n\r\n.option-text{\r\n    flex-grow: 2;\r\n}\r\n\r\n.selected {\r\n    background: #f0f5f5;\r\n}\r\n\r\n.option:hover {\r\n    background: #0275d8;\r\n    color: #fff\r\n}\r\n\r\n.option-check {\r\n    text-align: center;\r\n    display: none;\r\n    color: #0275d8;\r\n}\r\n\r\n.option:hover .option-check {\r\n    color: #fff;\r\n}\r\n\r\n.option:hover .text-muted {\r\n    color: rgba(255,255,255,.8) !important;\r\n}\r\n\r\n.selected .option-check {\r\n    display: block;\r\n}"
 
 /***/ },
 
-/***/ 1015:
+/***/ 1014:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"document-select\" [ngClass]=\"{ active : active }\">\r\n    <div class=\"input-combo\">\r\n        <span class=\"chevron\">\r\n            <input type=\"text\" [value]=\"displayLabel(selected)\" class=\"form-control\" (click)=\"toggleActive()\"  [disabled]=\"disabled\" readonly/>\r\n        </span>\r\n    </div>\r\n    <div class=\"options\">\r\n        <form [formGroup]=\"form\" class=\"p-1\">\r\n            <div class=\"input-combo\">\r\n                <span class=\"search\">\r\n                    <input type=\"text\" class=\"form-control form-control-sm\" formControlName=\"search\" autocomplete=\"off\" placeholder=\"Busqueda\" />\r\n                </span>\r\n            </div>\r\n        </form>\r\n        <div class=\"options-scroller\">\r\n            <div class=\"option px-1\" *ngFor=\"let option of options\" (click)=\"updateSelected(option)\" [ngClass]=\"{'selected' : isOptionSelected(option)}\">\r\n                <div class=\"option-item option-text\">\r\n                    <div class=\"option-display\">\r\n                        {{ displayLabel(option) }}\r\n                    </div>\r\n                    <div class=\"options-aux\" *ngIf=\"displayAux(option)\">\r\n                        <small class=\"text-muted\">{{ displayAux(option) }}</small>\r\n                    </div>\r\n                </div>\r\n                <div class=\"option-item option-check\">\r\n                    <i class=\"fa fa-fw fa-circle-o\"></i>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ },
 
-/***/ 1038:
+/***/ 1037:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -309,7 +309,7 @@ var TransferenciaListaComponent = (function () {
     TransferenciaListaComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: "app-guia-transferencia-lista",
-            template: __webpack_require__(1104)
+            template: __webpack_require__(1103)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object])
     ], TransferenciaListaComponent);
@@ -320,7 +320,7 @@ var TransferenciaListaComponent = (function () {
 
 /***/ },
 
-/***/ 1039:
+/***/ 1038:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -396,7 +396,7 @@ var TransferenciaVerComponent = (function () {
     TransferenciaVerComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: "app-guia-transferencia-ver",
-            template: __webpack_require__(1105)
+            template: __webpack_require__(1104)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _c) || Object])
     ], TransferenciaVerComponent);
@@ -407,7 +407,7 @@ var TransferenciaVerComponent = (function () {
 
 /***/ },
 
-/***/ 1054:
+/***/ 1053:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -450,14 +450,14 @@ var GuiasComponent = (function () {
 
 /***/ },
 
-/***/ 1064:
+/***/ 1063:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__transferencia_lista_transferencia_lista_component__ = __webpack_require__(1038);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__transferencia_ver_transferencia_ver_component__ = __webpack_require__(1039);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__transferencia_lista_transferencia_lista_component__ = __webpack_require__(1037);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__transferencia_ver_transferencia_ver_component__ = __webpack_require__(1038);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return GuiasRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -493,14 +493,14 @@ var GuiasRoutingModule = (function () {
 
 /***/ },
 
-/***/ 1104:
+/***/ 1103:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\r\n    <h5>Estados de Transferencia</h5>\r\n</div>\r\n<table class=\"table table-bordered table-hover text-sm-center\">\r\n    <thead>\r\n        <tr>\r\n            <th rowspan=\"2\" width=\"1\">#</th>\r\n            <th rowspan=\"2\">Numero de Guia</th>\r\n            <th colspan=\"2\" class=\"thead-expand-title\">Origen</th>\r\n            <th colspan=\"2\" class=\"thead-expand-title\">Destino</th>\r\n            <th rowspan=\"2\">Estado</th>\r\n            <th rowspan=\"2\">Emitida</th>\r\n            <th rowspan=\"2\">Culminada</th>\r\n        </tr>\r\n        <tr class=\"thead-expand\">\r\n            <th>Codigo</th>\r\n            <th>Nombre</th>\r\n            <th>Codigo</th>\r\n            <th>Nombre</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let guia of guias; let i = index\">\r\n            <td>{{ i + 1 }}</td>\r\n            <td><code><a [routerLink]=\"['../view', guia.numeroGuia ]\">{{ guia.numeroGuia }}</a></code></td>\r\n            <td><code>{{ guia.movimientoOrigen.bodega.codigo }}</code></td>\r\n            <td>{{ guia.movimientoOrigen.bodega.nombre }}</td>\r\n            <td><code>{{ guia.movimientoOrigen.detalle.bodega.codigo }}</code></td>\r\n            <td>{{ guia.movimientoOrigen.detalle.bodega.nombre }}</td>\r\n            <td><i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-warning' : guia.status == 'error', 'fa-check' : guia.status == 'done', 'fa-clock-o' : guia.status == 'waiting'}\"></i></td>\r\n            <td>{{ guia.created | date }}</td>\r\n            <td>{{ guia.updated | date }}</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n"
 
 /***/ },
 
-/***/ 1105:
+/***/ 1104:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\r\n    <div class=\"clearfix button-holder\">\r\n        <div class=\"view-action\">\r\n            <button (click)=\"toggleActive(bodega)\" [disabled]=\"toggleWaiting\">\r\n                Notificar Destino<i class=\"fa fa-fw fa-bell-o\"></i>\r\n            </button>\r\n            <button><i class=\"fa fa-fw fa-flag-o\"></i></button>\r\n        </div>\r\n        <h5>\r\n            Guia de Transferencia\r\n            <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-warning' : guia?.status == 'error', 'fa-check' : guia?.status == 'done', 'fa-clock-o' : guia?.status == 'waiting'}\"></i>\r\n        </h5>\r\n    </div>\r\n    <div class=\"row\">\r\n        <div class=\"col-xs-4\">\r\n            <div class=\"card\">\r\n                <div class=\"card-block\">\r\n                    <h5>Destino</h5>\r\n                    <div class=\"row\">\r\n                        <div class=\"col-xs-12\">\r\n                            <strong>Numero de Guia</strong>\r\n                            <div class=\"view-display-static\">\r\n                                <code>{{ guia?.numeroGuia }}</code>\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-xs-12\">\r\n                            <strong>Estado</strong>\r\n                            <div class=\"view-display-static\">\r\n                                <span *ngIf=\"guia?.status == 'waiting'\">Esperando</span>\r\n                                <span *ngIf=\"guia?.status == 'done'\">Terminada</span>\r\n                                <span *ngIf=\"guia?.status == 'error'\">Incompleta</span>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-xs-4\">\r\n            <div class=\"card\">\r\n                <div class=\"card-block\">\r\n                    <h5>Origen</h5>\r\n                    <div class=\"row\">\r\n                        <div class=\"col-xs-12\">\r\n                            <strong>Bodega</strong>\r\n                            <div class=\"view-display-static\">\r\n                                {{ guia?.movimientoOrigen.bodega.nombre }}\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-xs-12\">\r\n                            <strong>Fecha</strong>\r\n                            <div class=\"view-display-static\">\r\n                                {{ guia?.movimientoOrigen.created | date }}\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n        <div class=\"col-xs-4\">\r\n            <div class=\"card\">\r\n                <div class=\"card-block\">\r\n                    <h5>Destino</h5>\r\n                    <div class=\"row\">\r\n                        <div class=\"col-xs-12\">\r\n                            <strong>Bodega</strong>\r\n                            <div class=\"view-display-static\">\r\n                                {{ guia?.movimientoOrigen.detalle.bodega.nombre }}\r\n                            </div>\r\n                        </div>\r\n                        <div class=\"col-xs-12\">\r\n                            <strong>Fecha</strong>\r\n                            <div class=\"view-display-static\">\r\n                                {{ guia?.movimientoDestino?.created | date }}\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n<table class=\"table table-bordered toble-hover\">\r\n    <thead>\r\n        <tr>\r\n            <th rowspan=\"2\" width=\"1\">#</th>\r\n            <th colspan=\"5\" class=\"thead-expand-title\">Material</th>\r\n            <th class=\"text-sm-center\" rowspan=\"2\">Origen</th>\r\n            <th class=\"text-sm-center\" rowspan=\"2\">Destino</th>\r\n            <th class=\"text-sm-center\" rowspan=\"2\"></th>\r\n        </tr>\r\n        <tr class=\"thead-expand\">\r\n            <th>Codigo</th>\r\n            <th>Tipo</th>\r\n            <th>Categoria</th>\r\n            <th>Nombre</th>\r\n            <th>Descripcion</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let item of stack; let i = index\">\r\n            <td>{{ i + 1 }}</td>\r\n            <td class=\"text-sm-center\"><code>{{ item.material.codigo }}</code></td>\r\n            <td class=\"text-sm-center\">{{ item.material.tipoMaterial.nombre }}</td>\r\n            <td class=\"text-sm-center\">{{ item.material.categoria.nombre  }}</td>\r\n            <td class=\"text-sm-center\">{{ item.material.nombre }}</td>\r\n            <td>{{ item.material.descripcion }}</td>\r\n            <td class=\"text-sm-right\">{{ item.origen }}</td>\r\n            <td class=\"text-sm-right\">{{ item.destino }}</td>\r\n            <td  class=\"text-sm-right\" [ngClass]=\"{ 'text-danger' : (item.origen - item.destino) != 0, 'text-success' : (item.origen - item.destino) == 0}\">\r\n                {{ item.destino - item.origen }}\r\n            </td>\r\n        </tr>\r\n    </tbody>\r\n</table>"

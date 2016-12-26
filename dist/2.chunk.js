@@ -1,19 +1,19 @@
 webpackJsonp([2,4,16],{
 
-/***/ 1006:
+/***/ 1005:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__recursos_routing_module__ = __webpack_require__(1070);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__recursos_component__ = __webpack_require__(1057);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__recurso_nuevo_recurso_nuevo_component__ = __webpack_require__(1045);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__recursos_lista_recursos_lista_component__ = __webpack_require__(1047);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__recurso_editar_recurso_editar_component__ = __webpack_require__(1044);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__recurso_ver_recurso_ver_component__ = __webpack_require__(1046);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__recurso_editar_catagorias_item_catagorias_item_component__ = __webpack_require__(1069);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__recursos_routing_module__ = __webpack_require__(1069);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__recursos_component__ = __webpack_require__(1056);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__recurso_nuevo_recurso_nuevo_component__ = __webpack_require__(1044);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__recursos_lista_recursos_lista_component__ = __webpack_require__(1046);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__recurso_editar_recurso_editar_component__ = __webpack_require__(1043);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__recurso_ver_recurso_ver_component__ = __webpack_require__(1045);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__recurso_editar_catagorias_item_catagorias_item_component__ = __webpack_require__(1068);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -50,14 +50,14 @@ var RecursosModule = (function () {
 
 /***/ },
 
-/***/ 1009:
+/***/ 1008:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__panel_routing_module__ = __webpack_require__(1119);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__recursos_recursos_module__ = __webpack_require__(1006);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__panel_routing_module__ = __webpack_require__(1118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__recursos_recursos_module__ = __webpack_require__(1005);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -87,7 +87,7 @@ var PanelModule = (function () {
 
 /***/ },
 
-/***/ 1044:
+/***/ 1043:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -194,7 +194,7 @@ var RecursoEditarComponent = (function (_super) {
     RecursoEditarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-editar-recurso',
-            template: __webpack_require__(1113)
+            template: __webpack_require__(1112)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_api_service__["a" /* ApiService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _d) || Object])
     ], RecursoEditarComponent);
@@ -205,7 +205,7 @@ var RecursoEditarComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1045:
+/***/ 1044:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -275,7 +275,7 @@ var RecursoNuevoComponent = (function (_super) {
     RecursoNuevoComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-nuevo-recurso',
-            template: __webpack_require__(1114)
+            template: __webpack_require__(1113)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormBuilder */]) === 'function' && _d) || Object])
     ], RecursoNuevoComponent);
@@ -286,7 +286,7 @@ var RecursoNuevoComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1046:
+/***/ 1045:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -328,8 +328,8 @@ var RecursoVerComponent = (function () {
     RecursoVerComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-recurso-ver',
-            template: __webpack_require__(1115),
-            styles: [__webpack_require__(1080)]
+            template: __webpack_require__(1114),
+            styles: [__webpack_require__(1079)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* Router */]) === 'function' && _c) || Object])
     ], RecursoVerComponent);
@@ -340,7 +340,7 @@ var RecursoVerComponent = (function () {
 
 /***/ },
 
-/***/ 1047:
+/***/ 1046:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -378,8 +378,8 @@ var RecursosListaComponent = (function () {
     RecursosListaComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-recursos-lista',
-            template: __webpack_require__(1116),
-            styles: [__webpack_require__(1081)]
+            template: __webpack_require__(1115),
+            styles: [__webpack_require__(1080)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object])
     ], RecursosListaComponent);
@@ -390,7 +390,7 @@ var RecursosListaComponent = (function () {
 
 /***/ },
 
-/***/ 1057:
+/***/ 1056:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -433,13 +433,13 @@ var RecursosComponent = (function () {
 
 /***/ },
 
-/***/ 1069:
+/***/ 1068:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_interfaces_Panel_ICategoria__ = __webpack_require__(1074);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_interfaces_Panel_ICategoria__ = __webpack_require__(1073);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_FormController__ = __webpack_require__(431);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return CatagoriasItemComponent; });
 var __extends = (this && this.__extends) || function (d, b) {
@@ -516,8 +516,8 @@ var CatagoriasItemComponent = (function (_super) {
     CatagoriasItemComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-catagorias-item',
-            template: __webpack_require__(1112),
-            styles: [__webpack_require__(1079)]
+            template: __webpack_require__(1111),
+            styles: [__webpack_require__(1078)]
         }), 
         __metadata('design:paramtypes', [(typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormBuilder */]) === 'function' && _c) || Object])
     ], CatagoriasItemComponent);
@@ -528,16 +528,16 @@ var CatagoriasItemComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1070:
+/***/ 1069:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__recurso_nuevo_recurso_nuevo_component__ = __webpack_require__(1045);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__recursos_lista_recursos_lista_component__ = __webpack_require__(1047);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__recurso_editar_recurso_editar_component__ = __webpack_require__(1044);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__recurso_ver_recurso_ver_component__ = __webpack_require__(1046);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__recurso_nuevo_recurso_nuevo_component__ = __webpack_require__(1044);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__recursos_lista_recursos_lista_component__ = __webpack_require__(1046);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__recurso_editar_recurso_editar_component__ = __webpack_require__(1043);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__recurso_ver_recurso_ver_component__ = __webpack_require__(1045);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return RecursosRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -577,11 +577,11 @@ var RecursosRoutingModule = (function () {
 
 /***/ },
 
-/***/ 1072:
+/***/ 1071:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__IKey__ = __webpack_require__(1073);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__IKey__ = __webpack_require__(1072);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return IDocument; });
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -600,7 +600,7 @@ var IDocument = (function (_super) {
 
 /***/ },
 
-/***/ 1073:
+/***/ 1072:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -614,11 +614,11 @@ var IKey = (function () {
 
 /***/ },
 
-/***/ 1074:
+/***/ 1073:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__IDocument__ = __webpack_require__(1072);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__IDocument__ = __webpack_require__(1071);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ICategoria; });
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -637,69 +637,69 @@ var ICategoria = (function (_super) {
 
 /***/ },
 
-/***/ 1079:
+/***/ 1078:
 /***/ function(module, exports) {
 
 module.exports = ".form-inline {\r\n    display: flex;\r\n    align-items: center;\r\n}\r\n\r\n.form-group {\r\n    flex-grow: 0;\r\n    margin:8px 8px;\r\n}\r\n\r\n.form-control-static {\r\n    font-weight: bold;\r\n}\r\n\r\n.form-group-grow {\r\n    flex-grow: 1;\r\n}\r\n\r\n.form-group input.form-control[type=\"text\"] {\r\n    width: 100%\r\n}\r\n\r\n.has-danger .text-muted,\r\n.has-danger .form-control-static {\r\n    color: #d9534f !important;\r\n}"
 
 /***/ },
 
-/***/ 1080:
+/***/ 1079:
 /***/ function(module, exports) {
 
 module.exports = ".tag-default {\r\n    padding: 4px 6px;\r\n    cursor: pointer;\r\n    margin: 0 4px;\r\n    font-size: 14px;\r\n    font-weight: normal;\r\n}"
 
 /***/ },
 
-/***/ 1081:
+/***/ 1080:
 /***/ function(module, exports) {
 
 module.exports = "\r\n"
 
 /***/ },
 
-/***/ 1112:
+/***/ 1111:
 /***/ function(module, exports) {
 
 module.exports = "<form class=\"form-inline\" [formGroup]=\"form\">\n    <div class=\"form-group\" [ngClass]=\"{ 'has-danger'  : isControlInvalid('nombre')}\">\n        <div class=\"form-control-static\" [ngClass]=\"{ 'text-muted': !categoria.hasOwnProperty('id')}\">{{ index + 1 }}</div>\n    </div>\n    <div class=\"form-group form-group-grow\" [ngClass]=\"{ 'has-danger'  : isControlInvalid('nombre')}\">\n        <label class=\"sr-only\">Nombre</label>\n        <input type=\"text\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\" placeholder=\"Nombre\">\n    </div>\n    <div class=\"form-group\">\n        <button (click)=\"toggleActive()\">\n            <i class=\"fa fa-fw\" [ngClass]=\"{'fa-eye' : categoria.active, 'fa-eye-slash' : !categoria.active}\"></i>\n        </button>\n    </div>\n</form>"
 
 /***/ },
 
-/***/ 1113:
+/***/ 1112:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <form [formGroup]=\"form\">\n        <div class=\"clearfix\">\n            <div class=\"float-xs-right \">\n                <button [routerLink]=\"['../../view', recurso?.id ]\"><i class=\"fa fa-fw fa-file-text-o\"></i></button>\n            </div>\n            <h5>Editar Recurso</h5>\n        </div>\n        <fieldset [disabled]=\"isFormDisabled()\">\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\">\n                        <label class=\"form-control-label\" for=\"recurso-app\">Applicacion</label>\n                        <input type=\"text\" id=\"recurso-app\" class=\"form-control\" [value]=\"recurso?.aplicacion.nombre\" autocomplete=\"off\" readonly/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\">\n                        <label class=\"form-control-label\" for=\"recurso-tipo\">Tipo Recurso</label>\n                        <input type=\"text\" id=\"recurso-tipo\" class=\"form-control\" [value]=\"recurso?.seccion.nombre\" autocomplete=\"off\" readonly/>\n                    </div>\n                </div>\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group\" [ngClass]=\"{ 'has-danger': isControlInvalid('nombre')}\">\n                        <label class=\"form-control-label\" for=\"recurso-nombre\">Nombre</label>\n                        <input type=\"text\" id=\"recurso-nombre\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\" />\n                        <div class=\"form-control-feedback\" >{{ getFeedback('nombre') }}</div>\n                    </div>\n                    <div class=\"form-group\">\n                        <label class=\"form-control-label\" for=\"recurso-detalle\">Detalle</label>\n                        <textarea id=\"recurso-detalle\" class=\"form-control control-y-2\" formControlName=\"detalle\" placeholder=\"Opcional\"></textarea>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card\" [ngClass]=\"{'has-collection-danger': isControlInvalid('categorias')}\">\n                <div class=\"card-block\">\n                    <div class=\"clearfix\">\n                        <div class=\"float-xs-right\">\n                            <button (click)=\"clearCategorias()\"><i class=\"fa fa-fw fa-trash-o\"></i></button>\n                            <button (click)=\"addCategoria()\"><i class=\"fa fa-fw fa-plus\"></i></button>\n                        </div>\n                        <h5>Categorias</h5>\n                    </div>\n                    <div *ngFor=\"let categoria of recurso?.categorias; let i = index\">\n                        <app-catagorias-item [categoria]=\"categoria\" [index]=\"i\" (output)=\"updateCategorias($event)\"></app-catagorias-item>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <div class=\"form-check\">\n                        <label class=\"form-check-label\" for=\"recurso-active\">\n                            <input type=\"checkbox\" id=\"recurso-active\" class=\"form-check-input\" formControlName=\"active\"/>\n                            Recurso Habilitado\n                        </label>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-xs-12 text-xs-right\">\n                    <div class=\"btn-group\">\n                        <button type=\"submit\" (click)=\"submit()\" [disabled]=\"isFormDisabled()\">\n                            <span>Editar Recurso</span>\n                            <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }\"></i>\n                        </button>\n                    </div>\n                </div>\n            </div>\n        </fieldset>\n    </form>\n</div>"
 
 /***/ },
 
-/***/ 1114:
+/***/ 1113:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <form [formGroup]=\"form\">\n        <fieldset [disabled]=\"isFormDisabled()\">\n            <h5>Nuevo Recurso</h5>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\">\n                        <label for=\"app\">Applicacion</label>\n                        <select id=\"app\" class=\"form-control\" formControlName=\"aplicacion\">\n                            <option *ngFor=\"let aplicacion of index\" [value]=\"aplicacion.id\">{{ aplicacion.nombre }}</option>\n                        </select>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\">\n                        <label for=\"tipo\">Tipo Recurso</label>\n                        <select id=\"tipo\" class=\"form-control\" formControlName=\"seccion\">\n                            <option *ngFor=\"let seccion of secciones\" [value]=\"seccion.id\">{{ seccion.nombre }}</option>\n                        </select>\n                    </div>\n                </div>\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group\" [ngClass]=\"{ 'has-danger': isControlInvalid('nombre')}\">\n                        <label class=\"form-control-label\" for=\"recurso-nombre\">Nombre</label>\n                        <input type=\"text\" id=\"recurso-nombre\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\" />\n                        <div class=\"form-control-feedback\" >{{ getFeedback('nombre') }}</div>\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"recurso-detalle\">Detalle</label>\n                        <textarea id=\"recurso-detalle\" class=\"form-control control-y-2\" formControlName=\"detalle\" placeholder=\"Opcional\"></textarea>\n                    </div>\n                </div>\n            </div>\n            <div class=\"m-y-1 text-xs-right\">\n                <div class=\"btn-group\">\n                    <button type=\"submit\" (click)=\"submit()\" [disabled]=\"isSubmitDisabled()\">\n                        <span>Ingresar Recurso</span>\n                        <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }\"></i>\n                    </button>\n                </div>\n            </div>\n        </fieldset>\n    </form>\n</div>"
 
 /***/ },
 
-/***/ 1115:
+/***/ 1114:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <div class=\"clearfix button-holder\">\n        <div class=\"float-xs-right \">\n            <button (click)=\"toggleActive(recurso)\">\n                {{ recurso?.active ? 'Habilitado' : 'Deshabilitado' }} <i class=\"fa fa-fw\" [ngClass]=\"{'fa-eye': recurso?.active, 'fa-eye-slash': !recurso?.active}\"></i>\n            </button>\n            <button [routerLink]=\"['../../edit', recurso?.id ]\"><i class=\"fa fa-fw fa-pencil\"></i></button>\n        </div>\n        <h5>Recurso: {{ recurso?.nombre}}</h5>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Applicacion</strong>\n                <div class=\"view-display-static\">{{ recurso?.aplicacion.nombre }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Tipo Recurso</strong>\n                <div class=\"view-display-static\">{{ recurso?.seccion.nombre }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-12\">\n            <div>\n                <strong>Nombre</strong>\n                <div class=\"view-display-static\">{{ recurso?.nombre }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Creado</strong>\n                <div class=\"view-display-static\">{{ recurso?.created | date }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Editado</strong>\n                <div class=\"view-display-static\">{{ recurso?.edited | date }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-12\">\n            <div>\n                <strong>Detalle</strong>\n                <div class=\"box-pre\"><pre>{{ recurso?.detalle }}</pre></div>\n            </div>\n        </div>\n        <div class=\"col-sm-12\">\n            <div>\n                <strong>Categorias</strong>\n                <div class=\"view-display-static\">\n                    <span class=\"tag tag-default\" *ngFor=\"let categoria of recurso?.categorias; let i = index\">\n                    {{ categoria.nombre }}\n                    <i class=\"fa fa-fw\" [ngClass]=\"{'fa-eye': categoria.active, 'fa-eye-slash': !categoria.active}\"></i>\n                </span>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ },
 
-/***/ 1116:
+/***/ 1115:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <h5>Lista de Recursos</h5>\n</div>\n<div class=\"table-responsive\">\n    <table class=\"table table-hover\">\n        <thead>\n            <tr>\n                <th width=\"1\">#</th>\n                <th>Nombre</th>\n                <th>Aplicacion</th>\n                <th>Seccion</th>\n                <th class=\"text-xs-center\">Categorias</th>\n                <th class=\"text-xs-center\">Habilitado</th>\n                <th class=\"text-xs-center\">Creado</th>\n                <th></th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr *ngFor=\"let recurso of recursos; let i = index\">\n                <td>{{ i + 1 }}</td>\n                <td><a [routerLink]=\"['../view', recurso?.id]\">{{ recurso.nombre }}</a></td>\n                <td>{{ recurso.aplicacion.nombre }}</td>\n                <td>{{ recurso.seccion.nombre }}</td>\n                <td class=\"text-xs-center\">{{ recurso.categorias.length }}</td>\n                <td class=\"text-xs-center\">{{ recurso.active ? \"Si\" : \"No\" }}</td>\n                <td class=\"text-xs-center\">{{ recurso.created | date }}</td>\n                <td class=\"list-actions\">\n                    <a [routerLink]=\"['../edit', recurso.id]\"><i class=\"fa fa-pencil\"></i></a>\n                    <a (click)=\"toggleActive(recurso, i)\"><i class=\"fa\" [ngClass]=\"{'fa-eye' : recurso?.active, 'fa-eye-slash' : !recurso?.active}\"></i></a>\n                </td>\n            </tr>\n        </tbody>\n    </table>\n</div>"
 
 /***/ },
 
-/***/ 1119:
+/***/ 1118:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__recursos_recursos_component__ = __webpack_require__(1057);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__recursos_recursos_component__ = __webpack_require__(1056);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return PanelRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;

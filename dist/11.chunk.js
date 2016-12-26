@@ -1,16 +1,16 @@
 webpackJsonp([11,16],{
 
-/***/ 1002:
+/***/ 1001:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__existente_rounting_module__ = __webpack_require__(1063);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__existente_component__ = __webpack_require__(1053);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__existente_bodegas_existente_bodegas_component__ = __webpack_require__(1036);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__existente_materiales_existente_materiales_component__ = __webpack_require__(1037);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__existente_rounting_module__ = __webpack_require__(1062);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__existente_component__ = __webpack_require__(1052);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__existente_bodegas_existente_bodegas_component__ = __webpack_require__(1035);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__existente_materiales_existente_materiales_component__ = __webpack_require__(1036);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var ExistenteModule = (function () {
 
 /***/ },
 
-/***/ 1036:
+/***/ 1035:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76,7 +76,7 @@ var ExistenteBodegasComponent = (function () {
     ExistenteBodegasComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-existente-bodegas',
-            template: __webpack_require__(1102)
+            template: __webpack_require__(1101)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object])
     ], ExistenteBodegasComponent);
@@ -87,7 +87,7 @@ var ExistenteBodegasComponent = (function () {
 
 /***/ },
 
-/***/ 1037:
+/***/ 1036:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -119,7 +119,7 @@ var ExistenteMaterialesComponent = (function () {
     ExistenteMaterialesComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-existente-materiales',
-            template: __webpack_require__(1103)
+            template: __webpack_require__(1102)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object])
     ], ExistenteMaterialesComponent);
@@ -130,7 +130,7 @@ var ExistenteMaterialesComponent = (function () {
 
 /***/ },
 
-/***/ 1053:
+/***/ 1052:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -173,14 +173,14 @@ var ExistenteComponent = (function () {
 
 /***/ },
 
-/***/ 1063:
+/***/ 1062:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__existente_bodegas_existente_bodegas_component__ = __webpack_require__(1036);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__existente_materiales_existente_materiales_component__ = __webpack_require__(1037);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__existente_bodegas_existente_bodegas_component__ = __webpack_require__(1035);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__existente_materiales_existente_materiales_component__ = __webpack_require__(1036);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ExistenteRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -216,14 +216,14 @@ var ExistenteRoutingModule = (function () {
 
 /***/ },
 
-/***/ 1102:
+/***/ 1101:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\r\n    <h5>Lista de Materiales en Bodegas</h5>\r\n</div>\r\n<table class=\"table table-hover table-bordered\">\r\n    <thead>\r\n        <tr>\r\n            <th width=\"1\" rowspan=\"2\">#</th>\r\n            <th rowspan=\"2\">Bodega</th>\r\n            <th colspan=\"4\" class=\"thead-expand-title\">Material</th>\r\n            <th class=\"text-sm-center\" rowspan=\"2\">Disponible</th>\r\n            <th class=\"text-sm-center\" rowspan=\"2\">Ultimo Movimiento</th>\r\n            <th class=\"text-sm-center\" rowspan=\"2\">Primer Ingreso</th>\r\n        </tr>\r\n        <tr class=\"thead-expand\">\r\n            <th>Codigo</th>\r\n            <th>Tipo</th>\r\n            <th>Categoria</th>\r\n            <th>Nombre</th>\r\n        </tr>\r\n    </thead>\r\n    <tbody>\r\n        <tr *ngFor=\"let item of existente; let i = index\">\r\n            <td>{{ i + 1 }}</td>\r\n            <td>\r\n                <a [routerLink]=\"['../../historial/bodega', item.bodega.id]\">\r\n                    {{ item.bodega.nombre }}\r\n                </a>\r\n            </td>\r\n            <td class=\"text-sm-center\"><code>#{{ item.material.codigo}}</code></td>\r\n            <td class=\"text-sm-center\">{{ item.material.tipoMaterial.nombre }}</td>\r\n            <td class=\"text-sm-center\">{{ item.material.categoria.nombre }}</td>\r\n            <td class=\"text-sm-center\">{{ item.material.nombre}}</td>\r\n            <td class=\"text-sm-right\">\r\n                <a [routerLink]=\"['../../historial/materialEnBodega', { material : item.material.id, bodega : item.bodega.id}]\">\r\n                    {{ item.cantidad }}\r\n                </a>\r\n            </td>\r\n            <td class=\"text-sm-center\">{{ item.updated | date }}</td>\r\n            <td class=\"text-sm-center\">{{ item.created | date }}</td>\r\n        </tr>\r\n    </tbody>\r\n</table>\r\n\r\n"
 
 /***/ },
 
-/***/ 1103:
+/***/ 1102:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\r\n    <h5>Lista de saldos de Materailes</h5>\r\n</div>\r\n<table class=\"table table-hover table-bordered\">\r\n    <thead>\r\n    <tr>\r\n        <th width=\"1\" rowspan=\"2\">#</th>\r\n        <th colspan=\"4\" class=\"thead-expand-title\">Material</th>\r\n        <th class=\"text-sm-center\" rowspan=\"2\">Disponible</th>\r\n        <th class=\"text-sm-center\" rowspan=\"2\">Bodegas</th>\r\n        <th class=\"text-sm-center\" rowspan=\"2\">Ultimo Movimiento</th>\r\n        <th class=\"text-sm-center\" rowspan=\"2\">Primer Ingreso</th>\r\n    </tr>\r\n    <tr class=\"thead-expand\">\r\n        <th>Codigo</th>\r\n        <th>Tipo</th>\r\n        <th>Categoria</th>\r\n        <th>Nombre</th>\r\n    </tr>\r\n    </thead>\r\n    <tbody>\r\n    <tr *ngFor=\"let item of existente; let i = index\">\r\n        <td>{{ i + 1 }}</td>\r\n        <td class=\"text-sm-center\"><code>#{{ item.material.codigo}}</code></td>\r\n        <td class=\"text-sm-center\">{{ item.material.tipoMaterial.nombre }}</td>\r\n        <td class=\"text-sm-center\">{{ item.material.categoria.nombre }}</td>\r\n        <td class=\"text-sm-center\">{{ item.material.nombre}}</td>\r\n        <td class=\"text-sm-right\">{{ item.cantidad }}</td>\r\n        <td class=\"text-sm-right\">{{ item.inventarioBodegas.length }}</td>\r\n        <td class=\"text-sm-center\">{{ item.updated | date }}</td>\r\n        <td class=\"text-sm-center\">{{ item.created | date }}</td>\r\n    </tr>\r\n    </tbody>\r\n</table>\r\n\r\n"

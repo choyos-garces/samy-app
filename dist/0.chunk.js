@@ -7,60 +7,12 @@ webpackJsonp([0,5,7,8,9,10,16],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__productores_routing_module__ = __webpack_require__(1061);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__productores_component__ = __webpack_require__(1051);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__productor_lista_productor_lista_component__ = __webpack_require__(1029);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__productor_nuevo_productor_nuevo_component__ = __webpack_require__(1030);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__productor_editar_productor_editar_component__ = __webpack_require__(1028);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__productor_ver_productor_ver_component__ = __webpack_require__(1031);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-
-
-
-
-
-var ProductoresModule = (function () {
-    function ProductoresModule() {
-    }
-    ProductoresModule = __decorate([
-        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* NgModule */])({
-            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* ReactiveFormsModule */], __WEBPACK_IMPORTED_MODULE_3__productores_routing_module__["a" /* ProductoresRoutingModule */]],
-            declarations: [__WEBPACK_IMPORTED_MODULE_4__productores_component__["a" /* ProductoresComponent */], __WEBPACK_IMPORTED_MODULE_5__productor_lista_productor_lista_component__["a" /* ProductorListaComponent */], __WEBPACK_IMPORTED_MODULE_6__productor_nuevo_productor_nuevo_component__["a" /* ProductorNuevoComponent */], __WEBPACK_IMPORTED_MODULE_7__productor_editar_productor_editar_component__["a" /* ProductorEditarComponent */], __WEBPACK_IMPORTED_MODULE_8__productor_ver_productor_ver_component__["a" /* ProductorVerComponent */]]
-        }), 
-        __metadata('design:paramtypes', [])
-    ], ProductoresModule);
-    return ProductoresModule;
-}());
-/* harmony default export */ exports["default"] = ProductoresModule;
-
-
-/***/ },
-
-/***/ 1001:
-/***/ function(module, exports, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__proveedores_routing_module__ = __webpack_require__(1062);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__proveedores_component__ = __webpack_require__(1052);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__proveedor_lista_proveedor_lista_component__ = __webpack_require__(1033);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__proveedor_nuevo_proveedor_nuevo_component__ = __webpack_require__(1034);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__proveedor_editar_proveedor_editar_component__ = __webpack_require__(1032);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__proveedor_ver_proveedor_ver_component__ = __webpack_require__(1035);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__proveedores_routing_module__ = __webpack_require__(1061);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__proveedores_component__ = __webpack_require__(1051);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__proveedor_lista_proveedor_lista_component__ = __webpack_require__(1032);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__proveedor_nuevo_proveedor_nuevo_component__ = __webpack_require__(1033);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__proveedor_editar_proveedor_editar_component__ = __webpack_require__(1031);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__proveedor_ver_proveedor_ver_component__ = __webpack_require__(1034);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -96,18 +48,18 @@ var ProveedoresModule = (function () {
 
 /***/ },
 
-/***/ 1007:
+/***/ 1006:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__administracion_routing_module__ = __webpack_require__(1117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__personal_personal_module__ = __webpack_require__(999);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__proveedores_proveedores_module__ = __webpack_require__(1001);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__productores_productores_module__ = __webpack_require__(1000);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__materiales_materiales_module__ = __webpack_require__(998);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bodegas_bodegas_module__ = __webpack_require__(997);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__administracion_routing_module__ = __webpack_require__(1116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__personal_personal_module__ = __webpack_require__(998);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__proveedores_proveedores_module__ = __webpack_require__(1000);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__productores_productores_module__ = __webpack_require__(999);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__materiales_materiales_module__ = __webpack_require__(997);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bodegas_bodegas_module__ = __webpack_require__(996);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -141,7 +93,7 @@ var AdministracionModule = (function () {
 
 /***/ },
 
-/***/ 1010:
+/***/ 1009:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -183,14 +135,14 @@ var Utils = (function () {
 
 /***/ },
 
-/***/ 1011:
+/***/ 1010:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__documentSelect_component__ = __webpack_require__(1012);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__documentSelect_component__ = __webpack_require__(1011);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DocumentSelectModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -222,14 +174,14 @@ var DocumentSelectModule = (function () {
 
 /***/ },
 
-/***/ 1012:
+/***/ 1011:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__FormController__ = __webpack_require__(431);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_IDocumentMap__ = __webpack_require__(1013);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_IDocumentMap__ = __webpack_require__(1012);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_IDocumentMap___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__shared_IDocumentMap__);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return DocumentSelectComponent; });
 var __extends = (this && this.__extends) || function (d, b) {
@@ -377,8 +329,8 @@ var DocumentSelectComponent = (function (_super) {
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             host: { '(document:click)': 'onClickOutside($event)' },
             selector: 'app-document-select',
-            template: __webpack_require__(1015),
-            styles: [__webpack_require__(1014)]
+            template: __webpack_require__(1014),
+            styles: [__webpack_require__(1013)]
         }), 
         __metadata('design:paramtypes', [(typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* ElementRef */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_0__angular_core__["j" /* ElementRef */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _c) || Object])
     ], DocumentSelectComponent);
@@ -389,28 +341,28 @@ var DocumentSelectComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1013:
+/***/ 1012:
 /***/ function(module, exports) {
 
 
 
 /***/ },
 
-/***/ 1014:
+/***/ 1013:
 /***/ function(module, exports) {
 
 module.exports = ".document-select {\r\n    position: relative;\r\n}\r\n\r\n.input-combo {\r\n    position: relative;\r\n}\r\n\r\n.input-combo span:after {\r\n    font: normal normal normal 14px/1 FontAwesome;\r\n    text-rendering: auto;\r\n    display: block;\r\n    position: absolute;\r\n}\r\n\r\n.input-combo span.chevron:after {\r\n    content: \"\\f078\";\r\n    bottom: 12px;\r\n    right: 12px;\r\n}\r\n\r\n.active .input-combo span.chevron:after {\r\n    content: \"\\f077\";\r\n}\r\n\r\n.input-combo span.search:after {\r\n    content: \"\\f002\";\r\n    background: #fff;\r\n    bottom: 7px;\r\n    left: 8px;\r\n}\r\n\r\n.input-combo .form-control[readonly] {\r\n    cursor: pointer;\r\n    background: #fff;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n}\r\n\r\n.input-combo .form-control:disabled {\r\n    background-color: #eceeef;\r\n}\r\n\r\n.active .input-combo .form-control {\r\n    border-radius: 0.25rem 0.25rem 0 0;\r\n}\r\n\r\n.options {\r\n    box-shadow: 0 1px 4px rgba(0,0,0,0.12);\r\n    position: absolute;\r\n    display: none;\r\n    margin-bottom: 0.75rem;\r\n    background-color: #fff;\r\n    border-radius: 0 0 0.25rem 0.25rem;\r\n    border: 1px solid rgba(0, 0, 0, 0.125);\r\n    border-top: none;\r\n    z-index: 333;\r\n    left: 0;\r\n    right: 0;\r\n}\r\n\r\n.active .options {\r\n    display: block;\r\n}\r\n\r\n.options .form-control {\r\n    padding-left: 28px;\r\n    background: #fff;\r\n}\r\n\r\n.options-scroller {\r\n    max-height: 168px;\r\n    overflow-x: hidden;\r\n}\r\n\r\n.option {\r\n    display: flex;\r\n    align-items: center;\r\n    cursor: pointer;\r\n    padding: 4px;\r\n    -webkit-user-select: none;\r\n    -moz-user-select: none;\r\n    -ms-user-select: none;\r\n    user-select: none;\r\n}\r\n\r\n\r\n.option-text{\r\n    flex-grow: 2;\r\n}\r\n\r\n.selected {\r\n    background: #f0f5f5;\r\n}\r\n\r\n.option:hover {\r\n    background: #0275d8;\r\n    color: #fff\r\n}\r\n\r\n.option-check {\r\n    text-align: center;\r\n    display: none;\r\n    color: #0275d8;\r\n}\r\n\r\n.option:hover .option-check {\r\n    color: #fff;\r\n}\r\n\r\n.option:hover .text-muted {\r\n    color: rgba(255,255,255,.8) !important;\r\n}\r\n\r\n.selected .option-check {\r\n    display: block;\r\n}"
 
 /***/ },
 
-/***/ 1015:
+/***/ 1014:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"document-select\" [ngClass]=\"{ active : active }\">\r\n    <div class=\"input-combo\">\r\n        <span class=\"chevron\">\r\n            <input type=\"text\" [value]=\"displayLabel(selected)\" class=\"form-control\" (click)=\"toggleActive()\"  [disabled]=\"disabled\" readonly/>\r\n        </span>\r\n    </div>\r\n    <div class=\"options\">\r\n        <form [formGroup]=\"form\" class=\"p-1\">\r\n            <div class=\"input-combo\">\r\n                <span class=\"search\">\r\n                    <input type=\"text\" class=\"form-control form-control-sm\" formControlName=\"search\" autocomplete=\"off\" placeholder=\"Busqueda\" />\r\n                </span>\r\n            </div>\r\n        </form>\r\n        <div class=\"options-scroller\">\r\n            <div class=\"option px-1\" *ngFor=\"let option of options\" (click)=\"updateSelected(option)\" [ngClass]=\"{'selected' : isOptionSelected(option)}\">\r\n                <div class=\"option-item option-text\">\r\n                    <div class=\"option-display\">\r\n                        {{ displayLabel(option) }}\r\n                    </div>\r\n                    <div class=\"options-aux\" *ngIf=\"displayAux(option)\">\r\n                        <small class=\"text-muted\">{{ displayAux(option) }}</small>\r\n                    </div>\r\n                </div>\r\n                <div class=\"option-item option-check\">\r\n                    <i class=\"fa fa-fw fa-circle-o\"></i>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n</div>\r\n"
 
 /***/ },
 
-/***/ 1016:
+/***/ 1015:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -419,7 +371,7 @@ module.exports = "<div class=\"document-select\" [ngClass]=\"{ active : active }
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_FormController__ = __webpack_require__(431);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__ = __webpack_require__(430);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_utils__ = __webpack_require__(1010);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_utils__ = __webpack_require__(1009);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BodegaEditarComponent; });
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -494,7 +446,7 @@ var BodegaEditarComponent = (function (_super) {
     BodegaEditarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-bodega-editar',
-            template: __webpack_require__(1082)
+            template: __webpack_require__(1081)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _d) || Object])
     ], BodegaEditarComponent);
@@ -505,7 +457,7 @@ var BodegaEditarComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1017:
+/***/ 1016:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -543,7 +495,7 @@ var BodegaListaComponent = (function () {
     BodegaListaComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-bodegas-lista',
-            template: __webpack_require__(1083)
+            template: __webpack_require__(1082)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object])
     ], BodegaListaComponent);
@@ -554,7 +506,7 @@ var BodegaListaComponent = (function () {
 
 /***/ },
 
-/***/ 1018:
+/***/ 1017:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -563,7 +515,7 @@ var BodegaListaComponent = (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__shared_FormController__ = __webpack_require__(431);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_services_api_service__ = __webpack_require__(430);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_utils__ = __webpack_require__(1010);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_utils__ = __webpack_require__(1009);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BodegaNuevaComponent; });
 var __extends = (this && this.__extends) || function (d, b) {
     for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
@@ -634,7 +586,7 @@ var BodegaNuevaComponent = (function (_super) {
     BodegaNuevaComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-bodega-nueva',
-            template: __webpack_require__(1084)
+            template: __webpack_require__(1083)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_3__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["c" /* FormBuilder */]) === 'function' && _d) || Object])
     ], BodegaNuevaComponent);
@@ -645,7 +597,7 @@ var BodegaNuevaComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1019:
+/***/ 1018:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -690,7 +642,7 @@ var BodegaVerComponent = (function () {
     BodegaVerComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-bodega-ver',
-            template: __webpack_require__(1085)
+            template: __webpack_require__(1084)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _c) || Object])
     ], BodegaVerComponent);
@@ -701,7 +653,7 @@ var BodegaVerComponent = (function () {
 
 /***/ },
 
-/***/ 1020:
+/***/ 1019:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -770,7 +722,7 @@ var MaterialEditarComponent = (function (_super) {
     MaterialEditarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-material-editar',
-            template: __webpack_require__(1086)
+            template: __webpack_require__(1085)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__angular_forms__["c" /* FormBuilder */]) === 'function' && _d) || Object])
     ], MaterialEditarComponent);
@@ -781,7 +733,7 @@ var MaterialEditarComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1021:
+/***/ 1020:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -819,7 +771,7 @@ var MaterialListaComponent = (function () {
     MaterialListaComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-material-lista',
-            template: __webpack_require__(1087)
+            template: __webpack_require__(1086)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object])
     ], MaterialListaComponent);
@@ -830,14 +782,14 @@ var MaterialListaComponent = (function () {
 
 /***/ },
 
-/***/ 1022:
+/***/ 1021:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_utils__ = __webpack_require__(1010);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_utils__ = __webpack_require__(1009);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__ = __webpack_require__(430);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__shared_FormController__ = __webpack_require__(431);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return MaterialNuevoComponent; });
@@ -912,7 +864,7 @@ var MaterialNuevoComponent = (function (_super) {
     MaterialNuevoComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-material-nuevo',
-            template: __webpack_require__(1088)
+            template: __webpack_require__(1087)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _d) || Object])
     ], MaterialNuevoComponent);
@@ -923,7 +875,7 @@ var MaterialNuevoComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1023:
+/***/ 1022:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -968,7 +920,7 @@ var MaterialVerComponent = (function () {
     MaterialVerComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-material-ver',
-            template: __webpack_require__(1089)
+            template: __webpack_require__(1088)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _c) || Object])
     ], MaterialVerComponent);
@@ -979,7 +931,7 @@ var MaterialVerComponent = (function () {
 
 /***/ },
 
-/***/ 1024:
+/***/ 1023:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1058,7 +1010,7 @@ var PersonalEditarComponent = (function (_super) {
     PersonalEditarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-personal-editar',
-            template: __webpack_require__(1090)
+            template: __webpack_require__(1089)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _d) || Object])
     ], PersonalEditarComponent);
@@ -1069,7 +1021,7 @@ var PersonalEditarComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1025:
+/***/ 1024:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1107,7 +1059,7 @@ var PersonalListaComponent = (function () {
     PersonalListaComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-personal-lista',
-            template: __webpack_require__(1091),
+            template: __webpack_require__(1090),
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object])
     ], PersonalListaComponent);
@@ -1118,7 +1070,7 @@ var PersonalListaComponent = (function () {
 
 /***/ },
 
-/***/ 1026:
+/***/ 1025:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1186,7 +1138,7 @@ var PersonalNuevoComponent = (function (_super) {
     PersonalNuevoComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-personal-nuevo',
-            template: __webpack_require__(1092)
+            template: __webpack_require__(1091)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _d) || Object])
     ], PersonalNuevoComponent);
@@ -1197,7 +1149,7 @@ var PersonalNuevoComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1027:
+/***/ 1026:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1242,8 +1194,8 @@ var PersonalVerComponent = (function () {
     PersonalVerComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-personal-ver',
-            template: __webpack_require__(1093),
-            styles: [__webpack_require__(1075)]
+            template: __webpack_require__(1092),
+            styles: [__webpack_require__(1074)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _c) || Object])
     ], PersonalVerComponent);
@@ -1254,7 +1206,7 @@ var PersonalVerComponent = (function () {
 
 /***/ },
 
-/***/ 1028:
+/***/ 1027:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1330,7 +1282,7 @@ var ProductorEditarComponent = (function (_super) {
     ProductorEditarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-productor-editar',
-            template: __webpack_require__(1094)
+            template: __webpack_require__(1093)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _d) || Object])
     ], ProductorEditarComponent);
@@ -1341,7 +1293,7 @@ var ProductorEditarComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1029:
+/***/ 1028:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1379,7 +1331,7 @@ var ProductorListaComponent = (function () {
     ProductorListaComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-productor-lista',
-            template: __webpack_require__(1095),
+            template: __webpack_require__(1094),
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object])
     ], ProductorListaComponent);
@@ -1390,7 +1342,7 @@ var ProductorListaComponent = (function () {
 
 /***/ },
 
-/***/ 1030:
+/***/ 1029:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1450,7 +1402,7 @@ var ProductorNuevoComponent = (function (_super) {
     ProductorNuevoComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-productor-nuevo',
-            template: __webpack_require__(1096)
+            template: __webpack_require__(1095)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _d) || Object])
     ], ProductorNuevoComponent);
@@ -1461,7 +1413,7 @@ var ProductorNuevoComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1031:
+/***/ 1030:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1506,8 +1458,8 @@ var ProductorVerComponent = (function () {
     ProductorVerComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-productor-ver',
-            template: __webpack_require__(1097),
-            styles: [__webpack_require__(1076)]
+            template: __webpack_require__(1096),
+            styles: [__webpack_require__(1075)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _c) || Object])
     ], ProductorVerComponent);
@@ -1518,7 +1470,7 @@ var ProductorVerComponent = (function () {
 
 /***/ },
 
-/***/ 1032:
+/***/ 1031:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1592,7 +1544,7 @@ var ProveedorEditarComponent = (function (_super) {
     ProveedorEditarComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-proveedor-editar',
-            template: __webpack_require__(1098)
+            template: __webpack_require__(1097)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _d) || Object])
     ], ProveedorEditarComponent);
@@ -1603,7 +1555,7 @@ var ProveedorEditarComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1033:
+/***/ 1032:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1641,7 +1593,7 @@ var ProveedorListaComponent = (function () {
     ProveedorListaComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-proveedor-lista',
-            template: __webpack_require__(1099),
+            template: __webpack_require__(1098),
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object])
     ], ProveedorListaComponent);
@@ -1652,7 +1604,7 @@ var ProveedorListaComponent = (function () {
 
 /***/ },
 
-/***/ 1034:
+/***/ 1033:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1712,7 +1664,7 @@ var ProveedorNuevoComponent = (function (_super) {
     ProveedorNuevoComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-proveedor-nuevo',
-            template: __webpack_require__(1100)
+            template: __webpack_require__(1099)
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_4__shared_services_api_service__["a" /* ApiService */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _c) || Object, (typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["c" /* FormBuilder */]) === 'function' && _d) || Object])
     ], ProveedorNuevoComponent);
@@ -1723,7 +1675,7 @@ var ProveedorNuevoComponent = (function (_super) {
 
 /***/ },
 
-/***/ 1035:
+/***/ 1034:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1768,8 +1720,8 @@ var ProveedorVerComponent = (function () {
     ProveedorVerComponent = __decorate([
         __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Q" /* Component */])({
             selector: 'app-proveedor-ver',
-            template: __webpack_require__(1101),
-            styles: [__webpack_require__(1077)]
+            template: __webpack_require__(1100),
+            styles: [__webpack_require__(1076)]
         }), 
         __metadata('design:paramtypes', [(typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* ActivatedRoute */]) === 'function' && _a) || Object, (typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_2__shared_services_api_service__["a" /* ApiService */]) === 'function' && _b) || Object, (typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */] !== 'undefined' && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* Router */]) === 'function' && _c) || Object])
     ], ProveedorVerComponent);
@@ -1780,7 +1732,7 @@ var ProveedorVerComponent = (function () {
 
 /***/ },
 
-/***/ 1048:
+/***/ 1047:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1823,7 +1775,7 @@ var BodegasComponent = (function () {
 
 /***/ },
 
-/***/ 1049:
+/***/ 1048:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1866,7 +1818,7 @@ var MaterialesComponent = (function () {
 
 /***/ },
 
-/***/ 1050:
+/***/ 1049:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1909,7 +1861,7 @@ var PersonalComponent = (function () {
 
 /***/ },
 
-/***/ 1051:
+/***/ 1050:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1952,7 +1904,7 @@ var ProductoresComponent = (function () {
 
 /***/ },
 
-/***/ 1052:
+/***/ 1051:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1995,16 +1947,16 @@ var ProveedoresComponent = (function () {
 
 /***/ },
 
-/***/ 1058:
+/***/ 1057:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bodega_nueva_bodega_nueva_component__ = __webpack_require__(1018);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bodega_lista_bodega_lista_component__ = __webpack_require__(1017);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bodega_ver_bodega_ver_component__ = __webpack_require__(1019);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bodega_editar_bodega_editar_component__ = __webpack_require__(1016);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__bodega_nueva_bodega_nueva_component__ = __webpack_require__(1017);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bodega_lista_bodega_lista_component__ = __webpack_require__(1016);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bodega_ver_bodega_ver_component__ = __webpack_require__(1018);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bodega_editar_bodega_editar_component__ = __webpack_require__(1015);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return BodegasRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2044,16 +1996,16 @@ var BodegasRoutingModule = (function () {
 
 /***/ },
 
-/***/ 1059:
+/***/ 1058:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__material_lista_material_lista_component__ = __webpack_require__(1021);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__material_nuevo_material_nuevo_component__ = __webpack_require__(1022);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__material_ver_material_ver_component__ = __webpack_require__(1023);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__material_editar_material_editar_component__ = __webpack_require__(1020);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__material_lista_material_lista_component__ = __webpack_require__(1020);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__material_nuevo_material_nuevo_component__ = __webpack_require__(1021);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__material_ver_material_ver_component__ = __webpack_require__(1022);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__material_editar_material_editar_component__ = __webpack_require__(1019);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return MaterialesRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2093,16 +2045,16 @@ var MaterialesRoutingModule = (function () {
 
 /***/ },
 
-/***/ 1060:
+/***/ 1059:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__personal_lista_personal_lista_component__ = __webpack_require__(1025);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__personal_nuevo_personal_nuevo_component__ = __webpack_require__(1026);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__personal_ver_personal_ver_component__ = __webpack_require__(1027);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__personal_editar_personal_editar_component__ = __webpack_require__(1024);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__personal_lista_personal_lista_component__ = __webpack_require__(1024);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__personal_nuevo_personal_nuevo_component__ = __webpack_require__(1025);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__personal_ver_personal_ver_component__ = __webpack_require__(1026);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__personal_editar_personal_editar_component__ = __webpack_require__(1023);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return PersonalRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2142,16 +2094,16 @@ var PersonalRoutingModule = (function () {
 
 /***/ },
 
-/***/ 1061:
+/***/ 1060:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__productor_lista_productor_lista_component__ = __webpack_require__(1029);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__productor_nuevo_productor_nuevo_component__ = __webpack_require__(1030);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__productor_ver_productor_ver_component__ = __webpack_require__(1031);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__productor_editar_productor_editar_component__ = __webpack_require__(1028);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__productor_lista_productor_lista_component__ = __webpack_require__(1028);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__productor_nuevo_productor_nuevo_component__ = __webpack_require__(1029);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__productor_ver_productor_ver_component__ = __webpack_require__(1030);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__productor_editar_productor_editar_component__ = __webpack_require__(1027);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ProductoresRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2191,16 +2143,16 @@ var ProductoresRoutingModule = (function () {
 
 /***/ },
 
-/***/ 1062:
+/***/ 1061:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__proveedor_lista_proveedor_lista_component__ = __webpack_require__(1033);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__proveedor_nuevo_proveedor_nuevo_component__ = __webpack_require__(1034);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__proveedor_ver_proveedor_ver_component__ = __webpack_require__(1035);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__proveedor_editar_proveedor_editar_component__ = __webpack_require__(1032);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__proveedor_lista_proveedor_lista_component__ = __webpack_require__(1032);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__proveedor_nuevo_proveedor_nuevo_component__ = __webpack_require__(1033);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__proveedor_ver_proveedor_ver_component__ = __webpack_require__(1034);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__proveedor_editar_proveedor_editar_component__ = __webpack_require__(1031);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return ProveedoresRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2240,6 +2192,13 @@ var ProveedoresRoutingModule = (function () {
 
 /***/ },
 
+/***/ 1074:
+/***/ function(module, exports) {
+
+module.exports = ""
+
+/***/ },
+
 /***/ 1075:
 /***/ function(module, exports) {
 
@@ -2254,164 +2213,157 @@ module.exports = ""
 
 /***/ },
 
-/***/ 1077:
-/***/ function(module, exports) {
-
-module.exports = ""
-
-/***/ },
-
-/***/ 1082:
+/***/ 1081:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <form [formGroup]=\"form\" autocomplete=\"off\">\n        <div class=\"clearfix\">\n            <div class=\"float-xs-right \">\n                <button [routerLink]=\"['../../view',bodega?.id ]\"><i class=\"fa fa-fw fa-file-text-o\"></i></button>\n            </div>\n            <h5>Editar Bodega</h5>\n        </div>\n        <fieldset [disabled]=\"isFormDisabled()\">\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\">\n                        <label class=\"form-control-label\" for=\"bodega-codigo\">Codigo</label>\n                        <input type=\"text\" id=\"bodega-codigo\" class=\"form-control text-md-center\" [value]=\"bodega?.codigo\" readonly/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('encargado')}\">\n                        <label class=\"form-control-label\">Encargado</label>\n                        <app-document-select\n                                [documents]=\"personal\"\n                                [current]=\"bodega?.encargado.id\"\n                                [documentMap]=\"documentMap\"\n                                [disabled]=\"waiting\"\n                                (output)=\"updateEncargado($event)\"\n                        ></app-document-select>\n                        <small class=\"form-control-feedback\">{{ getFeedback('encargado') }}</small>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('nombre')}\">\n                        <label class=\"form-control-label\" for=\"bodega-nombre\">Nombre</label>\n                        <input type=\"text\" id=\"bodega-nombre\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\" placeholder=\"Cuidad, Edificio, etc...\" />\n                    </div>\n                    <div class=\"form-group\">\n                        <label for=\"descripcion\">Descripcion</label>\n                        <textarea id=\"descripcion\" class=\"form-control control-y-2\" formControlName=\"descripcion\" placeholder=\"Cartonera, Etiquetas y Fundas, etc..\"></textarea>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-xs-12\">\n                    <div class=\"form-check\">\n                        <label class=\"form-check-label\" for=\"recurso-active\">\n                            <input type=\"checkbox\" id=\"recurso-active\" class=\"form-check-input\" formControlName=\"active\"/>\n                            Recurso Habilitado\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col-xs-12 text-xs-right\">\n                    <div class=\"btn-group\">\n                        <button type=\"submit\" (click)=\"submit()\" [disabled]=\"isSubmitDisabled()\">\n                            <span>Editar Bodega</span>\n                            <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }\"></i>\n                        </button>\n                    </div>\n                </div>\n            </div>\n        </fieldset>\n    </form>\n</div>"
 
 /***/ },
 
-/***/ 1083:
+/***/ 1082:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <h5>Lista de Bodegas</h5>\n</div>\n<div class=\"table-responsive\">\n    <table class=\"table table-hover\">\n        <thead>\n        <tr>\n            <th width=\"1\">#</th>\n            <th>Codigo</th>\n            <th>Nombre</th>\n            <th class=\"text-xs-center\">Habilitado</th>\n            <th class=\"text-xs-center\">Creado</th>\n            <th></th>\n        </tr>\n        </thead>\n        <tbody>\n        <tr *ngFor=\"let bodega of bodegas; let i = index\">\n            <td>{{ i + 1 }}</td>\n            <td><code><a [routerLink]=\"['../view', bodega.id]\">{{ bodega.codigo }}</a></code></td>\n            <td><a [routerLink]=\"['../view', bodega.id]\">{{ bodega.nombre }}</a></td>\n            <td class=\"text-xs-center\">{{ bodega.active ? \"Si\" : \"No\" }}</td>\n            <td class=\"text-xs-center\">{{ bodega.created | date }}</td>\n            <td class=\"list-actions\">\n                <a [routerLink]=\"['../edit', bodega.id]\"><i class=\"fa fa-pencil\"></i></a>\n                <a (click)=\"toggleActive(bodega, i)\"><i class=\"fa\" [ngClass]=\"{'fa-eye' : bodega?.active, 'fa-eye-slash' : !bodega?.active}\"></i></a>\n            </td>\n        </tr>\n        </tbody>\n    </table>\n</div>"
 
 /***/ },
 
-/***/ 1084:
+/***/ 1083:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <form [formGroup]=\"form\" autocomplete=\"off\">\n        <fieldset [disabled]=\"isFormDisabled()\">\n            <h5>Nueva Bodega</h5>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('codigo'), 'has-success' : codigoReady }\">\n                        <label class=\"form-control-label\" for=\"bodega-codigo\">Codigo</label>\n                        <input type=\"text\" id=\"bodega-codigo\" class=\"form-control form-control-success text-md-center\" formControlName=\"codigo\" readonly/>\n                        <small class=\"form-text text-muted\">Codigo generado automaticamente</small>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('encargado')}\">\n                        <label class=\"form-control-label\" for=\"encargado\">Encargado</label>\n                        <select formControlName=\"encargado\" id=\"encargado\" class=\"form-control\">\n                            <option *ngFor=\"let persona of personal\" [value]=\"persona.id\">{{ persona.nombre + \" \" + persona.apellido}}</option>\n                        </select>\n                        <small class=\"form-control-feedback\">{{ getFeedback('encargado') }}</small>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('nombre')}\">\n                        <label class=\"form-control-label\" for=\"bodega-nombre\">Nombre</label>\n                        <input type=\"text\" id=\"bodega-nombre\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\" placeholder=\"Cuidad, Edificio, etc...\" />\n                    </div>\n                    <div class=\"form-group\">\n                        <label class=\"form-control-label\" for=\"descripcion\">Descripcion</label>\n                        <textarea id=\"descripcion\" class=\"form-control control-y-2\" formControlName=\"descripcion\" placeholder=\"Cartonera, Etiquetas y Fundas, etc..\"></textarea>\n                    </div>\n                </div>\n            </div>\n            <div class=\"form-group text-xs-right\">\n                <div class=\"btn-group\">\n                    <button type=\"submit\" (click)=\"submit()\" [disabled]=\"isSubmitDisabled()\">\n                        <span>Ingresar Bodega</span>\n                        <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }\"></i>\n                    </button>\n                </div>\n            </div>\n        </fieldset>\n    </form>\n</div>"
 
 /***/ },
 
-/***/ 1085:
+/***/ 1084:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <div class=\"clearfix button-holder\">\n        <div class=\"view-action\">\n            <button (click)=\"toggleActive(bodega)\" [disabled]=\"toggleWaiting\">\n                {{ bodega?.active ? 'Habilitado' : 'Deshabilitado' }} <i class=\"fa fa-fw\" [ngClass]=\"{'fa-eye': bodega?.active, 'fa-eye-slash': !bodega?.active}\"></i>\n            </button>\n            <button [routerLink]=\"['../../edit', bodega?.id ]\" ><i class=\"fa fa-fw fa-pencil\"></i></button>\n        </div>\n        <h5>Bodega: <code>#{{ bodega?.codigo}}</code></h5>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Nombre</strong>\n                <div class=\"view-display-static\">{{ bodega?.nombre }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Encargado Actual</strong>\n                <div class=\"view-display-static\">{{ bodega?.encargado?.nombre }} {{ bodega?.encargado?.apellido }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Creada</strong>\n                <div class=\"view-display-static\">{{ bodega?.created | date }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Ultimo Cambio</strong>\n                <div class=\"view-display-static\">{{ bodega?.edited | date }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-12\">\n            <div>\n                <strong>Descripcion</strong>\n                <div class=\"box-pre\"><pre>{{ bodega?.descripcion }}</pre></div>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ },
 
-/***/ 1086:
+/***/ 1085:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <form [formGroup]=\"form\">\n        <div class=\"clearfix\">\n            <div class=\"float-xs-right \">\n                <button [routerLink]=\"['../../view', material?.id ]\"><i class=\"fa fa-fw fa-file-text-o\"></i></button>\n            </div>\n            <h5>Editar Material</h5>\n        </div>\n        <fieldset [disabled]=\"isFormDisabled()\">\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\">\n                        <label class=\"form-control-label\" for=\"codigo-material\">Codigo</label>\n                        <input type=\"text\" id=\"codigo-material\" class=\"form-control text-md-center\" [value]=\"material?.codigo\" readonly/>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\">\n                        <label class=\"form-control-label\" for=\"tipo-material\">Tipo de Material</label>\n                        <input type=\"text\" id=\"tipo-material\" class=\"form-control text-md-center\" [value]=\"material?.tipoMaterial.nombre\" readonly/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\">\n                        <label class=\"form-control-label\" for=\"categoria\">Categoria</label>\n                        <input type=\"text\" id=\"categoria\" class=\"form-control text-md-center\" [value]=\"material?.categoria.nombre\" readonly/>\n                    </div>\n                </div>\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group\" [ngClass]=\"{ 'has-danger' : isControlInvalid('nombre')}\">\n                        <label class=\"form-control-label\" for=\"nombre-material\">Nombre</label>\n                        <input type=\"text\" id=\"nombre-material\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\"/>\n                    </div>\n                    <div class=\"form-group\">\n                        <label class=\"form-control-label\" for=\"descripcion-material\">Descripcion</label>\n                        <textarea id=\"descripcion-material\" class=\"form-control control-y-2\" formControlName=\"descripcion\" placeholder=\"Opcional\"></textarea>\n                    </div>\n                    <div class=\"form-check\">\n                        <label class=\"form-check-label\" for=\"recurso-active\">\n                            <input type=\"checkbox\" id=\"recurso-active\" class=\"form-check-input\" formControlName=\"active\"/>\n                            Material Habilitado\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col-xs-12 text-xs-right\">\n                    <div class=\"btn-group\">\n                        <button type=\"submit\" (click)=\"submit()\" [disabled]=\"isSubmitDisabled()\">\n                            <span>Editar Material</span>\n                            <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }\"></i>\n                        </button>\n                    </div>\n                </div>\n            </div>\n        </fieldset>\n    </form>\n</div>"
 
 /***/ },
 
-/***/ 1087:
+/***/ 1086:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <h5>Lista de Materiales</h5>\n</div>\n<div class=\"table-responsive\">\n    <table class=\"table table-hover\">\n        <thead>\n            <tr>\n                <th>#</th>\n                <th>Codigo</th>\n                <th>Nombre</th>\n                <th>Tipo Material</th>\n                <th>Categoria</th>\n                <th class=\"text-xs-center\">Habilitado</th>\n                <th class=\"text-xs-center\">Creado</th>\n                <th></th>\n            </tr>\n        </thead>\n        <tbody>\n            <tr *ngFor=\"let material of materiales; let i = index\">\n                <td>{{ i + 1 }}</td>\n                <td><code><a [routerLink]=\"['../view', material?.id]\">{{ material.codigo }}</a></code></td>\n                <td><a [routerLink]=\"['../view', material?.id]\">{{ material.nombre }}</a></td>\n                <td>{{ material.tipoMaterial.nombre }}</td>\n                <td>{{ material.categoria.nombre }}</td>\n                <td class=\"text-xs-center\">{{ material.active ? \"Si\" : \"No\" }}</td>\n                <td class=\"text-xs-center\">{{ material.created | date }}</td>\n                <td class=\"list-actions\">\n                    <a [routerLink]=\"['../edit', material.id]\"><i class=\"fa fa-pencil\"></i></a>\n                    <a (click)=\"toggleActive(material, i)\"><i class=\"fa\" [ngClass]=\"{'fa-eye-slash' : !material?.active, 'fa-eye' : material?.active}\"></i></a>\n                </td>\n            </tr>\n        </tbody>\n    </table>\n</div>"
 
 /***/ },
 
-/***/ 1088:
+/***/ 1087:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <form [formGroup]=\"form\">\n        <fieldset [disabled]=\"isFormDisabled()\">\n            <h5>Nuevo Material</h5>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{ 'has-danger' :isControlInvalid('codigo'), 'has-success' : codigoReady}\">\n                        <label class=\"form-control-label\" for=\"codigo-material\">Codigo</label>\n                        <input type=\"text\" id=\"codigo-material\" class=\"form-control  form-control-success text-md-center\" formControlName=\"codigo\" readonly/>\n                        <small class=\"form-text text-muted\">Codigo generado automaticamente</small>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\">\n                        <label class=\"form-control-label\" for=\"tipo-material\">Tipo de Material</label>\n                        <select id=\"tipo-material\" class=\"form-control\" formControlName=\"tipoMaterial\">\n                            <option *ngFor=\"let tipoMaterial of tiposMateriales\" [value]=\"tipoMaterial.id\">{{ tipoMaterial.nombre }}</option>\n                        </select>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{ 'has-danger' : isControlInvalid('categoria')}\">\n                        <label class=\"form-control-label\" for=\"categoria\">Categoria</label>\n                        <select id=\"categoria\" class=\"form-control\" formControlName=\"categoria\">\n                            <option *ngFor=\"let categoria of categorias\" [value]=\"categoria.id\">{{ categoria.nombre }}</option>\n                        </select>\n                    </div>\n                </div>\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group\" [ngClass]=\"{ 'has-danger' : isControlInvalid('nombre')}\">\n                        <label class=\"form-control-label\" for=\"nombre-material\">Nombre</label>\n                        <input type=\"text\" id=\"nombre-material\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\"/>\n                    </div>\n                    <div class=\"form-group\">\n                        <label class=\"form-control-label\" for=\"descripcion-material\">Descripcion</label>\n                        <textarea id=\"descripcion-material\" class=\"form-control control-y-2\" formControlName=\"descripcion\" placeholder=\"Opcional\"></textarea>\n                    </div>\n                </div>\n            </div>\n            <div class=\"form-group text-xs-right\">\n                <button type=\"submit\" (click)=\"submit()\" [disabled]=\"isSubmitDisabled()\">\n                    <span>Ingresar Material</span>\n                    <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }\"></i>\n                </button>\n            </div>\n        </fieldset>\n    </form>\n</div>"
 
 /***/ },
 
-/***/ 1089:
+/***/ 1088:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <div class=\"clearfix button-holder\">\n        <div class=\"view-action\">\n            <button (click)=\"toggleActive(material)\" [disabled]=\"toggleWaiting\">\n                {{ material?.active ? 'Habilitado' : 'Deshabilitado' }} <i class=\"fa fa-fw\" [ngClass]=\"{'fa-eye': material?.active, 'fa-eye-slash': !material?.active}\"></i>\n            </button>\n            <button [routerLink]=\"['../../edit', material?.id ]\" ><i class=\"fa fa-fw fa-pencil\"></i></button>\n        </div>\n        <h5>Material: <code>#{{ material?.codigo}}</code></h5>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Nombre</strong>\n                <div class=\"view-display-static\">{{ material?.nombre }}</div>\n            </div>\n        </div>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Tipo Material</strong>\n                <div class=\"view-display-static\">{{ material?.tipoMaterial.nombre }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Categoria</strong>\n                <div class=\"view-display-static\">{{ material?.categoria.nombre }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Creado</strong>\n                <div class=\"view-display-static\">{{ material?.created | date }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Ultimo Cambio</strong>\n                <div class=\"view-display-static\">{{ material?.edited | date }}</div>\n            </div>\n        </div>\n        <div class=\"col-sm-12\">\n            <div>\n                <strong>Detalle</strong>\n                <div class=\"box-pre\"><pre>{{ material?.descripcion }}</pre></div>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ },
 
-/***/ 1090:
+/***/ 1089:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <form [formGroup]=\"form\" autocomplete=\"off\">\n        <div class=\"clearfix\">\n            <div class=\"float-xs-right \">\n                <button [routerLink]=\"['../../view', personal?.id ]\"><i class=\"fa fa-fw fa-file-text-o\"></i></button>\n            </div>\n            <h5>Editar Personal</h5>\n        </div>\n        <fieldset [disabled]=\"isFormDisabled()\">\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\">\n                        <label class=\"form-control-label\" for=\"codigo\">Codigo</label>\n                        <input type=\"text\" id=\"codigo\" class=\"form-control text-md-center\" [ngClass]=\"{ 'form-control-success' : !isControlInvalid('codigo') }\" [value]=\"personal?.codigo\" readonly/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('cedula')}\">\n                        <label class=\"form-control-label\" for=\"cedula\">Cedula</label>\n                        <input type=\"tel\" id=\"cedula\" class=\"form-control\" formControlName=\"cedula\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('cedula') }}</div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('nombre')}\">\n                        <label class=\"form-control-label\" for=\"nombre\">Nombre</label>\n                        <input type=\"text\" id=\"nombre\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('apellido')}\">\n                        <label class=\"form-control-label\" for=\"apellido\">Apellido</label>\n                        <input type=\"text\" id=\"apellido\" class=\"form-control form-control-danger\" formControlName=\"apellido\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('correo')}\">\n                        <label class=\"form-control-label\" for=\"correo\">Correo Electronico</label>\n                        <input type=\"email\" id=\"correo\" class=\"form-control\" formControlName=\"correo\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('telefono')}\">\n                        <label class=\"form-control-label\" for=\"telefono\">Telefono</label>\n                        <input type=\"tel\" id=\"telefono\" class=\"form-control\" formControlName=\"telefono\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('telefono') }}</div>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('celular')}\">\n                        <label class=\"form-control-label\" for=\"celular\">Celular</label>\n                        <input type=\"tel\" id=\"celular\" class=\"form-control\" formControlName=\"celular\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('celular') }}</div>\n                    </div>\n                </div>\n                <div class=\"col-sm-12\">\n                    <div class=\"form-check\">\n                        <label class=\"form-check-label\" for=\"recurso-active\">\n                            <input type=\"checkbox\" id=\"recurso-active\" class=\"form-check-input\" formControlName=\"active\"/>\n                            Recurso Habilitado\n                        </label>\n                    </div>\n                </div>\n            </div>\n            <div class=\"form-group text-xs-right\">\n                <div class=\"btn-group\">\n                    <button type=\"submit\" (click)=\"submit()\" [disabled]=\"isSubmitDisabled()\">\n                        <span>Ingresar Bodega</span>\n                        <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }\"></i>\n                    </button>\n                </div>\n            </div>\n        </fieldset>\n    </form>\n</div>\n"
 
 /***/ },
 
-/***/ 1091:
+/***/ 1090:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\r\n    <h5>Lista del Personal</h5>\r\n</div>\r\n<div class=\"table-responsive\">\r\n    <table class=\"table table-hover\">\r\n        <thead>\r\n        <tr>\r\n            <th>Nombre</th>\r\n            <th>Codigo</th>\r\n            <th>Cedula</th>\r\n            <th class=\"text-xs-center\">Habilitado</th>\r\n            <th class=\"text-xs-center\">Creado</th>\r\n            <th></th>\r\n        </tr>\r\n        </thead>\r\n        <tbody>\r\n        <tr *ngFor=\"let persona of personal; let i = index\">\r\n            <td><a [routerLink]=\"['../view', persona.id]\">{{ persona.nombre + \" \" + persona.apellido }}</a></td>\r\n            <td>{{ persona.codigo }}</td>\r\n            <td>{{ persona.cedula }}</td>\r\n            <td class=\"text-xs-center\">{{ persona.active ? \"Si\" : \"No\" }}</td>\r\n            <td class=\"text-xs-center\">{{ persona.created | date }}</td>\r\n            <td class=\"list-actions\">\r\n                <a [routerLink]=\"['../edit', persona.id]\"><i class=\"fa fa-pencil\"></i></a>\r\n                <a (click)=\"toggleActive(persona, i)\"><i class=\"fa\" [ngClass]=\"{'fa-eye' : persona?.active, 'fa-eye-slash' : !persona?.active}\"></i></a>\r\n            </td>\r\n        </tr>\r\n        </tbody>\r\n    </table>\r\n</div>"
 
 /***/ },
 
-/***/ 1092:
+/***/ 1091:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <form [formGroup]=\"form\" autocomplete=\"off\">\n        <fieldset [disabled]=\"isFormDisabled()\">\n            <h5>Nuevo Personal</h5>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('codigo'), 'has-success' : codigoReady}\">\n                        <label class=\"form-control-label\" for=\"codigo\">Codigo</label>\n                        <input type=\"text\" id=\"codigo\" class=\"form-control form-control-success text-md-center\" formControlName=\"codigo\" readonly/>\n                        <small class=\"form-text text-muted\">Codigo generado automaticamente.</small>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('cedula')}\">\n                        <label class=\"form-control-label\" for=\"cedula\">Cedula</label>\n                        <input type=\"tel\" id=\"cedula\" class=\"form-control\" formControlName=\"cedula\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('cedula') }}</div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('nombre')}\">\n                        <label class=\"form-control-label\" for=\"nombre\">Nombre</label>\n                        <input type=\"text\" id=\"nombre\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('apellido')}\">\n                        <label class=\"form-control-label\" for=\"apellido\">Apellido</label>\n                        <input type=\"text\" id=\"apellido\" class=\"form-control\" formControlName=\"apellido\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('correo')}\">\n                        <label class=\"form-control-label\" for=\"correo\">Correo Electronico</label>\n                        <input type=\"email\" id=\"correo\" class=\"form-control\" formControlName=\"correo\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('telefono')}\">\n                        <label class=\"form-control-label\" for=\"telefono\">Telefono</label>\n                        <input type=\"tel\" id=\"telefono\" class=\"form-control\" formControlName=\"telefono\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('telefono') }}</div>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('celular')}\">\n                        <label class=\"form-control-label\" for=\"celular\">Celular</label>\n                        <input type=\"tel\" id=\"celular\" class=\"form-control\" formControlName=\"celular\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('celular') }}</div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group text-xs-right\">\n                        <div class=\"btn-group\">\n                            <button type=\"submit\" (click)=\"submit()\" [disabled]=\"isSubmitDisabled()\">\n                                <span>Ingresar Personal</span>\n                                <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }\"></i>\n                            </button>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </fieldset>\n    </form>\n</div>"
 
 /***/ },
 
-/***/ 1093:
+/***/ 1092:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <p>\n    personal-ver works!\n    </p>\n</div>\n"
 
 /***/ },
 
-/***/ 1094:
+/***/ 1093:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <form [formGroup]=\"form\" autocomplete=\"off\">\n        <div class=\"clearfix\">\n            <div class=\"float-xs-right \">\n                <button [routerLink]=\"['../../view', productor?.id ]\"><i class=\"fa fa-fw fa-file-text-o\"></i></button>\n            </div>\n            <h5>Editar Productor</h5>\n        </div>\n        <fieldset [disabled]=\"isFormDisabled()\">\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('nombre')}\">\n                        <label class=\"form-control-label\" for=\"nombre\">Nombre</label>\n                        <input type=\"text\" id=\"nombre\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('apellido')}\">\n                        <label class=\"form-control-label\" for=\"apellido\">Apellido</label>\n                        <input type=\"text\" id=\"apellido\" class=\"form-control form-control-danger\" formControlName=\"apellido\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('correo')}\">\n                        <label class=\"form-control-label\" for=\"correo\">Correo Electronico</label>\n                        <input type=\"email\" id=\"correo\" class=\"form-control\" formControlName=\"correo\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('telefono')}\">\n                        <label class=\"form-control-label\" for=\"telefono\">Telefono</label>\n                        <input type=\"tel\" id=\"telefono\" class=\"form-control\" formControlName=\"telefono\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('telefono') }}</div>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('ruc')}\">\n                        <label class=\"form-control-label\" for=\"ruc\">Cedula</label>\n                        <input type=\"tel\" id=\"ruc\" class=\"form-control\" formControlName=\"ruc\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('ruc') }}</div>\n                    </div>\n                </div>\n                <div class=\"col-sm-12\">\n                    <div class=\"form-check\">\n                        <label class=\"form-check-label\" for=\"recurso-active\">\n                            <input type=\"checkbox\" id=\"recurso-active\" class=\"form-check-input\" formControlName=\"active\"/>\n                            Recurso Habilitado\n                        </label>\n                    </div>\n                </div>\n            </div>\n            <div class=\"form-group text-xs-right\">\n                <div class=\"btn-group\">\n                    <button type=\"submit\" (click)=\"submit()\" [disabled]=\"isSubmitDisabled()\">\n                        <span>Ingresar Bodega</span>\n                        <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }\"></i>\n                    </button>\n                </div>\n            </div>\n        </fieldset>\n    </form>\n</div>"
 
 /***/ },
 
-/***/ 1095:
+/***/ 1094:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\r\n    <h5>Lista del Personal</h5>\r\n</div>\r\n<div class=\"table-responsive\">\r\n    <table class=\"table table-hover\">\r\n        <thead>\r\n        <tr>\r\n            <th>Nombre</th>\r\n            <th>RUC</th>\r\n            <th>Correo</th>\r\n            <th class=\"text-xs-center\">Habilitado</th>\r\n            <th class=\"text-xs-center\">Creado</th>\r\n            <th></th>\r\n        </tr>\r\n        </thead>\r\n        <tbody>\r\n        <tr *ngFor=\"let productor of productores; let i = index\">\r\n            <td><a [routerLink]=\"['../view', productor.id]\">{{ productor.nombre + \" \" + productor.apellido }}</a></td>\r\n            <td>{{ productor.ruc }}</td>\r\n            <td>{{ productor.correo }}</td>\r\n            <td class=\"text-xs-center\">{{ productor.active ? \"Si\" : \"No\" }}</td>\r\n            <td class=\"text-xs-center\">{{ productor.created | date }}</td>\r\n            <td class=\"list-actions\">\r\n                <a [routerLink]=\"['../edit', productor.id]\"><i class=\"fa fa-pencil\"></i></a>\r\n                <a (click)=\"toggleActive(productor, i)\"><i class=\"fa\" [ngClass]=\"{'fa-eye' : productor?.active, 'fa-eye-slash' : !productor?.active}\"></i></a>\r\n            </td>\r\n        </tr>\r\n        </tbody>\r\n    </table>\r\n</div>"
 
 /***/ },
 
-/***/ 1096:
+/***/ 1095:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <form [formGroup]=\"form\" autocomplete=\"off\">\n        <fieldset [disabled]=\"isFormDisabled()\">\n            <h5>Nuevo Productor</h5>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('nombre')}\">\n                        <label class=\"form-control-label\" for=\"nombre\">Nombre</label>\n                        <input type=\"text\" id=\"nombre\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('apellido')}\">\n                        <label class=\"form-control-label\" for=\"apellido\">Apellido</label>\n                        <input type=\"text\" id=\"apellido\" class=\"form-control\" formControlName=\"apellido\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('correo')}\">\n                        <label class=\"form-control-label\" for=\"correo\">Correo Electronico</label>\n                        <input type=\"email\" id=\"correo\" class=\"form-control\" formControlName=\"correo\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('ruc')}\">\n                        <label class=\"form-control-label\" for=\"ruc\">Cedula</label>\n                        <input type=\"tel\" id=\"ruc\" class=\"form-control\" formControlName=\"ruc\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('ruc') }}</div>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('telefono')}\">\n                        <label class=\"form-control-label\" for=\"telefono\">Telefono</label>\n                        <input type=\"tel\" id=\"telefono\" class=\"form-control\" formControlName=\"telefono\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('telefono') }}</div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group text-xs-right\">\n                        <div class=\"btn-group\">\n                            <button type=\"submit\" (click)=\"submit()\" [disabled]=\"isSubmitDisabled()\">\n                                <span>Ingresar Personal</span>\n                                <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }\"></i>\n                            </button>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </fieldset>\n    </form>\n</div>"
 
 /***/ },
 
-/***/ 1097:
+/***/ 1096:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <p>\n      personal-ver works!\n    </p>\n</div>\n"
 
 /***/ },
 
-/***/ 1098:
+/***/ 1097:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <form [formGroup]=\"form\" autocomplete=\"off\">\n        <div class=\"clearfix\">\n            <div class=\"float-xs-right \">\n                <button [routerLink]=\"['../../view', proveedor?.id ]\"><i class=\"fa fa-fw fa-file-text-o\"></i></button>\n            </div>\n            <h5>Editar Proveedor</h5>\n        </div>\n        <fieldset [disabled]=\"isFormDisabled()\">\n            <div class=\"row\">\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('nombre')}\">\n                        <label class=\"form-control-label\" for=\"nombre\">Nombre</label>\n                        <input type=\"text\" id=\"nombre\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('ruc')}\">\n                        <label class=\"form-control-label\" for=\"ruc\">Cedula o R.U.C.</label>\n                        <input type=\"tel\" id=\"ruc\" class=\"form-control\" formControlName=\"ruc\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('ruc') }}</div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('correo')}\">\n                        <label class=\"form-control-label\" for=\"correo\">Correo Electronico</label>\n                        <input type=\"email\" id=\"correo\" class=\"form-control\" formControlName=\"correo\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('telefono')}\">\n                        <label class=\"form-control-label\" for=\"telefono\">Telefono</label>\n                        <input type=\"tel\" id=\"telefono\" class=\"form-control\" formControlName=\"telefono\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('telefono') }}</div>\n                    </div>\n                </div>\n                <div class=\"col-sm-12\">\n                    <div class=\"form-check\">\n                        <label class=\"form-check-label\" for=\"recurso-active\">\n                            <input type=\"checkbox\" id=\"recurso-active\" class=\"form-check-input\" formControlName=\"active\"/>\n                            Recurso Habilitado\n                        </label>\n                    </div>\n                </div>\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group text-xs-right\">\n                        <div class=\"btn-group\">\n                            <button type=\"submit\" (click)=\"submit()\" [disabled]=\"isSubmitDisabled()\">\n                                <span>Editar Proveedor</span>\n                                <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }\"></i>\n                            </button>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </fieldset>\n    </form>\n</div>"
 
 /***/ },
 
-/***/ 1099:
+/***/ 1098:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\r\n    <h5>Lista de Proveedores</h5>\r\n</div>\r\n<div class=\"table-responsive\">\r\n    <table class=\"table table-hover\">\r\n        <thead>\r\n        <tr>\r\n            <th>Nombre</th>\r\n            <th>RUC</th>\r\n            <th>Correo</th>\r\n            <th class=\"text-xs-center\">Habilitado</th>\r\n            <th class=\"text-xs-center\">Creado</th>\r\n            <th></th>\r\n        </tr>\r\n        </thead>\r\n        <tbody>\r\n        <tr *ngFor=\"let proveedor of proveedores; let i = index\">\r\n            <td><a [routerLink]=\"['../view', proveedor.id]\">{{ proveedor.nombre }}</a></td>\r\n            <td>{{ proveedor.ruc }}</td>\r\n            <td>{{ proveedor.correo }}</td>\r\n            <td class=\"text-xs-center\">{{ proveedor.active ? \"Si\" : \"No\" }}</td>\r\n            <td class=\"text-xs-center\">{{ proveedor.created | date }}</td>\r\n            <td class=\"list-actions\">\r\n                <a [routerLink]=\"['../edit', proveedor.id]\"><i class=\"fa fa-pencil\"></i></a>\r\n                <a (click)=\"toggleActive(proveedor, i)\"><i class=\"fa\" [ngClass]=\"{'fa-eye' : proveedor?.active, 'fa-eye-slash' : !proveedor?.active}\"></i></a>\r\n            </td>\r\n        </tr>\r\n        </tbody>\r\n    </table>\r\n</div>"
 
 /***/ },
 
-/***/ 1100:
+/***/ 1099:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <form [formGroup]=\"form\" autocomplete=\"off\">\n        <fieldset [disabled]=\"isFormDisabled()\">\n            <h5>Nuevo Proveedor</h5>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('nombre')}\">\n                        <label class=\"form-control-label\" for=\"nombre\">Nombre</label>\n                        <input type=\"text\" id=\"nombre\" class=\"form-control\" formControlName=\"nombre\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('ruc')}\">\n                        <label class=\"form-control-label\" for=\"ruc\">Cedula o R.U.C.</label>\n                        <input type=\"tel\" id=\"ruc\" class=\"form-control\" formControlName=\"ruc\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('ruc') }}</div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"row\">\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('correo')}\">\n                        <label class=\"form-control-label\" for=\"correo\">Correo Electronico</label>\n                        <input type=\"email\" id=\"correo\" class=\"form-control\" formControlName=\"correo\" autocomplete=\"off\"/>\n                    </div>\n                </div>\n                <div class=\"col-sm-6\">\n                    <div class=\"form-group\" [ngClass]=\"{'has-danger' : isControlInvalid('telefono')}\">\n                        <label class=\"form-control-label\" for=\"telefono\">Telefono</label>\n                        <input type=\"tel\" id=\"telefono\" class=\"form-control\" formControlName=\"telefono\" autocomplete=\"off\"/>\n                        <div class=\"form-control-feedback\" >{{ getFeedback('telefono') }}</div>\n                    </div>\n                </div>\n                <div class=\"col-sm-12\">\n                    <div class=\"form-group text-xs-right\">\n                        <button type=\"submit\" (click)=\"submit()\" [disabled]=\"isSubmitDisabled()\">\n                            <span>Ingresar Proveedor</span>\n                            <i class=\"fa fa-fw\" [ngClass]=\"{ 'fa-spin fa-circle-o-notch' : waiting, 'fa-check' : !waiting }\"></i>\n                        </button>\n                    </div>\n                </div>\n            </div>\n        </fieldset>\n    </form>\n</div>"
 
 /***/ },
 
-/***/ 1101:
+/***/ 1100:
 /***/ function(module, exports) {
 
 module.exports = "<div class=\"content-block\">\n    <div class=\"clearfix button-holder\">\n        <div class=\"float-xs-right \">\n            <button (click)=\"toggleActive(proveedor)\" [disabled]=\"toggleWaiting\">\n                {{ proveedor?.active ? 'Habilitado' : 'Deshabilitado' }} <i class=\"fa fa-fw\" [ngClass]=\"{'fa-eye': proveedor?.active, 'fa-eye-slash': !proveedor?.active}\"></i>\n            </button>\n            <button [routerLink]=\"['../../edit', proveedor?.id ]\" ><i class=\"fa fa-fw fa-pencil\"></i></button>\n        </div>\n        <h5>Proveedor: {{ proveedor?.nombre}}</h5>\n    </div>\n    <div class=\"row\">\n        <div class=\"col-sm-6\">\n            <div>\n                <strong>Nombre</strong>\n                <div class=\"form-control-static\">{{ proveedor?.nombre }}</div>\n            </div>\n            <div>\n                <strong>Creado</strong>\n                <div class=\"form-control-static\">{{ proveedor?.created | date }}</div>\n            </div>\n        </div>\n    </div>\n</div>"
 
 /***/ },
 
-/***/ 1117:
+/***/ 1116:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(94);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__personal_personal_component__ = __webpack_require__(1050);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__productores_productores_component__ = __webpack_require__(1051);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__proveedores_proveedores_component__ = __webpack_require__(1052);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bodegas_bodegas_component__ = __webpack_require__(1048);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__materiales_materiales_component__ = __webpack_require__(1049);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__personal_personal_component__ = __webpack_require__(1049);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__productores_productores_component__ = __webpack_require__(1050);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__proveedores_proveedores_component__ = __webpack_require__(1051);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bodegas_bodegas_component__ = __webpack_require__(1047);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__materiales_materiales_component__ = __webpack_require__(1048);
 /* harmony export (binding) */ __webpack_require__.d(exports, "a", function() { return AdministracionRoutingnModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2453,20 +2405,20 @@ var AdministracionRoutingnModule = (function () {
 
 /***/ },
 
-/***/ 997:
+/***/ 996:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bodegas_routing_module__ = __webpack_require__(1058);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_components_documentSelect_documentSelect_module__ = __webpack_require__(1011);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bodegas_component__ = __webpack_require__(1048);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bodega_lista_bodega_lista_component__ = __webpack_require__(1017);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bodega_nueva_bodega_nueva_component__ = __webpack_require__(1018);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bodega_ver_bodega_ver_component__ = __webpack_require__(1019);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__bodega_editar_bodega_editar_component__ = __webpack_require__(1016);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bodegas_routing_module__ = __webpack_require__(1057);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_components_documentSelect_documentSelect_module__ = __webpack_require__(1010);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__bodegas_component__ = __webpack_require__(1047);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__bodega_lista_bodega_lista_component__ = __webpack_require__(1016);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bodega_nueva_bodega_nueva_component__ = __webpack_require__(1017);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__bodega_ver_bodega_ver_component__ = __webpack_require__(1018);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__bodega_editar_bodega_editar_component__ = __webpack_require__(1015);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2509,19 +2461,19 @@ var BodegasModule = (function () {
 
 /***/ },
 
-/***/ 998:
+/***/ 997:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__materiales_routing_module__ = __webpack_require__(1059);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__materiales_component__ = __webpack_require__(1049);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__material_ver_material_ver_component__ = __webpack_require__(1023);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__material_nuevo_material_nuevo_component__ = __webpack_require__(1022);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__material_lista_material_lista_component__ = __webpack_require__(1021);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__material_editar_material_editar_component__ = __webpack_require__(1020);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__materiales_routing_module__ = __webpack_require__(1058);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__materiales_component__ = __webpack_require__(1048);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__material_ver_material_ver_component__ = __webpack_require__(1022);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__material_nuevo_material_nuevo_component__ = __webpack_require__(1021);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__material_lista_material_lista_component__ = __webpack_require__(1020);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__material_editar_material_editar_component__ = __webpack_require__(1019);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2557,19 +2509,19 @@ var MaterialesModule = (function () {
 
 /***/ },
 
-/***/ 999:
+/***/ 998:
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__personal_lista_personal_lista_component__ = __webpack_require__(1025);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__personal_routing_module__ = __webpack_require__(1060);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__personal_component__ = __webpack_require__(1050);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__personal_nuevo_personal_nuevo_component__ = __webpack_require__(1026);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__personal_editar_personal_editar_component__ = __webpack_require__(1024);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__personal_ver_personal_ver_component__ = __webpack_require__(1027);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__personal_lista_personal_lista_component__ = __webpack_require__(1024);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__personal_routing_module__ = __webpack_require__(1059);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__personal_component__ = __webpack_require__(1049);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__personal_nuevo_personal_nuevo_component__ = __webpack_require__(1025);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__personal_editar_personal_editar_component__ = __webpack_require__(1023);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__personal_ver_personal_ver_component__ = __webpack_require__(1026);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2601,6 +2553,54 @@ var PersonalModule = (function () {
     return PersonalModule;
 }());
 /* harmony default export */ exports["default"] = PersonalModule;
+
+
+/***/ },
+
+/***/ 999:
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(81);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__productores_routing_module__ = __webpack_require__(1060);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__productores_component__ = __webpack_require__(1050);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__productor_lista_productor_lista_component__ = __webpack_require__(1028);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__productor_nuevo_productor_nuevo_component__ = __webpack_require__(1029);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__productor_editar_productor_editar_component__ = __webpack_require__(1027);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__productor_ver_productor_ver_component__ = __webpack_require__(1030);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+var ProductoresModule = (function () {
+    function ProductoresModule() {
+    }
+    ProductoresModule = __decorate([
+        __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* NgModule */])({
+            imports: [__WEBPACK_IMPORTED_MODULE_1__angular_common__["b" /* CommonModule */], __WEBPACK_IMPORTED_MODULE_2__angular_forms__["d" /* ReactiveFormsModule */], __WEBPACK_IMPORTED_MODULE_3__productores_routing_module__["a" /* ProductoresRoutingModule */]],
+            declarations: [__WEBPACK_IMPORTED_MODULE_4__productores_component__["a" /* ProductoresComponent */], __WEBPACK_IMPORTED_MODULE_5__productor_lista_productor_lista_component__["a" /* ProductorListaComponent */], __WEBPACK_IMPORTED_MODULE_6__productor_nuevo_productor_nuevo_component__["a" /* ProductorNuevoComponent */], __WEBPACK_IMPORTED_MODULE_7__productor_editar_productor_editar_component__["a" /* ProductorEditarComponent */], __WEBPACK_IMPORTED_MODULE_8__productor_ver_productor_ver_component__["a" /* ProductorVerComponent */]]
+        }), 
+        __metadata('design:paramtypes', [])
+    ], ProductoresModule);
+    return ProductoresModule;
+}());
+/* harmony default export */ exports["default"] = ProductoresModule;
 
 
 /***/ }
