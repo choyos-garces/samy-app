@@ -45,12 +45,13 @@ body {
     border-color: #d9534f;
 }
 
+.form-text,
 .form-control-feedback {
-    font-size: 80%;
-    display: none;
+    font-size: .85rem;
+    user-select: none;
 }
 
-.has-danger small.form-text {
+.form-control-feedback {
     display: none;
 }
 
@@ -108,22 +109,27 @@ textarea {
 .table thead .thead-expand-title {
     text-align: center;
     padding: .4rem .75rem;
+    border-bottom: none;
+}
+
+.table-bordered thead .thead-expand-title {
     border-bottom: 1px solid #eceeef;
 }
 
 .table .thead-expand th {
+    border-top: none;
     text-align: center;
     padding: .3rem .75rem;
     font-size: .75rem;
     vertical-align: middle;
 }
 
-.table tr th:first-child,
+.table tr:not(.thead-expand) th:first-child,
 .table tr td:first-child {
     padding-left: 24px;
 }
 
-.table tr th:last-child,
+.table tr:not(.thead-expand) th:last-child,
 .table tr td:last-child {
     padding-right: 24px;
 }

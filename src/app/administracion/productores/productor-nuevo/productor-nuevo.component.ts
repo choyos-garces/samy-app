@@ -38,7 +38,7 @@ export class ProductorNuevoComponent extends FormController
 
             this._apiService.post("/administracion/productores", this.form.value).subscribe(
                 ( repsonse : IProductor ) => {
-                    this.router.navigate(["../view", repsonse.id], { relativeTo: this.route });
+                    this.router.navigate(["../list"], { relativeTo: this.route });
                 },
                 ( error : IError) => {
                     this.toggleForm();

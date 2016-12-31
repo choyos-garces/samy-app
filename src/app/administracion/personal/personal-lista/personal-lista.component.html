@@ -5,6 +5,7 @@
     <table class="table table-hover">
         <thead>
         <tr>
+            <th width="1">#</th>
             <th>Nombre</th>
             <th>Codigo</th>
             <th>Cedula</th>
@@ -15,6 +16,7 @@
         </thead>
         <tbody>
         <tr *ngFor="let persona of personal; let i = index">
+            <td>{{ i + 1 }}</td>
             <td><a [routerLink]="['../view', persona.id]">{{ persona.nombre + " " + persona.apellido }}</a></td>
             <td>{{ persona.codigo }}</td>
             <td>{{ persona.cedula }}</td>

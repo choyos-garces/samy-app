@@ -17,13 +17,9 @@
                 <div class="col-sm-6">
                     <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('encargado')}">
                         <label class="form-control-label">Encargado</label>
-                        <app-document-select
-                                [documents]="personal"
-                                [current]="bodega?.encargado.id"
-                                [documentMap]="documentMap"
-                                [disabled]="waiting"
-                                (output)="updateEncargado($event)"
-                        ></app-document-select>
+                        <select formControlName="encargado" id="encargado" class="form-control">
+                            <option *ngFor="let persona of personal" [value]="persona.id">{{ persona.nombre + " " + persona.apellido}}</option>
+                        </select>
                         <small class="form-control-feedback">{{ getFeedback('encargado') }}</small>
                     </div>
                 </div>

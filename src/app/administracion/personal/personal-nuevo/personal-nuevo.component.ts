@@ -50,7 +50,7 @@ export class PersonalNuevoComponent extends FormController
 
             this._apiService.post("/administracion/personal", this.form.value).subscribe(
                 ( repsonse : IPersonal ) => {
-                    this.router.navigate(["../view", repsonse.id], { relativeTo: this.route });
+                    this.router.navigate(["../list"], { relativeTo: this.route });
                 },
                 ( error : IError) => {
                     this.toggleForm();

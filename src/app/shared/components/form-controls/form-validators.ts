@@ -1,6 +1,6 @@
-import {FormControl} from "@angular/forms";
+import {FormControl, AbstractControl} from "@angular/forms";
 
-export class AppValidators {
+export class FormValidators {
     static collectionRequired = function ( control : FormControl ) {
         return (control.value.length !== 0) ? null : {
                 collectionRequired : {
@@ -18,5 +18,14 @@ export class AppValidators {
             notNullorEmpty : "Este item no puede quedar vacio."
         };
         return null
+    };
+
+    static notNumber = function(control : FormControl ) {
+        let value = control.value;
+
+        if( value == null ) return null;
+        if( isNaN(parseFloat(value)) && !isFinite(value)) return { notNumber : "Item debe ser un numero." };
+
+        return null;
     }
 }

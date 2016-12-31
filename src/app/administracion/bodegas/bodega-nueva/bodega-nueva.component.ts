@@ -48,12 +48,6 @@ export class BodegaNuevaComponent extends FormController
         this.subscribeResource('personal', this._apiService.get("/administracion/personal?"+Utils.queryParameters(filters)));
 
         this.onControlChange('encargado', value => console.log(value));
-
-        this.documentMap = {
-            searchKeys: ["nombre", "apellido", "cedula"],
-            display: ["nombre", "apellido"],
-            small: ["cedula"]
-        }
     }
 
     updateEncargado(id : string ) : void

@@ -58,7 +58,7 @@ export class ProductorEditarComponent extends FormController {
 
             this._apiService.patch("/administracion/productores/"+this.productor.id, this.form.value).subscribe(
                 ( repsonse : IProductor ) => {
-                    this.router.navigate(["../../view", repsonse.id], { relativeTo: this.route });
+                    this.router.navigate(["../../list"], { relativeTo: this.route });
                 },
                 ( error : IError) => {
                     this.toggleForm();

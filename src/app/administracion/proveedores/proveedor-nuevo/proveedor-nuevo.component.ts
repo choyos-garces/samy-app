@@ -39,7 +39,7 @@ export class ProveedorNuevoComponent extends FormController
 
             this._apiService.post("/administracion/proveedores", this.form.value).subscribe(
                 ( repsonse : IProveedor ) => {
-                    this.router.navigate(["../view", repsonse.id], { relativeTo: this.route });
+                    this.router.navigate(["../list"], { relativeTo: this.route });
                 },
                 ( error : IError) => {
                     this.toggleForm();

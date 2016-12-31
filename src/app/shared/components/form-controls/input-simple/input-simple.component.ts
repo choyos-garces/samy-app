@@ -14,8 +14,8 @@ export const INPUT_TEXT_VALIDATORS: any = {
 };
 
 @Component({
-    selector: 'samy-input-text',
-    templateUrl: 'input-text.component.html',
+    selector: 'samy-input-simple',
+    templateUrl: 'input-simple.component.html',
     providers: [INPUT_TEXT_VALUE_ACCESSOR, INPUT_TEXT_VALIDATORS]
 })
 export class InputTextComponent implements ControlValueAccessor

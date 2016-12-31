@@ -5,6 +5,7 @@
     <table class="table table-hover">
         <thead>
         <tr>
+            <th width="1">#</th>
             <th>Nombre</th>
             <th>RUC</th>
             <th>Correo</th>
@@ -15,6 +16,7 @@
         </thead>
         <tbody>
         <tr *ngFor="let proveedor of proveedores; let i = index">
+            <td>{{ i + 1 }}</td>
             <td><a [routerLink]="['../view', proveedor.id]">{{ proveedor.nombre }}</a></td>
             <td>{{ proveedor.ruc }}</td>
             <td>{{ proveedor.correo }}</td>

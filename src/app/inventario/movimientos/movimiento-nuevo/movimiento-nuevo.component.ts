@@ -12,7 +12,7 @@ import {IMovimientoItem} from "../../../shared/interfaces/Inventario/IMovimiento
 import {ICategoria} from "../../../shared/interfaces/Panel/ICategoria";
 import {IProveedor} from "../../../shared/interfaces/Administracion/IProveedor";
 import {IProductor} from "../../../shared/interfaces/Administracion/IProductor";
-import {AppValidators} from "../../../shared/components/form-controls/app-validators";
+import {FormValidators} from "../../../shared/components/form-controls/form-validators";
 import {Router, ActivatedRoute} from "@angular/router";
 
 @Component({
@@ -68,7 +68,7 @@ export class MovimientoNuevoComponent extends FormController
         this.addControl('accion', null, Validators.required);
         this.addControl('bodega', null, Validators.required);
         this.addControl('detalle', null, Validators.required);
-        this.addControl('materiales', [], AppValidators.collectionRequired);
+        this.addControl('materiales', [], FormValidators.collectionRequired);
         this.addControl('observaciones', null);
 
         // Sets behavior for Controllers

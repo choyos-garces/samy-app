@@ -2,9 +2,7 @@ import {Component} from "@angular/core";
 import {ActivatedRoute, Router} from "@angular/router";
 import {ApiService} from "../../../shared/services/api.service";
 import {IGuiaTransferencia} from "../../../shared/interfaces/Inventario/IGuiaTransferencia";
-import {IMovimientoInventario} from "../../../shared/interfaces/Inventario/IMovimientoInventario";
 import {IMaterial} from "../../../shared/interfaces/Administracion/IMaterial";
-import {forEach} from "@angular/router/src/utils/collection";
 import {IMovimientoMaterial} from "../../../shared/interfaces/Inventario/IMovimientoMaterial";
 
 @Component({
@@ -69,8 +67,7 @@ export class TransferenciaVerComponent {
 
     private findMaterialById(id : string, materiales : IMovimientoMaterial[] ) : IMovimientoMaterial
     {
-        let results = materiales.filter( (item, key)  => {
-            console.log(key);
+        let results = materiales.filter( (item )  => {
             return item.material.id == id;
         });
 

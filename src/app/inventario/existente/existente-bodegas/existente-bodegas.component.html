@@ -5,7 +5,7 @@
     <thead>
         <tr>
             <th width="1" rowspan="2">#</th>
-            <th rowspan="2">Bodega</th>
+            <th colspan="2" class="thead-expand-title">Bodega</th>
             <th colspan="4" class="thead-expand-title">Material</th>
             <th class="text-sm-center" rowspan="2">Disponible</th>
             <th class="text-sm-center" rowspan="2">Ultimo Movimiento</th>
@@ -13,30 +13,25 @@
         </tr>
         <tr class="thead-expand">
             <th>Codigo</th>
+            <th>Nombre</th>
+            <th>Codigo</th>
             <th>Tipo</th>
             <th>Categoria</th>
             <th>Nombre</th>
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let item of existente; let i = index">
+        <tr  class="text-sm-center" *ngFor="let item of existente; let i = index">
             <td>{{ i + 1 }}</td>
-            <td>
-                <a [routerLink]="['../../historial/bodega', item.bodega.id]">
-                    {{ item.bodega.nombre }}
-                </a>
-            </td>
-            <td class="text-sm-center"><code>#{{ item.material.codigo}}</code></td>
-            <td class="text-sm-center">{{ item.material.tipoMaterial.nombre }}</td>
-            <td class="text-sm-center">{{ item.material.categoria.nombre }}</td>
-            <td class="text-sm-center">{{ item.material.nombre}}</td>
-            <td class="text-sm-right">
-                <a [routerLink]="['../../historial/materialEnBodega', { material : item.material.id, bodega : item.bodega.id}]">
-                    {{ item.cantidad }}
-                </a>
-            </td>
-            <td class="text-sm-center">{{ item.updated | date }}</td>
-            <td class="text-sm-center">{{ item.created | date }}</td>
+            <td><code>{{ item.bodega.codigo }}</code></td>
+            <td>{{ item.bodega.nombre }}</td>
+            <td><code>#{{ item.material.codigo}}</code></td>
+            <td>{{ item.material.tipoMaterial.nombre }}</td>
+            <td>{{ item.material.categoria.nombre }}</td>
+            <td>{{ item.material.nombre}}</td>
+            <td class="text-sm-right">{{ item.cantidad }}</td>
+            <td>{{ item.updated | date }}</td>
+            <td>{{ item.created | date }}</td>
         </tr>
     </tbody>
 </table>

@@ -1,0 +1,20 @@
+<div class="form-group"  [ngClass]="controlGroupValidationClasses({ active : isActive })">
+    <label class="form-control-label" [attr.for]="name">{{ label }}</label>
+    <div class="input-combo">
+        <span class="chevron">
+            <input type="text" class="form-control" [(ngModel)]="selectedLabel" [attr.id]="name" (click)="toggleOptions()" (focus)="onTouchedCallback()" readonly/>
+        </span>
+    </div>
+    <div class="options">
+        <div class="item" *ngFor="let item of collection; let i = index" (click)="updateSelection(i)">
+            <div class="item-label">{{ displayItemLabel(item)}}</div>
+            <div class="item-aux">{{ displayItemAux(item) }}</div>
+        </div>
+    </div>
+    <ng-content></ng-content>
+    <div *ngIf="control.dirty && !control.valid" class="form-control-feedback">
+        <div *ngFor="let error of (control.errors | controlError)">
+            {{ error.msg }}
+        </div>
+    </div>
+</div>

@@ -33,7 +33,7 @@ export class BodegaEditarComponent extends FormController
     {
         this.addControl('active', null, Validators.required);
         this.addControl('nombre', null, Validators.required);
-        this.addControl('descripcion', null, Validators.required);
+        this.addControl('descripcion', null);
         this.addControl('encargado', null, Validators.required);
 
         this.route.params.subscribe( ( params : string[] ) => {

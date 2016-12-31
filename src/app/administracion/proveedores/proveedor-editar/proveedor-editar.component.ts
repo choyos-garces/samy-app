@@ -56,7 +56,7 @@ export class ProveedorEditarComponent extends FormController {
 
             this._apiService.patch("/administracion/proveedores/"+this.proveedor.id, this.form.value).subscribe(
                 ( repsonse : IProveedor ) => {
-                    this.router.navigate(["../../view", repsonse.id], { relativeTo: this.route });
+                    this.router.navigate(["../../list"], { relativeTo: this.route });
                 },
                 ( error : IError) => {
                     this.toggleForm();
