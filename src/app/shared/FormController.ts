@@ -16,7 +16,7 @@ export class FormController implements OnInit {
         this.form = formBuilder.group({});
     }
 
-    protected addControl(name, value : any, validators : any = null) : void
+    protected addControl(name : string, value : any, validators : any = null) : void
     {
         let control = new FormControl(name, validators);
         control.setValue(value);

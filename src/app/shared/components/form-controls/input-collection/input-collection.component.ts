@@ -32,17 +32,22 @@ export class InputCollectionComponent extends InputBase implements OnChanges
     @Input() itemAux : string[];
 
     isActive : boolean = false;
-    selected : any;
     selectedLabel : string;
 
-    constructor( private ref : ElementRef) {
+    constructor( private ref : ElementRef)
+    {
         super();
     }
-    
-    ngOnChanges(changes: SimpleChanges) : void
+
+    s : any;
+
+    set modelValue( value : any )
     {
-        if('collection' in changes) {
-            if(this.selected == null && this.modelValue !== null && this.collection ) {
+        if(value !== this.s ) {
+            this.s = value;
+            this.onChangeCallback(value);
+
+            if(this.collection) {
                 let result = Utils.searchCollectionBy(this.key, this.collection, this.modelValue);
                 if(result.length == 1) {
                     this.selectedLabel = this.displayItemLabel(result[0]);
@@ -50,16 +55,13 @@ export class InputCollectionComponent extends InputBase implements OnChanges
                 else {
                     this.modelValue = null;
                 }
-
             }
         }
-        
-        if( 'options' in changes && this.options) {
-            let options = changes['options'].currentValue;
-            Object.keys(options).forEach( key => {
-                this[key] = options[key]
-            });
-        }
+    }
+
+    get modelValue() : any
+    {
+        return this.s;
     }
 
     toggleOptions() : void
@@ -69,10 +71,10 @@ export class InputCollectionComponent extends InputBase implements OnChanges
 
     updateSelection( index : number ) : void
     {
-        this.selected = this.collection[index];
-        this.selectedLabel = this.displayItemLabel(this.selected);
+        let selected = this.collection[index];
+        this.selectedLabel = this.displayItemLabel(selected);
         if( this.key !== null ) {
-            this.modelValue = this.selected[this.key];
+            this.modelValue = selected[this.key];
         }
 
         this.toggleOptions();
@@ -116,10 +118,9 @@ export class InputCollectionComponent extends InputBase implements OnChanges
     onClickOutside( event ) : void
     {
         if (!this.ref.nativeElement.contains(event.target)) {
-
             this.isActive = false;
 
-            if( this.selected == null && this.collection && this.control.touched ) {
+            if( this.modelValue == null && this.collection && this.control.touched ) {
                 this.control.markAsDirty();
             }
         }

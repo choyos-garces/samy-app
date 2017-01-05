@@ -1,5 +1,6 @@
 import {ControlValueAccessor, AbstractControl, FormControl} from "@angular/forms";
 import {IInputBaseOptions} from "./IInputBaseOptions";
+import {SimpleChanges} from "@angular/core";
 
 export class InputBase implements ControlValueAccessor {
 
@@ -11,18 +12,18 @@ export class InputBase implements ControlValueAccessor {
     hasDanger : boolean = true;
 
     /** Accessors Properties **/
-    private onTouchedCallback : () => void = () => {};
-    private onChangeCallback : ( _ : any ) => void = () => {};
-    private validatFn : ( control : AbstractControl) => any = () => {};
+    onTouchedCallback : () => void = () => {};
+    onChangeCallback : ( _ : any ) => void = () => {};
+    validatFn : ( control : AbstractControl) => any = () => {};
 
-    private value: string = '';
+    private value : string | boolean;
 
-    get modelValue() : string
+    get modelValue() : string | boolean
     {
         return this.value;
     };
 
-    set modelValue(value : string )
+    set modelValue(value : string | boolean )
     {
         if ( value !== this.value ) {
             this.value = value;
@@ -64,4 +65,13 @@ export class InputBase implements ControlValueAccessor {
         return classes;
     }
 
+    ngOnChanges(changes: SimpleChanges) : void
+    {
+        if( 'options' in changes && this.options) {
+            let options = changes['options'].currentValue;
+            Object.keys(options).forEach( key => {
+                this[key] = options[key]
+            });
+        }
+    }
 }

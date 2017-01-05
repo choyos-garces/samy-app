@@ -1,0 +1,27 @@
+<div class="content-block">
+    <form [formGroup]="form">
+        <div class="row">
+            <div class="col-sm-12">
+                <samy-input-collection [options]="{ name : 'test-col', label : 'Collection Test', control : form.controls['collection'] }" [collection]="materiales" [itemLabel]="['nombre']" [itemAux]="['codigo']" [key]="'id'" formControlName="collection">
+                    <div class="form-text text-muted">Este es el ejemplo de un selelctor.</div>
+                </samy-input-collection>
+            </div>
+            <div class="col-sm-6">
+                <samy-input-simple [options]="{ name : 'test-text', label : 'Text Test', control : form.controls['text'] }" [type]="'text'" formControlName="text"></samy-input-simple>
+            </div>
+            <div class="col-sm-6">
+                <samy-input-simple [options]="{ name : 'test-num', label : 'Number Test', control : form.controls['number'], hasSuccess : true }" [type]="'number'" formControlName="number"></samy-input-simple>
+            </div>
+            <div class="col-sm-12">
+                <samy-input-textarea [options]="{ name : 'test-ta', label : 'Textarea Test', control : form.controls['textarea'] }" [placeholder]="'Place Holder Example'" formControlName="textarea"></samy-input-textarea>
+            </div>
+            <div class="col-sm-12">
+                <samy-input-checkbox [options]="{ name : 'test-checkbox', label : 'Checkbox Test', control : form.controls['checkbox'] }" formControlName="checkbox"></samy-input-checkbox>
+            </div>
+            <div class="col-xs-12 text-xs-right">
+                <button [disabled]="!form.valid">Is Valid</button>
+            </div>
+        </div>
+    </form>
+    <pre>{{ form.value | json}}</pre>
+</div>

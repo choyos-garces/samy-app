@@ -1,4 +1,4 @@
-import {FormControl, AbstractControl} from "@angular/forms";
+import {FormControl} from "@angular/forms";
 
 export class FormValidators {
     static collectionRequired = function ( control : FormControl ) {

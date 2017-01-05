@@ -8,10 +8,10 @@
             [readonly]="readOnly"
             [(ngModel)]="modelValue"
             (focus)="onTouchedCallback()" />
+    <ng-content></ng-content>
     <div *ngIf="control.dirty && !control.valid" class="form-control-feedback">
         <div *ngFor="let error of (control.errors | controlError)">
             {{ error.msg }}
         </div>
     </div>
-    <ng-content></ng-content>
 </div>

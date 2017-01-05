@@ -15,35 +15,18 @@
                     </div>
                 </div>
                 <div class="col-sm-6">
-                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('encargado')}">
-                        <label class="form-control-label">Encargado</label>
-                        <select formControlName="encargado" id="encargado" class="form-control">
-                            <option *ngFor="let persona of personal" [value]="persona.id">{{ persona.nombre + " " + persona.apellido}}</option>
-                        </select>
-                        <small class="form-control-feedback">{{ getFeedback('encargado') }}</small>
-                    </div>
+                    <samy-input-collection [options]="{ name : 'encargado', label : 'Encargado', control : form.controls['encargado'], hasDanger : true }" [collection]="personal" [key]="'id'" [itemLabel]="['nombre', 'apellido']" [itemAux]="['cedula']" formControlName="encargado"></samy-input-collection>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="form-group" [ngClass]="{'has-danger' : isControlInvalid('nombre')}">
-                        <label class="form-control-label" for="bodega-nombre">Nombre</label>
-                        <input type="text" id="bodega-nombre" class="form-control" formControlName="nombre" autocomplete="off" placeholder="Cuidad, Edificio, etc..." />
-                    </div>
-                    <div class="form-group">
-                        <label for="descripcion">Descripcion</label>
-                        <textarea id="descripcion" class="form-control control-y-2" formControlName="descripcion" placeholder="Cartonera, Etiquetas y Fundas, etc.."></textarea>
-                    </div>
+                    <samy-input-simple [type]="text" formControlName="nombre" [options]="{ name : 'nombre', label : 'Nombre', control : form.controls['nombre']}"></samy-input-simple>
+                    <samy-input-textarea [placeholder]="'ej. Cartoner, Etiquetas, Fundas, etc...'" formControlName="descripcion" [options]="{ name : 'descripcion', label : 'Descripcion', control : form.controls['descripcion']}"></samy-input-textarea>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <div class="form-check">
-                        <label class="form-check-label" for="recurso-active">
-                            <input type="checkbox" id="recurso-active" class="form-check-input" formControlName="active"/>
-                            Recurso Habilitado
-                        </label>
-                    </div>
+                    <samy-input-checkbox [options]="{ name : 'active', label : 'Bodega Habilitada', control : form.controls['active'] }" formControlName="active"></samy-input-checkbox>
                 </div>
                 <div class="col-xs-12 text-xs-right">
                     <div class="btn-group">

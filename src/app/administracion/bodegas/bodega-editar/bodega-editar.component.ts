@@ -1,15 +1,15 @@
 import {Component} from '@angular/core';
 import {Router, ActivatedRoute} from "@angular/router";
-import {FormBuilder, Validators} from "@angular/forms";
+import {FormBuilder} from "@angular/forms";
 
 import {IBodega} from "../../../shared/interfaces/Administracion/IBodega";
 import {IError} from "../../../shared/interfaces/IError";
 
+import {Utils} from "../../../shared/utils";
 import {FormController} from "../../../shared/FormController";
+import {FormValidators} from "../../../shared/components/form-controls/form-validators";
 import {ApiService} from "../../../shared/services/api.service";
 import {IPersonal} from "../../../shared/interfaces/Administracion/IPersonal";
-import {IDocumentMap} from "../../../shared/components/documentSelect/shared/IDocumentMap";
-import {Utils} from "../../../shared/utils";
 
 @Component({
     selector: 'app-bodega-editar',
@@ -19,7 +19,6 @@ export class BodegaEditarComponent extends FormController
 {
     bodega : IBodega;
     personal : IPersonal[];
-    documentMap : IDocumentMap;
 
     constructor( private _apiService : ApiService,
                  private router : Router,
@@ -31,10 +30,10 @@ export class BodegaEditarComponent extends FormController
 
     ngOnInit()
     {
-        this.addControl('active', null, Validators.required);
-        this.addControl('nombre', null, Validators.required);
+        this.addControl('active',false);
+        this.addControl('nombre', null, FormValidators.notNullorEmpty);
         this.addControl('descripcion', null);
-        this.addControl('encargado', null, Validators.required);
+        this.addControl('encargado', null, FormValidators.notNullorEmpty);
 
         this.route.params.subscribe( ( params : string[] ) => {
             let id  = params['id'];
@@ -53,17 +52,6 @@ export class BodegaEditarComponent extends FormController
 
         let filters = { active : true };
         this.subscribeResource('personal', this._apiService.get("/administracion/personal?"+Utils.queryParameters(filters)));
-
-        this.documentMap = {
-            searchKeys: ["nombre", "apellido", "cedula"],
-            display: ["nombre", "apellido"],
-            small: ["cedula"]
-        }
-    }
-
-    updateEncargado(id : string ) : void
-    {
-        this.setControlValue('encargado', id);
     }
 
     submit() : void
@@ -77,7 +65,6 @@ export class BodegaEditarComponent extends FormController
                 },
                 ( error : IError) => {
                     this.toggleForm();
-                    console.log(error.errors);
                     this.handleFormErrors(error.errors);
                 }
             );

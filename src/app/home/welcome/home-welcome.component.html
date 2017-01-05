@@ -1,9 +1,0 @@
-<div class="content-block">
-    <form [formGroup]="form">
-        <samy-input-collection [options]="inputMateriales" [collection]="materiales" [itemLabel]="['nombre']" [itemAux]="['codigo']" [key]="'id'" formControlName="test">
-            <div class="form-text text-muted">Este es el ejemplo de un selelctor.</div>
-        </samy-input-collection>
-        <samy-input-simple [label]="'Hola'" [name]="'test'" [control]="form.controls['test2']" formControlName="test2"></samy-input-simple>
-    </form>
-    <pre>{{ form.value | json }}</pre>
-</div>

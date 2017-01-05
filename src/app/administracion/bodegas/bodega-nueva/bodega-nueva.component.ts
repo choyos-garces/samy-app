@@ -6,9 +6,9 @@ import {ApiService} from "../../../shared/services/api.service";
 import {Router, ActivatedRoute} from "@angular/router";
 import {IBodega} from "../../../shared/interfaces/Administracion/IBodega";
 import {IError} from "../../../shared/interfaces/IError";
-import {IDocumentMap} from "../../../shared/components/documentSelect/shared/IDocumentMap";
 import {IPersonal} from "../../../shared/interfaces/Administracion/IPersonal";
 import {Utils} from "../../../shared/utils";
+import {FormValidators} from "../../../shared/components/form-controls/form-validators";
 
 @Component({
     selector: 'app-bodega-nueva',
@@ -18,7 +18,6 @@ export class BodegaNuevaComponent extends FormController
 {
     codigoReady : boolean = false;
     personal : IPersonal[];
-    documentMap : IDocumentMap;
 
     constructor( private _apiService : ApiService,
                  private router : Router,
@@ -30,9 +29,9 @@ export class BodegaNuevaComponent extends FormController
 
     ngOnInit()
     {
-        this.addControl('nombre', null, Validators.required);
-        this.addControl('codigo', null, Validators.required);
-        this.addControl('encargado', null, Validators.required);
+        this.addControl('nombre', null, FormValidators.notNullorEmpty);
+        this.addControl('codigo', null, FormValidators.notNullorEmpty);
+        this.addControl('encargado', null, FormValidators.notNullorEmpty);
         this.addControl('descripcion', null);
 
         this._apiService.get("/administracion/bodegas?codigo=true").subscribe(
@@ -46,13 +45,6 @@ export class BodegaNuevaComponent extends FormController
 
         let filters = { active : true };
         this.subscribeResource('personal', this._apiService.get("/administracion/personal?"+Utils.queryParameters(filters)));
-
-        this.onControlChange('encargado', value => console.log(value));
-    }
-
-    updateEncargado(id : string ) : void
-    {
-        this.setControlValue('encargado', id);
     }
 
     submit()

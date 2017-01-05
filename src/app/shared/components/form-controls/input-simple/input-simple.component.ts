@@ -1,83 +1,31 @@
 import {Component, forwardRef, Input} from '@angular/core';
-import {NG_VALUE_ACCESSOR, ControlValueAccessor, FormControl, NG_VALIDATORS, Validators} from '@angular/forms';
+import {NG_VALUE_ACCESSOR,NG_VALIDATORS} from '@angular/forms';
+import {IInputBaseOptions} from "../IInputBaseOptions";
+import {InputBase} from "../input-base";
 
 export const INPUT_TEXT_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
-    useExisting: forwardRef(() => InputTextComponent),
+    useExisting: forwardRef(() => InputSimpleComponent),
     multi: true
 };
 
 export const INPUT_TEXT_VALIDATORS: any = {
     provide: NG_VALIDATORS,
-    useExisting: forwardRef(() => InputTextComponent),
+    useExisting: forwardRef(() => InputSimpleComponent),
     multi: true
 };
 
 @Component({
     selector: 'samy-input-simple',
     templateUrl: 'input-simple.component.html',
+    styleUrls: ['input-simple.component.css'],
     providers: [INPUT_TEXT_VALUE_ACCESSOR, INPUT_TEXT_VALIDATORS]
 })
-export class InputTextComponent implements ControlValueAccessor
+export class InputSimpleComponent extends InputBase
 {
-    @Input() value : string;
-    @Input() label : string;
-    @Input() name : string;
+    @Input() options : IInputBaseOptions;
     @Input() type : string = 'text';
     @Input() readOnly : boolean = false;
     @Input() placeholder : string = null;
-    @Input() control : any;
-    @Input() hasSuccess : boolean = false;
-    @Input() hasDanger : boolean = true;
-
-    /** Accessors Properties **/
-    private onTouchedCallback : () => void = () => {};
-    private onChangeCallback : ( _ : any ) => void = () => {};
-    private validatFn : ( control : FormControl) => any = () => {};
-
-    private _value: string = '';
-
-    get modelValue() : string
-    {
-        return this._value;
-    };
-
-    set modelValue(value : string )
-    {
-        if ( value !== this._value ) {
-            this._value = value;
-            this.onChangeCallback(value);
-        }
-    }
-
-    controlGroupValidationClasses() : { [key : string] : string}
-    {
-        let classes = {};
-        if(this.hasSuccess) classes['has-success'] = this.control.dirty && this.control.valid;
-        if(this.hasDanger) classes['has-danger'] = this.control.dirty && !this.control.valid;
-
-        return classes;
-    }
-
-    /** Accessors Bindings **/
-    writeValue( value: any ) : void
-    {
-        this.modelValue = value;
-    }
-
-    registerOnChange( fn : any ) : void
-    {
-        this.onChangeCallback = fn;
-    }
-
-    registerOnTouched( fn : any ) : void
-    {
-        this.onTouchedCallback = fn;
-    }
-
-    validate( control : FormControl ) : void
-    {
-        this.validatFn(control);
-    }
 
 }

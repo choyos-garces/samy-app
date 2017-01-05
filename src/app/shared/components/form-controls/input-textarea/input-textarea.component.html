@@ -1,0 +1,14 @@
+<div class="form-group" [ngClass]="controlGroupValidationClasses()">
+    <label class="form-control-label" [attr.for]="name">{{ label }}</label>
+    <textarea  class="form-control form-control-danger form-control-success"
+               [attr.id]="name" [attr.name]="name"
+               [attr.placeholder]="placeholder"
+               [(ngModel)]="modelValue"
+               (focus)="onTouchedCallback()"></textarea>
+    <ng-content></ng-content>
+    <div *ngIf="control.dirty && !control.valid" class="form-control-feedback">
+        <div *ngFor="let error of (control.errors | controlError)">
+            {{ error.msg }}
+        </div>
+    </div>
+</div>
