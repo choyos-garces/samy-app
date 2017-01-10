@@ -1,7 +1,7 @@
 import {Component, OnInit} from "@angular/core";
 import {DashboardService} from "../../shared/services/dashboard.service";
 import {FormBuilder, Validators} from "@angular/forms";
-import {FormValidators} from "../../shared/components/form-controls/form-validators";
+import {SamyValidators} from "../../shared/components/form-controls/form-validators";
 import {ApiService} from "../../shared/services/api.service";
 
 @Component({

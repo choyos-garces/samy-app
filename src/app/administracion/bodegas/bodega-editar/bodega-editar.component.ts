@@ -7,7 +7,7 @@ import {IError} from "../../../shared/interfaces/IError";
 
 import {Utils} from "../../../shared/utils";
 import {FormController} from "../../../shared/FormController";
-import {FormValidators} from "../../../shared/components/form-controls/form-validators";
+import {SamyValidators} from "../../../shared/components/form-controls/form-validators";
 import {ApiService} from "../../../shared/services/api.service";
 import {IPersonal} from "../../../shared/interfaces/Administracion/IPersonal";
 
@@ -31,9 +31,9 @@ export class BodegaEditarComponent extends FormController
     ngOnInit()
     {
         this.addControl('active',false);
-        this.addControl('nombre', null, FormValidators.notNullorEmpty);
+        this.addControl('nombre', null, SamyValidators.notNullorEmpty);
         this.addControl('descripcion', null);
-        this.addControl('encargado', null, FormValidators.notNullorEmpty);
+        this.addControl('encargado', null, SamyValidators.notNullorEmpty);
 
         this.route.params.subscribe( ( params : string[] ) => {
             let id  = params['id'];

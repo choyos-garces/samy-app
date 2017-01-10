@@ -8,7 +8,7 @@ import {IBodega} from "../../../shared/interfaces/Administracion/IBodega";
 import {IError} from "../../../shared/interfaces/IError";
 import {IPersonal} from "../../../shared/interfaces/Administracion/IPersonal";
 import {Utils} from "../../../shared/utils";
-import {FormValidators} from "../../../shared/components/form-controls/form-validators";
+import {SamyValidators} from "../../../shared/components/form-controls/form-validators";
 
 @Component({
     selector: 'app-bodega-nueva',
@@ -29,9 +29,9 @@ export class BodegaNuevaComponent extends FormController
 
     ngOnInit()
     {
-        this.addControl('nombre', null, FormValidators.notNullorEmpty);
-        this.addControl('codigo', null, FormValidators.notNullorEmpty);
-        this.addControl('encargado', null, FormValidators.notNullorEmpty);
+        this.addControl('nombre', null, SamyValidators.notNullorEmpty);
+        this.addControl('codigo', null, SamyValidators.notNullorEmpty);
+        this.addControl('encargado', null, SamyValidators.notNullorEmpty);
         this.addControl('descripcion', null);
 
         this._apiService.get("/administracion/bodegas?codigo=true").subscribe(

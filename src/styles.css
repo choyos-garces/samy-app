@@ -191,6 +191,14 @@ label, select {
     cursor: pointer;
 }
 
+label {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    user-select: none;
+}
+
 input[type=date] {
     max-height: 38px;
     font-size: 95%;

@@ -1,13 +1,12 @@
-.form-group label,
-.form-group .options {
+.form-text, .form-control-feedback, .options {
     user-select: none;
 }
 
-input:read-only:disabled {
+input[type=text]:disabled {
     background-color: rgb(236, 238, 239);
 }
 
-input:read-only {
+input[type=text] {
     background-color: rgb(255, 255, 255);
     cursor: pointer;
     padding-right: 30px;
@@ -21,8 +20,8 @@ input:read-only {
     position: relative;
 }
 
-span.chevron:after {
-    content: "\f078";
+span.search:after {
+    content: "\f002";
     font: normal normal normal 14px/1 FontAwesome;
     text-rendering: auto;
     position: absolute;
@@ -31,10 +30,6 @@ span.chevron:after {
     right: .75rem;
     display: flex;
     align-items: center;
-}
-
-.active span.chevron:after {
-    content: "\f077";
 }
 
 .options {

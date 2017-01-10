@@ -15,7 +15,8 @@ const routes : Routes = [
             { path : "", component: HomeWelcomeComponent },
             { path : "panel", loadChildren: "app/panel/panel.module" },
             { path : "administracion", loadChildren: "app/administracion/administracion.module" },
-            { path : "inventario", loadChildren: "app/inventario/inventario.module" }
+            { path : "inventario", loadChildren: "app/inventario/inventario.module" },
+            { path : "contabilidad", loadChildren: "app/contabilidad/contabilidad.module" }
         ]
 
     }

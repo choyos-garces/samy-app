@@ -1,10 +1,10 @@
 export class Utils {
 
-    static queryParameters(filters : {}, name : string = 'filters') : string
+    static queryParameters(params : {}, name : string = 'filters') : string
     {
         let filter = [];
-        for(let key in filters) {
-            filter.push(name+"["+key+"]="+filters[key])
+        for(let key in params) {
+            filter.push(name+"["+key+"]="+params[key])
         }
 
         return filter.join("&");

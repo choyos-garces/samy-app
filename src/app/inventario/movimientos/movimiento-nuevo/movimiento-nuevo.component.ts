@@ -12,7 +12,7 @@ import {IMovimientoItem} from "../../../shared/interfaces/Inventario/IMovimiento
 import {ICategoria} from "../../../shared/interfaces/Panel/ICategoria";
 import {IProveedor} from "../../../shared/interfaces/Administracion/IProveedor";
 import {IProductor} from "../../../shared/interfaces/Administracion/IProductor";
-import {FormValidators} from "../../../shared/components/form-controls/form-validators";
+import {SamyValidators} from "../../../shared/components/form-controls/form-validators";
 import {Router, ActivatedRoute} from "@angular/router";
 
 @Component({
@@ -58,17 +58,17 @@ export class MovimientoNuevoComponent extends FormController
         this.subscribeResource('proveedores', this._api.get('/administracion/proveedores?'+Utils.queryParameters(filters)), true);
         this.subscribeResource('productores', this._api.get('/administracion/productores?'+Utils.queryParameters(filters)), true);
 
-        filters = { 'seccion.id' : "_TIPO_MATERIAL" };
+        filters['seccion.id'] = "_TIPO_MATERIAL";
         this.subscribeResource("recursos", this._api.get("/panel/recursos?"+Utils.queryParameters(filters)), true, "tiposMateriales");
 
-        filters = { 'seccion.id' : "_MOVIMIENTOS" };
+        filters['seccion.id'] = "_MOVIMIENTOS";
         this.subscribeResource("recursos", this._api.get("/panel/recursos?"+Utils.queryParameters(filters)), true, "acciones");
 
         // Set the Form Controllers
         this.addControl('accion', null, Validators.required);
         this.addControl('bodega', null, Validators.required);
         this.addControl('detalle', null, Validators.required);
-        this.addControl('materiales', [], FormValidators.collectionRequired);
+        this.addControl('materiales', [], SamyValidators.collectionRequired);
         this.addControl('observaciones', null);
 
         // Sets behavior for Controllers

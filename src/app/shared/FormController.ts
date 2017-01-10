@@ -11,9 +11,14 @@ export class FormController implements OnInit {
 
     ngOnInit(): void {}
 
-    constructor(formBuilder : FormBuilder)
+    constructor(private formBuilder : FormBuilder)
     {
         this.form = formBuilder.group({});
+    }
+
+    protected buildForm( formControls : {} ) : void
+    {
+        this.form = this.formBuilder.group(formControls);
     }
 
     protected addControl(name : string, value : any, validators : any = null) : void
@@ -41,6 +46,12 @@ export class FormController implements OnInit {
         this.getControl(controlName).markAsDirty();
     }
 
+    /**
+     * Shortcut to subscribe to valueChanges
+     *
+     * @param controlName
+     * @param subscription
+     */
     protected onControlChange(controlName : string, subscription : ( value : any) => void) : void
     {
         this.getControl(controlName).valueChanges.subscribe(subscription);
@@ -111,15 +122,36 @@ export class FormController implements OnInit {
         return this.getControl(name).getError(error)
     }
 
-    protected resetForm() : void
+    protected resetForm(formControls : any = null) : void
     {
-        let blueprint = this.form.value;
+        let form = this.form;
 
-        for(let prop in blueprint) {
-            if(blueprint.hasOwnProperty(prop)) blueprint[prop] = null;
+        if(formControls) {
+            for(let control in formControls) {
+                if(formControls.hasOwnProperty(control)) {
+                    let value = formControls[control][0];
+                    let validator = (formControls[control].length !== 1 ) ? formControls[control][1] : null;
+                    form.controls[control].patchValue(value);
+                    form.controls[control].markAsPristine();
+                    form.controls[control].markAsUntouched();
+                    form.controls[control].setValidators(validator);
+                }
+            }
+        }
+        else {
+            formControls = this.form.value;
+
+            for(let control in formControls) {
+                if(formControls.hasOwnProperty(control)) {
+                    form.controls[control] = null;
+                    form.controls[control].markAsPristine();
+                    form.controls[control].markAsUntouched();
+                }
+            }
+
+            form.setValue(formControls);
         }
 
-        this.form.setValue(blueprint);
     }
 
     protected getFeedback(name : string ) : string[]

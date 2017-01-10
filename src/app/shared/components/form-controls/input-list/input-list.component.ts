@@ -1,58 +1,59 @@
-import {Component, Input, ElementRef, forwardRef, OnChanges, SimpleChanges, OnInit} from "@angular/core";
-import {NG_VALIDATORS, NG_VALUE_ACCESSOR} from "@angular/forms";
-import {Utils} from "../../../utils";
+import {Component, forwardRef, ElementRef, Input} from "@angular/core";
+import {NG_VALUE_ACCESSOR, NG_VALIDATORS} from "@angular/forms";
 import {InputBase} from "../input-base";
 import {IInputBaseOptions} from "../IInputBaseOptions";
+import {Utils} from "../../../utils";
 
-export const INPUT_COLLECTION_VALUE_ACCESSOR: any = {
+export const INPUT_LIST_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
-    useExisting: forwardRef(() => InputCollectionComponent),
+    useExisting: forwardRef(() => InputListComponent),
     multi: true
 };
 
-export const INPUT_COLLECTION_VALIDATORS: any = {
+export const INPUT_LIST_VALIDATORS: any = {
     provide: NG_VALIDATORS,
-    useExisting: forwardRef(() => InputCollectionComponent),
+    useExisting: forwardRef(() => InputListComponent),
     multi: true
 };
 
 @Component({
     host : {'(document:click)' : 'onClickOutside($event)'},
-    selector: 'samy-input-collection',
-    templateUrl: './input-collection.component.html',
-    styleUrls: ['./input-collection.component.css'],
-    providers: [INPUT_COLLECTION_VALIDATORS, INPUT_COLLECTION_VALUE_ACCESSOR]
+    selector: 'samy-input-list',
+    templateUrl: './input-list.component.html',
+    styleUrls: ['./input-list.component.css'],
+    providers: [INPUT_LIST_VALIDATORS, INPUT_LIST_VALUE_ACCESSOR]
 })
-export class InputCollectionComponent extends InputBase implements OnChanges
-{
+export class InputListComponent extends InputBase {
+
     @Input() options : IInputBaseOptions;
     @Input() collection : any[] = [];
     @Input() key : string = 'id';
     @Input() itemLabel : string[] = [];
-    @Input() itemAux : string[]= [];
+    @Input() itemAux : string[] = [];
 
     isActive : boolean = false;
-    selectedLabel : string;
-
+    searchQuery : string;
+    results : any[] = [];
+    /** overide of the private value **/
+    s : any;
+    
     constructor( private ref : ElementRef)
     {
         super();
     }
 
-    s : any;
-
     set modelValue( value : any )
     {
-        if(value == null) this.selectedLabel = "";
+        if(value == null ) this.searchQuery = "";
 
         if(value !== this.s ) {
             this.s = value;
             this.onChangeCallback(value);
 
-            if(this.collection) {
+            if(this.collection && value) {
                 let result = Utils.searchCollectionBy(this.key, this.collection, this.modelValue);
                 if(result.length == 1) {
-                    this.selectedLabel = this.displayItemLabel(result[0]);
+                    this.searchQuery = this.displayItemLabel(result[0]);
                 }
                 else {
                     this.modelValue = null;
@@ -71,10 +72,32 @@ export class InputCollectionComponent extends InputBase implements OnChanges
         this.isActive = !this.isActive;
     }
 
+    searchOptions() : void
+    {
+        let results = [];
+        let keys = [ ...this.itemLabel, ...this.itemAux];
+
+        if(this.searchQuery.length !== 0) {
+            results = this.collection.filter(value => {
+                for (let i = 0; i < keys.length; i++) {
+                    if (value.hasOwnProperty(keys[i]) && value[keys[i]].toLowerCase().indexOf(this.searchQuery.toLowerCase()) >= 0)
+                        return true;
+                }
+
+                return false;
+            });
+        }
+
+        this.results = [...results];
+
+        this.isActive = (results.length > 0 );
+        if(results.length == 0) this.modelValue = null
+    }
+
     updateSelection( index : number ) : void
     {
         let selected = this.collection[index];
-        this.selectedLabel = this.displayItemLabel(selected);
+        this.searchQuery = this.displayItemLabel(selected);
         if( this.key !== null ) {
             this.modelValue = selected[this.key];
         }
@@ -89,7 +112,7 @@ export class InputCollectionComponent extends InputBase implements OnChanges
             for(let i = 0; i < this.itemLabel.length; i++) {
                 if(item.hasOwnProperty(this.itemLabel[i])) label.push(item[this.itemLabel[i]]);
             }
-            
+
             return label.join(' - ');
         }
 
@@ -109,7 +132,7 @@ export class InputCollectionComponent extends InputBase implements OnChanges
 
         return null;
     }
-
+    
     /**
      * Esconde el dropdown si el usuario hace click en otra parte que no
      * sea este component.
@@ -123,14 +146,14 @@ export class InputCollectionComponent extends InputBase implements OnChanges
             this.isActive = false;
 
             if( this.modelValue == null && this.collection && this.control.touched ) {
-                this.selectedLabel = "";
+                this.searchQuery = "";
                 this.control.markAsDirty();
             }
 
             if(this.modelValue !== null) {
                 let result = Utils.searchCollectionBy(this.key, this.collection, this.modelValue);
                 if(result.length == 1) {
-                    this.selectedLabel = this.displayItemLabel(result[0]);
+                    this.searchQuery = this.displayItemLabel(result[0]);
                 }
                 else {
                     this.modelValue = null;
@@ -138,5 +161,4 @@ export class InputCollectionComponent extends InputBase implements OnChanges
             }
         }
     }
-
 }

@@ -8,8 +8,11 @@ export class InputBase implements ControlValueAccessor {
     label : string;
     name : string;
     control : FormControl = new FormControl();
+    hasFeedback : boolean = true;
+    hasValidationAddon : boolean = true;
     hasSuccess : boolean = false;
     hasDanger : boolean = true;
+    hasWarning : boolean = false;
 
     /** Accessors Properties **/
     onTouchedCallback : () => void = () => {};
@@ -52,7 +55,7 @@ export class InputBase implements ControlValueAccessor {
         this.validatFn(control);
     }
 
-    controlGroupValidationClasses( add? : { [key : string ] : string } ) : { [key : string] : string}
+    controlGroupValidationClasses( add? : { [key : string ] : string } ) : { [key : string] : boolean}
     {
         let classes = {};
         if(this.hasSuccess) classes['has-success'] = this.control.dirty && this.control.valid;
@@ -65,12 +68,24 @@ export class InputBase implements ControlValueAccessor {
         return classes;
     }
 
+    controlClasses() : { [key : string] : boolean}
+    {
+        return {
+            "form-control" : true,
+            "form-control-danger" : (this.hasValidationAddon && this.hasSuccess),
+            "form-control-warning" : (this.hasValidationAddon && this.hasWarning),
+            "form-control-success" : (this.hasValidationAddon && this.hasDanger)
+        };
+    }
+
     ngOnChanges(changes: SimpleChanges) : void
     {
         if( 'options' in changes && this.options) {
             let options = changes['options'].currentValue;
+            if(!('name' in options) && 'label' in options) options['name'] = options['label'].toLowerCase();
             Object.keys(options).forEach( key => {
                 this[key] = options[key]
+
             });
         }
     }

@@ -1,0 +1,65 @@
+<app-factura-agregar-item [materiales]="materiales" [tiposMateriales]="tiposMateriales" (output)="addItem($event)"></app-factura-agregar-item>
+<div class="content-block">
+    <form [formGroup]="form">
+        <fieldset [disabled]="isFormDisabled()">
+            <div class="row">
+                <div class="col-xs-6">
+                    <samy-input-collection [options]="{label: 'Proveedor', name: 'proveedor', control: getControl('proveedor')}" [collection]="proveedores" [itemLabel]="['nombre']" [itemAux]="['ruc']" formControlName="proveedor" ></samy-input-collection>
+                </div>
+                <div class="col-xs-6">
+                    <samy-input-simple [options]="{label: 'Factura', name: 'factura', control: getControl('factura')}" formControlName="factura"></samy-input-simple>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-block">
+                    <button data-toggle="modal" data-target="#factura-agregar-material">Agregar Material</button>
+                </div>
+                <table class="table table-bordered">
+                    <thead class="thead-condensed">
+                        <tr>
+                            <th width="1">#</th>
+                            <th class="text-xs-center" [ngStyle]="{width: '6rem'}">Codigo</th>
+                            <th>Item</th>
+                            <th>Detalle</th>
+                            <th class="text-xs-center" [ngStyle]="{width: '8rem'}">Cantidad</th>
+                            <th class="text-xs-center" [ngStyle]="{width: '4rem'}">Descuento</th>
+                            <th class="text-xs-center" [ngStyle]="{width: '8rem'}">P.U.</th>
+                            <th class="text-xs-center" [ngStyle]="{width: '10rem'}">Precio Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of getControlValue('items'); let i = index">
+                            <td>{{ i + 1 }}</td>
+                            <td class="text-xs-center"><code>{{ getMaterialById(item.material).codigo }}</code></td>
+                            <td>{{ getMaterialById(item.material).categoria.nombre }}</td>
+                            <td>{{ getMaterialById(item.material).nombre }}</td>
+                            <td class="text-xs-right">{{ item.cantidad }}</td>
+                            <td class="text-xs-right">{{ item.descuento }}%</td>
+                            <td class="text-xs-right">{{ item.precio | decimalPlaces }}</td>
+                            <td class="text-xs-right">{{ item.precio*item.cantidad - ((item.precio*item.cantidad*item.descuento)/100) | decimalPlaces }}</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="7" class="text-xs-right">Subtotal</th>
+                            <td class="text-xs-right">{{ valoresFactura().subtotal  | decimalPlaces }}</td>
+                        </tr>
+                        <tr>
+                            <th colspan="7" class="text-xs-right">Descuento</th>
+                            <td class="text-xs-right">{{ valoresFactura().descuento  | decimalPlaces }}</td>
+                        </tr>
+                        <tr>
+                            <th colspan="7" class="text-xs-right">I.V.A. {{ getControlValue('iva')}}%</th>
+                            <td class="text-xs-right">{{ valoresFactura().iva  | decimalPlaces  }}</td>
+                        </tr>
+                        <tr>
+                            <th colspan="7" class="text-xs-right">Total</th>
+                            <td class="text-xs-right">{{ valoresFactura().total | decimalPlaces }}</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </fieldset>
+    </form>
+    <pre>{{ form.value | json }}</pre>
+</div>

@@ -1,0 +1,49 @@
+<div class="modal fade" id="factura-agregar-material">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form [formGroup]="form">
+                <fieldset [disabled]="isFormDisabled()">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Agregar Item: Material</h5>
+                    </div>
+                    <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <samy-input-collection [options]="{label: 'Tipos Material', name: 'tipoMaterial', control: getControl('tipoMaterial')}" [collection]="tiposMateriales" [itemLabel]="['nombre']" formControlName="tipoMaterial"></samy-input-collection>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <samy-input-collection [options]="{label: 'Categoria', control: getControl('categoria')}" [collection]="categorias" [itemLabel]="['nombre']" formControlName="categoria"></samy-input-collection>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <samy-input-list [options]="{label : 'Material', name : 'material', control: getControl('material')}" [collection]="opcionesMateriales" [itemLabel]="['nombre']" [itemAux]="['codigo', 'descripcion']" formControlName="material"></samy-input-list>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <samy-input-simple [options]="{label : 'Detalle', name : 'detalle', control: getControl('detalle')}" formControlName="detalle"></samy-input-simple>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4">
+                                                <samy-input-simple [options]="{label: 'Cantidad', control: getControl('cantidad'), hasValidationAddon: false, hasFeedback: false}" [type]="'number'" formControlName="cantidad"></samy-input-simple>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4">
+                                                <samy-input-simple [options]="{label: 'Descuento', control: getControl('descuento'), hasValidationAddon: false, hasFeedback: false}" [type]="'number'" formControlName="descuento"></samy-input-simple>
+                                            </div>
+                                            <div class="col-xs-6 col-sm-4">
+                                                <samy-input-simple [options]="{label: 'Precio', name: 'precio', control: getControl('precio'), hasValidationAddon: false, hasFeedback: false}" [type]="'number'" [step]="0.01" formControlName="precio"></samy-input-simple>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button [disabled]="isSubmitDisabled()" (click)="submit()" data-dismiss="modal"><i class="fa fa-plus"></i> Agrega a Listado</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>

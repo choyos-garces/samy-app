@@ -13,7 +13,7 @@ import {BodegaEditarComponent} from './bodega-editar/bodega-editar.component';
 import {SamyFormControlsModule} from "../../shared/components/form-controls/form-controls.module";
 
 @NgModule({
-    imports : [CommonModule, SamyFormControlsModule, ReactiveFormsModule, BodegasRoutingModule, DocumentSelectModule],
+    imports : [CommonModule, ReactiveFormsModule, BodegasRoutingModule, SamyFormControlsModule],
     declarations : [
         BodegasComponent,
         BodegaListaComponent,

@@ -27,5 +27,5 @@ export class InputSimpleComponent extends InputBase
     @Input() type : string = 'text';
     @Input() readOnly : boolean = false;
     @Input() placeholder : string = null;
-
+    @Input() step : string | number = "any";
 }
