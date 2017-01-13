@@ -10,8 +10,8 @@
     color: #969ba0
 }
 
-.nav-section-name {
-    color: #7d8287
+.nav .nav {
+    padding-left: 24px;
 }
 
 .nav-link {
@@ -25,15 +25,5 @@
 
 .nav-link.active {
     color: inherit;
-    background: none;
     font-weight: bold;
-}
-
-.nav-link.active:hover, .nav-link.active:focus {
-    background: none;
-    color: inherit;
-}
-
-.nav-child {
-    padding-left: 24px;
 }

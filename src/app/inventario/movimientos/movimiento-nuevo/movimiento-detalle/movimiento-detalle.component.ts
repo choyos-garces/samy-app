@@ -22,6 +22,11 @@ export class MovimientoDetalleComponent extends FormController implements OnChan
     @Input() bodegas : IBodega[];
 
     isNotReady = true;
+    formControls = {
+        documento: [null, Validators.required],
+        referencia: [null, Validators.required],
+        adicional: [null]
+    };
 
     constructor(formBuilder : FormBuilder)
     {
@@ -30,9 +35,7 @@ export class MovimientoDetalleComponent extends FormController implements OnChan
 
     ngOnInit() : void
     {
-        this.addControl('documento', null, Validators.required);
-        this.addControl('referencia', null, Validators.required);
-        this.addControl('adicional', null);
+        this.buildForm(this.formControls);
 
         this.onControlChange('documento', value => {
             this.setControlValue('referencia', null);
@@ -50,7 +53,7 @@ export class MovimientoDetalleComponent extends FormController implements OnChan
     ngOnChanges(changes: SimpleChanges): void
     {
         if('accion' in changes) {
-            this.resetForm();
+            this.resetForm(this.formControls);
         }
         if(typeof this.accion != 'undefined') {
             this.isNotReady = false;

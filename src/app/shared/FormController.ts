@@ -126,9 +126,9 @@ export class FormController implements OnInit {
     {
         let form = this.form;
 
-        if(formControls) {
+        if(formControls !== null) {
             for(let control in formControls) {
-                if(formControls.hasOwnProperty(control)) {
+                if(form.controls.hasOwnProperty(control)) {
                     let value = formControls[control][0];
                     let validator = (formControls[control].length !== 1 ) ? formControls[control][1] : null;
                     form.controls[control].patchValue(value);

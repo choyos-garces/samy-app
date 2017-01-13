@@ -6,6 +6,16 @@ body {
     src: url("assets/fonts/Consolas.ttf");
 }
 
+@media print {
+    .sidebar, .sidebar * {
+        display: none !important;
+    }
+
+    .nav, .nav * {
+        display: none !important;
+    }
+}
+
 @media (max-width: 576px) {
     .view-action {
         margin-bottom: 15px;

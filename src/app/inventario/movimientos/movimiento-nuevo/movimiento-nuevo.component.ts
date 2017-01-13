@@ -36,6 +36,14 @@ export class MovimientoNuevoComponent extends FormController
     bodegasDisponibles : IBodega[] = [];
     materialesDisponibles : IMaterial[] = [];
 
+    formControls = {
+        accion: [null, SamyValidators.notNullorEmpty],
+        bodega: [null, SamyValidators.notNullorEmpty],
+        detalle: [null, SamyValidators.notNullorEmpty],
+        materiales: [[], SamyValidators.collectionRequired],
+        observaciones: [null]
+    };
+
     constructor(private _api : ApiService,
                 private router : Router,
                 private route : ActivatedRoute,
@@ -46,6 +54,9 @@ export class MovimientoNuevoComponent extends FormController
 
     ngOnInit() : void
     {
+
+        this.buildForm(this.formControls);
+
         // Fetch resources form DB
         let filters : any = { active : true };
         this.subscribeResource('bodegas', this._api.get("/administracion/bodegas?"+Utils.queryParameters(filters)), true);
@@ -63,13 +74,6 @@ export class MovimientoNuevoComponent extends FormController
 
         filters['seccion.id'] = "_MOVIMIENTOS";
         this.subscribeResource("recursos", this._api.get("/panel/recursos?"+Utils.queryParameters(filters)), true, "acciones");
-
-        // Set the Form Controllers
-        this.addControl('accion', null, Validators.required);
-        this.addControl('bodega', null, Validators.required);
-        this.addControl('detalle', null, Validators.required);
-        this.addControl('materiales', [], SamyValidators.collectionRequired);
-        this.addControl('observaciones', null);
 
         // Sets behavior for Controllers
         this.onControlChange('accion', (id : boolean) => {

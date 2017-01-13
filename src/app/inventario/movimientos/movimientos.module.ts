@@ -3,8 +3,8 @@ import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
 import {ReactiveFormsModule} from "@angular/forms";
 
+import {SamyFormControlsModule} from "../../shared/components/form-controls/form-controls.module";
 import {MovimientosRoutingModule} from "./movimientos-routing.module";
-import {DocumentSelectModule} from "../../shared/components/documentSelect/documentSelect.module";
 
 import {MovimientosComponent} from "./movimientos.component";
 import {MovimientoListaComponent} from "./movimiento-lista/movimiento-lista.component";
@@ -16,7 +16,7 @@ import {MovimientoDetalleComponent} from "./movimiento-nuevo/movimiento-detalle/
 
 
 @NgModule({
-    imports : [CommonModule, ReactiveFormsModule, MovimientosRoutingModule, DocumentSelectModule],
+    imports : [CommonModule, ReactiveFormsModule, MovimientosRoutingModule, SamyFormControlsModule],
     declarations: [
         MovimientosComponent,
         MovimientoViewComponent,

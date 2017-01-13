@@ -1,15 +1,36 @@
 <div>
     <small class="text-muted"><strong>{{compania}}</strong> - {{ header?.grupo }}</small>
     <div class="clearfix">
-        <div class="float-xs-right">
-            <div class="btn-group">
-                <button><i class="fa fa-fw fa-download"></i></button>
-                <button><i class="fa fa-fw fa-print"></i></button>
+        <div class="float-right">
+            <div class="float-right">
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item" *ngFor="let accion of header.acciones">
+                            <a class="page-link" [routerLink]="accion.uri" [title]="accion.title">
+                                <i class="fa fa-fw {{ accion.icono }}"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="btn-group">
-                <button *ngFor="let accion of header.acciones" [routerLink]="accion.uri" [title]="accion.title">
-                    <i class="fa fa-fw {{ accion.icono }}"></i>
-                </button>
+            <div class="float-right">
+                &nbsp;&nbsp;
+            </div>
+            <div class="float-right">
+                <nav>
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link">
+                                <i class="fa fa-fw fa-share-alt"></i>
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link">
+                                <i class="fa fa-fw fa-print"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <h3>{{ header?.seccion }}</h3>
